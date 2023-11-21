@@ -21,6 +21,8 @@ section {
   margin: 100px auto;
 }
 
+
+
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
   background-size: cover;
@@ -106,21 +108,20 @@ section {
   color: #33A8DB;
 }
 
-#disseminar-conhecimentos {
-  height: 560px;
+#pensamento {
+  height: 700px;
   background-size: cover;
   background-image: url("../images/codigos.jpeg");
   background-attachment: fixed;
   border-top: 1px solid #33A8DB80;
   border-bottom: 1px solid #33A8DB80;
-  padding: 200px;
+  padding: 150px;
 }
 
-#disseminar-conhecimentos p {
+#pensamento p {
   font-weight: 900;
-  font-size: 60px;
-  text-transform: lowercase;
-  max-width: 500px;
+  font-size: 50px;
+  max-width: 800;
   text-shadow: 3px 2px #33A8DB;
   text-align: center;
   margin: auto;
