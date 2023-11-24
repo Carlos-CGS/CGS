@@ -107,7 +107,6 @@ section {
 
 #tech-content .tech-list .tech:hover {
   transition: 0.8s;
-  height: 60px;
   width: 450px;
   padding: center;
 }
