@@ -60,6 +60,7 @@ section {
   border-radius: 50%;
   padding: 16px;
   margin-bottom: 16px;
+  
 }
 
 .banner .logo img {
@@ -67,6 +68,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(146, 193, 231, 0.8)) brightness(1.2);
 }
 
 .banner .banner-content button {
@@ -82,16 +84,17 @@ section {
   border-radius: 30px;
 }
 
-#course-content {
+#tech-content {
   width: 800px;
   text-align: center;
 }
 
-#course-content .tech-list {
+#tech-content .tech-list {
   margin: 24px 0;
+  
 }
 
-#course-content .tech-list .tech {
+#tech-content .tech-list .tech {
   color: white;
   width: 530px;
   margin: 0 auto 24px;
@@ -102,11 +105,20 @@ section {
   box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
 }
 
-#course-content .tech-list .tech span {
-  color: #33A8DB;
+#tech-content .tech-list .tech:hover {
+  transition: 0.8s;
+  height: 60px;
+  width: 450px;
+  padding: center;
 }
 
-#pensamento {
+
+#tech-content .tech-list .tech a {
+  color: #33A8DB;
+  text-decoration: none;
+}
+
+#noticias {
   height: 700px;
   background-size: cover;
   background-image: url("../images/codigos.jpeg");
@@ -116,13 +128,36 @@ section {
   padding: 150px;
 }
 
-#pensamento p {
-  font-weight: 900;
-  font-size: 50px;
-  max-width: 800;
-  text-shadow: 3px 2px #33A8DB;
-  text-align: center;
-  margin: auto;
+.news-container {
+  display: flex;
+  gap: 20px;
+}
+
+.news {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 10px;
+}
+
+.news img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-color: black;
+}
+
+.news h2,
+.news p {
+  font-family: arial, 'sans serif';
+  color: black; 
+  text-align: justify;
+}
+
+.news a {
+  text-decoration: none;
 }
 
 #meu-repositorio {
