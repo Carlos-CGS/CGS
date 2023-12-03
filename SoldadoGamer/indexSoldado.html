@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataque do Soldado - CGS</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&display=swap" rel="stylesheet">
+    
+    <!-- Folgas de estilo -->
+    <link rel="stylesheet" href="./src/style/resetS.css">
+    <link rel="stylesheet" href="./src/style/mainS.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <!-- escrever isto e apertar TAb, cria uma div automática >>> div.menu <<< -->
+            <div class="menu-time">
+                <h2 class="second">Tempo Restante</h2>
+                <h2 id="time-left">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 class="second">Seu Score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu-name">
+                <img src="./src/imagem/soldado.png" alt="Foto Jogador" height="50px"/>
+                <h2>Soldado</h2>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="10"></div>
+                <div class="square" id="11"></div>
+                <div class="square" id="12"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="13"></div>
+                <div class="square" id="14"></div>
+                <div class="square" id="15"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="16"></div>
+                <div class="square" id="17"></div>
+                <div class="square" id="18"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="19"></div>
+                <div class="square" id="20"></div>
+                <div class="square" id="21"></div>
+            </div>
+        </div>
+
+        <button class="btn" onclick="window.location.reload()">Reiniciar Jogo</button>
+
+        <div id="mensagemVitoria" class="oculto vitoria">
+            <img src="./src/imagem/soldado.png" alt="Foto Jogador" height="100px"/>
+            <h2>Fim do Jogo!</h2><br>
+            <h2>Seu Resultado foi:</h2> 
+            <h2 id="score">0</h2>
+            
+          <button class="btn" onclick="window.location.reload()">Reiniciar o Jogo!</button>
+        </div> 
+    </div>
+    
+    <script defer src="./src/script/engineS.js"></script>
+</body>
+</html>
