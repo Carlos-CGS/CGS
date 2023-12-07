@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../imagem/camuflado.jpg");
+    background-size: cover;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border-bottom: 5px solid #09d609;
+}
+
+.menu-name {
+    margin-top: 10px; 
+}
+
+.panel{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #6b8e23;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #cec9c9b2;
+}
+
+.enemy{
+    background-image: url("../imagem/inimigo.png");
+    background-size: cover;
+}
+
+.menu-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second{
+    margin-top: 1rem;
+}
+
+.btn {
+    height: 60px;
+    width: 180px;
+    border: 1px solid #d4cfcf2a;
+    background-color: #000000;
+    color: #fff;
+    display: block;
+    margin: auto;
+    text-decoration: arial;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #cec9c9b2;
+    cursor: pointer;
+}
+
+.vitoria {
+    background: rgb(133,131,0);
+    background: radial-gradient(circle, rgba(133,131,0,1) 0%, rgba(241,255,0,0.9472163865546218) 0%, rgba(133,131,0,1) 52%);
+    box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 75px 120px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.oculto {
+    display: none;
+  }
