@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galinha Feliz - CGS</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&display=swap" rel="stylesheet">
+    
+    <!-- Folgas de estilo -->
+    <link rel="stylesheet" href="./src/style/resetG.css">
+    <link rel="stylesheet" href="./src/style/mainG.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <div class="menu-name">
+                <img src="./src/imagem/sair.png" onclick="window.location.reload()"alt="Botão Sair" height="50px"/>
+            </div>
+            <div class="menu-time">
+                <h2 class="second">Galinha Feliz</h2>
+                <h2 id="time-left">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 class="second">Pontos</h2>
+                <h2 id="score">0</h2>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="6"></div>
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+                <div class="square" id="10"></div>
+            </div>
+            <div class="panel-row">   
+                <div class="square" id="11"></div>
+                <div class="square" id="12"></div>
+                <div class="square" id="13"></div>
+                <div class="square" id="14"></div>
+                <div class="square" id="15"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="16"></div>
+                <div class="square" id="17"></div>
+                <div class="square" id="18"></div>
+                <div class="square" id="3=19"></div>
+                <div class="square" id="20"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="21"></div>
+                <div class="square" id="22"></div>
+                <div class="square" id="23"></div>
+                <div class="square" id="24"></div>
+                <div class="square" id="25"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="26"></div>
+                <div class="square" id="27"></div>
+                <div class="square" id="28"></div>
+                <div class="square" id="29"></div>
+                <div class="square" id="30"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="31"></div>
+                <div class="square" id="32"></div>
+                <div class="square" id="33"></div>
+                <div class="square" id="34"></div>
+                <div class="square" id="35"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="36"></div>
+                <div class="square" id="37"></div>
+                <div class="square" id="38"></div>
+                <div class="square" id="39"></div>
+                <div class="square" id="40"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="41"></div>
+                <div class="square" id="42"></div>
+                <div class="square" id="43"></div>
+                <div class="square" id="44"></div>
+                <div class="square" id="45"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="41"></div>
+                <div class="square" id="42"></div>
+                <div class="square" id="43"></div>
+                <div class="square" id="44"></div>
+                <div class="square" id="45"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="46"></div>
+                <div class="square" id="47"></div>
+                <div class="square" id="48"></div>
+                <div class="square" id="49"></div>
+                <div class="square" id="50"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="51"></div>
+                <div class="square" id="52"></div>
+                <div class="square" id="53"></div>
+                <div class="square" id="54"></div>
+                <div class="square" id="55"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="56"></div>
+                <div class="square" id="57"></div>
+                <div class="square" id="58"></div>
+                <div class="square" id="59"></div>
+                <div class="square" id="60"></div>
+            </div>
+        </div>
+
+        <h2 class="dedicatoria">A Galinha Feliz <img src="./src/imagem/galinha.png" height="50px"> De Carlos para Nickolas,  Valentina e Tayná.</h2>
+
+        <div id="mensagemVitoria" class="oculto vitoria">
+            <h2>Fim do Jogo!</h2><br>
+          <button class="btn" onclick="window.location.reload()">Reiniciar o Jogo!</button>
+        </div> 
+    </div>
+    <script defer src="./src/script/engineG.js"></script>
+</body>
+</html>
