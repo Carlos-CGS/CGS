@@ -136,7 +136,7 @@ section {
 }
 
 .news {
-  width: 50%;
+  width: 300px;
   padding: 20px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.9); 
@@ -151,7 +151,13 @@ section {
   border-color: black;
 }
 
-.news h2,
+.news h2{
+  color: #000;
+  font-size: 20px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: gray;
+}
+
 .news p {
   font-family: arial, 'sans serif';
   color: black; 
@@ -188,6 +194,4 @@ footer a {
   text-decoration: none;
 }
 
-/* background: rgb(1,15,6); */
-/* background: linear-gradient(180deg, rgba(1,15,6,1) 0%, rgba(60,126,69,0.8323704481792717) 52%, rgba(36,241,9,1) 100%); */
 
