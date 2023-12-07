@@ -45,6 +45,8 @@ section {
   background: -webkit-linear-gradient(#33A8DB, #1472B7);
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
 }
 
 .banner p {
@@ -60,7 +62,7 @@ section {
   border-radius: 50%;
   padding: 16px;
   margin-bottom: 16px;
-  
+  clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);
 }
 
 .banner .logo img {
@@ -69,6 +71,7 @@ section {
   height: 100%;
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(146, 193, 231, 0.8)) brightness(1.2);
+  clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);
 }
 
 .banner .banner-content button {
@@ -184,3 +187,7 @@ footer a {
   font-weight: bold;
   text-decoration: none;
 }
+
+/* background: rgb(1,15,6); */
+/* background: linear-gradient(180deg, rgba(1,15,6,1) 0%, rgba(60,126,69,0.8323704481792717) 52%, rgba(36,241,9,1) 100%); */
+
