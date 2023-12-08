@@ -61,7 +61,7 @@ function addListenerHitBox(){
             if(square.id === state.values.hitPosition){
                 state.values.result = state.values.result + 10;
                 state.view.score.textContent = state.values.result;
-                state.view.classList.add("ovo");
+                square.classList.add("ovo");
                 playSound("poin");
                 playSound("cocorico");
             };
