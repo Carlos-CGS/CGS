@@ -4,6 +4,35 @@ body {
   background-color: black;
 }
 
+html {
+  scroll-behavior: smooth; /* Adiciona o efeito de rolagem suave globalmente */
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 48px;
+  list-style: none;
+}
+
+.navegacao_link{
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #fff;
+  position: relative;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+  transform: scale(1.2);
+  text-transform: uppercase;
+}
+
+.navegacao_link:hover{
+  color: #33A8DB;
+  font-weight: bold;
+  
+}
+
 h2 {
   font-size: 2rem;
   color: #33A8DB;
@@ -193,5 +222,3 @@ footer a {
   font-weight: bold;
   text-decoration: none;
 }
-
-
