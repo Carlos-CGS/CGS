@@ -86,7 +86,7 @@ const cardData = [
 
 async function getRandomCardId(){
     const randomIndex = Math.floor(Math.random() * cardData.length);
-    return cardData[randomIndex].id;
+    return cardData[randomIndex].id; 
 };
 
 async function createCardImage(IdCard, fieldSide){
@@ -126,7 +126,7 @@ async function setCardsField(cardId){
 };
 
 async function hiddenCardDetails(){
-    state.cardSprites.avatar.src = "";
+    state.cardSprites.avatar.src = "./src/assets/icons/card-back-azul.jpg";
     state.cardSprites.name.innerText = "";
     state.cardSprites.type.innerText = "";
 }
@@ -182,7 +182,7 @@ async function drawCards(cardNumbers, fieldSide){
 };
 
 async function resetDuel(){
-    state.cardSprites.avatar.src = "";
+    state.cardSprites.avatar.src = "./src/assets/icons/card-back-azul.jpg";
     state.actions.buttom.style.display = "none";
 
     state.fieldCards.player.style.display = "none";
