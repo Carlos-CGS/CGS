@@ -5,7 +5,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth; /* Adiciona o efeito de rolagem suave globalmente */ 
+  scroll-behavior: smooth; /* Adiciona o efeito de rolagem suave globalmente */
 }
 
 .navegacao {
@@ -30,7 +30,6 @@ html {
 .navegacao_link:hover{
   color: #33A8DB;
   font-weight: bold;
-  
 }
 
 h2 {
@@ -55,6 +54,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
+  width: 100vw;
   padding-top: 60px;
   border-bottom: 1px solid #33A8DB80;
 }
@@ -151,6 +151,7 @@ section {
 
 #noticias {
   height: 700px;
+  width: 100vw;
   background-size: cover;
   background-image: url("../images/codigos.jpeg");
   background-attachment: fixed;
@@ -182,9 +183,10 @@ section {
 
 .news h2{
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: gray;
+  text-align: center;
 }
 
 .news p {
@@ -199,7 +201,7 @@ section {
 
 #meu-repositorio {
   text-align: center;
-  width: 800px;
+  width: 100vwpx;
 }
 
 #meu-repositorio img {
@@ -210,6 +212,7 @@ footer {
   padding: 60px 0;
   text-align: center;
   background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+  width: 100vw;
   border-top: 1px solid #33A8DB80;
 }
 
@@ -221,4 +224,8 @@ footer a {
   color: #33A8DB;
   font-weight: bold;
   text-decoration: none;
+}
+
+.galeria img {
+  filter: drop-shadow(10px, 3px, 1px #87ceeb);
 }
