@@ -50,7 +50,7 @@ section {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6));
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
