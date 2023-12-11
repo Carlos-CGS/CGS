@@ -1,5 +1,6 @@
 body{
-    cursor: pointer;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .bg-video{
@@ -109,6 +110,7 @@ body{
 
 #next-duel{
     display: none;
+    cursor: pointer;
 }
 
 .card-box{
@@ -118,6 +120,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .card-infield{
@@ -129,8 +132,11 @@ body{
 
 .card{
     transition: transform 0.2s;
+    cursor: pointer;
 }
 
 .card:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
+
