@@ -6,6 +6,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     height: 100vh;
     background: #49d3c7;
 }
@@ -43,6 +44,8 @@ body {
     border: 1px solid #49d3c7;
     background-color: #49d3c7;
     cursor: pointer;
+    flex-grow: 1;
+    flex-basis: 50;
 }
 
 .enemy{
