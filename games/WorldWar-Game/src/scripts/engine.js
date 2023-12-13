@@ -28,65 +28,161 @@ const pathImages = "./src/assets/icons/";
 const cardData = [
     {
         id: 0,
-        name: "Soldado",
-        type: "exercito",
-        img: `${pathImages}001.jpg`,
-        WinOf: [0],
-        LoseOf: [1,2,3,4,5,6],
+        name: "Sniper",
+        type: "Tropa",
+        img: `${pathImages}000.jpg`,
+        WinOf: [0,6,7],
+        LoseOf: [0,1,2,3,4,5,8,9,10,11,12,13,14,15,16,17,18],
     },
     {
         id: 1,
-        name: "Cabo",
-        type: "exercito",
-        img: `${pathImages}002.jpg`,
-        WinOf: [0],
-        LoseOf: [2,3,4,5,6],
+        name: "Soldado",
+        type: "Tropa",
+        img: `${pathImages}001.jpg`,
+        WinOf: [0,1],
+        LoseOf: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
     },
     {
         id: 2,
-        name: "Sargento",
-        type: "exercito",
-        img: `${pathImages}003.jpg`,
-        WinOf: [0,1],
-        LoseOf: [3,4,5,6],
+        name: "Cabo",
+        type: "Tropa",
+        img: `${pathImages}002.jpg`,
+        WinOf: [0,1,2],
+        LoseOf: [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
     },
     {
         id: 3,
-        name: "Sub Oficial",
-        type: "exercito",
-        img: `${pathImages}004.jpg`,
-        WinOf: [0,1,2],
-        LoseOf: [4,5,6],
+        name: "Sargento",
+        type: "Tropa",
+        img: `${pathImages}003.jpg`,
+        WinOf: [0,1,2,3],
+        LoseOf: [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
     },
     {
         id: 4,
-        name: "Fuzileiros Navais",
-        type: "exercito",
-        img: `${pathImages}005.jpg`,
-        WinOf: [0,1,2,3],
-        LoseOf: [5,6],
+        name: "Sub Oficial",
+        type: "Tropa",
+        img: `${pathImages}004.jpg`,
+        WinOf: [0,1,2,3,4],
+        LoseOf: [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
     },
     {
         id: 5,
-        name: "Ataque Tropas",
-        type: "exercito",
-        img: `${pathImages}006.jpg`,
-        WinOf: [0,1,2,3,4],
-        LoseOf: [6],
+        name: "Fuzileiros Navais",
+        type: "Tropa",
+        img: `${pathImages}005.jpg`,
+        WinOf: [0,1,2,3,4,5],
+        LoseOf: [5,6,7,8,9,10,11,12,13,14,15,16,17,18],
     },
     {
         id: 6,
-        name: "Boma Atomica",
-        type: "bomba",
+        name: "Capitão Tenente",
+        type: "Oficial",
+        img: `${pathImages}006.jpg`,
+        WinOf: [0,1,2,3,4,5,6],
+        LoseOf: [6,7,8,9,10,11,12,13,14,15,16,17,18],
+    },
+    {
+        id: 7,
+        name: "Alto Comando",
+        type: "Comando",
         img: `${pathImages}007.jpg`,
-        WinOf: [0,1,2,3,4,5],
-        LoseOf: [],
+        WinOf: [0,1,2,3,4,5,6,7],
+        LoseOf: [7,8,9,10,11,12,13,14,15,16,17,18],
+    },
+    {
+        id: 8,
+        name: "Jipe Militar",
+        type: "Veículo",
+        img: `${pathImages}008.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10],
+        LoseOf: [8,9,10,11,12,13,14,15,16,17,18],
+    },
+    {
+        id: 9,
+        name: "Fragata Destroyer",
+        type: "Veículo",
+        img: `${pathImages}009.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10],
+        LoseOf: [8,9,10,11,12,13,14,15,16,17,18],
+    },
+    {
+        id: 10,
+        name: "Helicoptero Apache",
+        type: "Veículo",
+        img: `${pathImages}010.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10],
+        LoseOf: [8,9,10,11,12,13,14,15,16,17,18],
+    },
+    {
+        id: 11,
+        name: "Torpedo Submerino",
+        type: "Veículo",
+        img: `${pathImages}011.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+        LoseOf: [11,12,13,14,15,16,17,18],
+    },
+    {
+        id: 12,
+        name: "Tanque Blindado",
+        type: "Veículo",
+        img: `${pathImages}012.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+        LoseOf: [11,12,13,14,15,16,17,18],
+    },
+    {
+        id: 13,
+        name: "Bombardeio Aereo",
+        type: "Veículo",
+        img: `${pathImages}013.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
+        LoseOf: [11,12,13,14,15,16,17,18],
+    },
+    {
+        id: 14,
+        name: "Ataque da Esquadra",
+        type: "Comando",
+        img: `${pathImages}014.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+        LoseOf: [14,15,16,18],
+    },
+    {
+        id: 15,
+        name: "",
+        type: "Ataque com Caças",
+        img: `${pathImages}015.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+        LoseOf: [14,15,16,18],
+    },
+    {
+        id: 16,
+        name: "Avaço das Tropas",
+        type: "Comando",
+        img: `${pathImages}016.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+        LoseOf: [14,15,16,18],
+    },
+    {
+        id: 17,
+        name: "Granada",
+        type: "Explosivo",
+        img: `${pathImages}017.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,17],
+        LoseOf: [8,9,10,11,12,13,14,15,16,17,18],
+    },
+    {
+        id: 18,
+        name: "Bomba Atomica",
+        type: "Explosivo",
+        img: `${pathImages}018.jpg`,
+        WinOf: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+        LoseOf: [18],
     },
 ];
 
 async function getRandomCardId(){
     const randomIndex = Math.floor(Math.random() * cardData.length);
-    return cardData[randomIndex].id; 
+    return cardData[randomIndex].id;
 };
 
 async function createCardImage(IdCard, fieldSide){
@@ -126,7 +222,7 @@ async function setCardsField(cardId){
 };
 
 async function hiddenCardDetails(){
-    state.cardSprites.avatar.src = "./src/assets/icons/card-back-azul.jpg";
+    state.cardSprites.avatar.src = "";
     state.cardSprites.name.innerText = "";
     state.cardSprites.type.innerText = "";
 }
@@ -182,7 +278,7 @@ async function drawCards(cardNumbers, fieldSide){
 };
 
 async function resetDuel(){
-    state.cardSprites.avatar.src = "./src/assets/icons/card-back-azul.jpg";
+    state.cardSprites.avatar.src = "";
     state.actions.buttom.style.display = "none";
 
     state.fieldCards.player.style.display = "none";
