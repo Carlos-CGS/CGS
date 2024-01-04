@@ -104,16 +104,26 @@ section {
 }
 
 .banner .banner-content button {
-  color: #31A8DD;
+  color: #1a7097;
   font-size: 1rem;
   font-weight: bold;
   padding: 16px 32px;
-  text-transform: uppercase;
   letter-spacing: 4px;
   background-color: transparent;
-  border-image: linear-gradient(#3BA1CD, #1572B7);
-  border-image-slice: 10;
-  border-radius: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.banner .banner-content button :hover{
+  color: #1a7097;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 16px 32px;
+  letter-spacing: 4px;
+  background-color: transparent;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 #tech-content {
@@ -128,7 +138,7 @@ section {
 
 #tech-content .tech-list .tech {
   color: white;
-  width: 530px;
+  width: 500px;
   margin: 0 auto 24px;
   border: 1px solid #33A8DB;
   background-color: #252525;
@@ -139,7 +149,7 @@ section {
 
 #tech-content .tech-list .tech:hover {
   transition: 0.8s;
-  width: 450px;
+  width: 550px;
   padding: center;
 }
 
@@ -199,9 +209,31 @@ section {
   text-decoration: none;
 }
 
+#certificados {
+  font-family: Calibri, 'Trebuchet MS';
+  padding: 60px 10px;
+  text-align: center;
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 40%;
+  color: #fff;
+  border-top: 1px solid #33A8DB80;
+  width: 100vw;
+}
+
+#certificados h2 {
+  padding: 0px 30px;
+}
+
+.column {
+  flex-basis: 48%;
+}
+
 #meu-repositorio {
   text-align: center;
-  width: 100vwpx;
+  width: 100vw;
 }
 
 #meu-repositorio img {
