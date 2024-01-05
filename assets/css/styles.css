@@ -262,3 +262,8 @@ footer a {
   font-size: 1.5rem;
   padding: 10px 10px ;
 }
+
+.galeria img:hover{
+  scale: 1.2;
+  transition: 0.5s;
+}
