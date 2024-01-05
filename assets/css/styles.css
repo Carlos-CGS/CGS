@@ -112,6 +112,7 @@ section {
   background-color: transparent;
   border-radius: 10px;
   text-decoration: none;
+  box-shadow: 2px 2px 2px 2px rgba(90, 86, 86, 0.5);
 }
 
 .banner .banner-content button :hover{
@@ -129,11 +130,14 @@ section {
 #tech-content {
   width: 800px;
   text-align: center;
+  background: rgb(11,63,93);
+  background: radial-gradient(circle, rgba(11,63,93,0.9248074229691877) 0%, rgba(0,9,0,1) 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(90, 86, 86, 0.5);
 }
 
 #tech-content .tech-list {
-  margin: 24px 0;
-  
+  margin: 24px;
 }
 
 #tech-content .tech-list .tech {
@@ -238,6 +242,8 @@ section {
 
 #meu-repositorio img {
   margin: 32px 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgba(90, 86, 86, 0.5);
 }
 
 footer {
