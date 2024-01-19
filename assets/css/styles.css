@@ -7,7 +7,7 @@ body {
 html {
   scroll-behavior: smooth; /* Adiciona o efeito de rolagem suave globalmente */
 }
-
+ 
 .navegacao {
   display: flex;
   align-items: center;
@@ -48,22 +48,22 @@ p {
 
 section {
   margin: 100px auto;
-  width: 100vw;
+  width: 100%;
 }
 
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6));
   background-size: auto;
   background-repeat: no-repeat;
-  height: 600px;
-  width: 100vw;
+  height: 650px;
+  width: 100%;
   padding-top: 60px;
   border-bottom: 1px solid #33A8DB80;
 }
 
 .banner .banner-content {
   color: white;
-  width: 600px;
+  width: 100vw;
   margin: auto;
   text-align: center;
 }
@@ -129,25 +129,19 @@ section {
   transition: 0.5s;
 }
 
+#main {
+  width: 100%;
+}
+
 #tech-content {
-  width: 800px;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
   text-align: center;
   background: rgb(11,63,93);
   background: radial-gradient(circle, rgba(11,63,93,0.9248074229691877) 0%, rgba(0,9,0,1) 100%);
   border-radius: 20px;
   box-shadow: 5px 5px 5px 5px rgba(90, 86, 86, 0.5);
-}
-
-#tech-content .tech-list {
-  margin: 24px;
-}
-
-#tech-content .tech-list .tech {
-  color: white;
-  width: 500px;
-  margin: 0 auto 24px;
-  background-color: #252525;
-  padding: 16px;
 }
 
 #tech-content .tech-list .tech a {
@@ -157,13 +151,13 @@ section {
 
 #noticias {
   height: 700px;
-  width: 100vw;
-  background-size: auto;
+  width: 100%;
+  background-size: cover;
   background-image: url("../images/codigos.jpeg");
   background-attachment: fixed;
   border-top: 1px solid #33A8DB80;
   border-bottom: 1px solid #33A8DB80;
-  padding: 150px;
+  padding: 10%;
 }
 
 .news-container {
@@ -173,23 +167,23 @@ section {
 
 .news {
   width: 100vw;
-  padding: 20px;
+  padding: 1%;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.9); 
   border-radius: 10px;
 }
 
 .news img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
   border-color: black;
 }
 
 .news h2{
   color: #000;
-  font-size: 18px;
+  font-size: 1rem;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: gray;
   text-align: center;
@@ -234,7 +228,8 @@ section {
 }
 
 #meu-repositorio img {
-  margin: 32px 0;
+  margin: 1rem;
+  width: 80%;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 3px rgba(90, 86, 86, 0.5);
 }
