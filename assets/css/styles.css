@@ -13,7 +13,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 3rem;
+  column-gap: 5%;
   list-style: none;
   font-size: 20%;
 }
