@@ -23,13 +23,6 @@ body {
     border-radius: 5px;
 }
 
-@media(max-width: 700px) {
-    .item{
-        width: 80px;
-        height: 80px;
-    }
-}
-
 .h2 {
     font-weight: 600;
     font-size: 5.0em;
@@ -72,8 +65,16 @@ body {
 
 @media(max-width: 500px){
     .game{
-        width: 80%;
-        height: 80%;
+        width: 250px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .item{
+        width: 15%;
+        height: 15%;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -140,4 +141,3 @@ body {
 .oculto {
     display: none;
   }
-
