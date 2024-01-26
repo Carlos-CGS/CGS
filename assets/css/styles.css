@@ -235,7 +235,7 @@ section {
 @media (max-width: 700px) {
   .meus_jogos_container__jogo{
     width: 20%;
-    height: auto;
+    max-height: 90vh;
   }
   #certificados {
     flex-direction: column;
