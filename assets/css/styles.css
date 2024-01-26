@@ -157,13 +157,13 @@ section {
 
 #meus_jogos {
   height: 43.75rem;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
   background-image: url("../images/codigos.jpeg");
   background-attachment: fixed;
   border-top: 0.0625rem solid #33A8DB80;
   border-bottom: 0.0625rem solid #33A8DB80;
-  padding: 10%;
+  padding: 10% 3% 10% 3%;
 }
 
 .meus_jogos__container {
