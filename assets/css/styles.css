@@ -209,7 +209,7 @@ section {
 
 #certificados {
   font-family: Calibri, 'Trebuchet MS';
-  padding: 3.75rem 0.625rem;
+  padding: 0% 1% 0% 1%;
   text-align: center;
   text-align: justify;
   display: flex;
@@ -217,12 +217,19 @@ section {
   flex-wrap: wrap;
   flex-basis: 40%;
   color: #fff;
-  border-top: 0.0625rem solid #33A8DB80;
   width: 100vw;
+}
+
+@media (max-width: 800px) {
+  #certificados {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 #certificados h2 {
   padding: 0rem 1.875rem;
+  justify-content: center;
 }
 
 .column {
