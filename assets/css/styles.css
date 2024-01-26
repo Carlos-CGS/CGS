@@ -189,6 +189,7 @@ section {
   position: relative;
   background-color: rgba(255, 255, 255, 0.9); 
   border-radius: 0.625rem;
+  overflow: auto;
 }
 
 .meus_jogos_container__jogo img {
@@ -235,7 +236,7 @@ section {
 @media (max-width: 700px) {
   .meus_jogos_container__jogo{
     width: 20%;
-    max-height: 90vh;
+    max-height: 100vh;
   }
   #certificados {
     flex-direction: column;
