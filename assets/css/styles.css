@@ -178,7 +178,7 @@ section {
 .meus_jogos__container {
   display: flex;
   gap: 1.25rem;
-  height: 70%;
+  height: auto;
 }
 
 .meus_jogos_container__jogo {
