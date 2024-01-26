@@ -184,6 +184,7 @@ section {
 .meus_jogos_container__jogo {
   padding: 1%;
   width: 25%;
+  height: auto;
   box-sizing: border-box;
   position: relative;
   background-color: rgba(255, 255, 255, 0.9); 
@@ -231,10 +232,10 @@ section {
   width: 100vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .meus_jogos_container__jogo{
     width: 20%;
-    height: 100vh;
+    height: auto;
   }
   #certificados {
     flex-direction: column;
