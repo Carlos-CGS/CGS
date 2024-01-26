@@ -48,6 +48,30 @@ body {
     flex-basis: 50;
 }
 
+@media(max-width:500px){
+    .square{
+        height: 30px;
+        width: 30px;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .menu-time{
+        font-size: 50%;
+    }
+    .menu-score{
+        font-size: 50%;
+    }
+    .vitoria{
+        width: 5px;
+        height: 20px;
+    }
+    .dedicatoria{
+        font-size: 50%;
+    }
+}
+
 .enemy{
     background-image: url("../imagem/galinha.png");
     background-size: cover;
