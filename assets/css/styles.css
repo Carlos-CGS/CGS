@@ -166,15 +166,26 @@ section {
   padding: 10% 3% 10% 3%;
 }
 
+.link_game{
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 2%;
+  align-items: center;
+  text-align: justify;
+}
+
 .meus_jogos__container {
   display: flex;
   gap: 1.25rem;
+  height: 70%;
 }
 
 .meus_jogos_container__jogo {
   padding: 1%;
   width: 25%;
   box-sizing: border-box;
+  position: relative;
   background-color: rgba(255, 255, 255, 0.9); 
   border-radius: 0.625rem;
 }
@@ -221,9 +232,16 @@ section {
 }
 
 @media (max-width: 800px) {
+  .meus_jogos_container__jogo{
+    width: 20%;
+    height: 100vh;
+  }
   #certificados {
     flex-direction: column;
     align-items: center;
+  }
+  .link_game{
+    position: relative;
   }
 }
 
