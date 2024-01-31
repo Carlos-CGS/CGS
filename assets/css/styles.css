@@ -263,6 +263,9 @@ section {
   #meu-repositorio h2{
     font-size: 150%;
   }
+  p{
+    word-wrap: break-word;
+  }
 }
 
 #certificados h2 {
