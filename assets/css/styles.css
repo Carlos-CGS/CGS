@@ -283,7 +283,7 @@ section {
   background-size: cover;
   align-items: center;
   justify-content: center;
-  margin: 6% 3%;
+  padding: 3%;
 }
 
 #meu-repositorio h2 {
