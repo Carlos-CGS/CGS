@@ -259,6 +259,9 @@ section {
   .link_game{
     position: relative;
   }
+  #meu-repositorio h2{
+    font-size: 100%;
+  }
 }
 
 #certificados h2 {
