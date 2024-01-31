@@ -47,6 +47,7 @@ h2 {
 
 p {
   color: white;
+  width: 100vw;
 }
 
 section {
@@ -297,7 +298,7 @@ section {
   width: 45%;
   border-radius: 0.625rem;
   box-shadow: 0.1875rem 0.1875rem 0.1875rem 0.1875rem rgba(90, 86, 86, 0.5);
-  padding: 3%;
+  padding: 1%;
 }
 
 .videos-container {
