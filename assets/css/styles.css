@@ -38,7 +38,7 @@ h2 {
   font-size: 200%;
   color: #33A8DB;
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
   text-align: center;
   text-transform: uppercase;
   margin-top: 1.5625rem;
@@ -260,7 +260,7 @@ section {
     position: relative;
   }
   #meu-repositorio h2{
-    font-size: 100%;
+    font-size: 150%;
   }
 }
 
@@ -280,6 +280,7 @@ section {
   background-size: cover;
   align-items: center;
   justify-content: center;
+  margin: 6% 3%;
 }
 
 #meu-repositorio h2 {
