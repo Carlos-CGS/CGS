@@ -47,7 +47,6 @@ h2 {
 
 p {
   color: white;
-  width: 100vw;
 }
 
 section {
@@ -193,7 +192,7 @@ section {
 .meus_jogos__container {
   display: flex;
   gap: 1.25rem;
-  height: auto;
+  height: 90%;
 }
 
 .meus_jogos_container__jogo {
@@ -217,7 +216,7 @@ section {
 
 .meus_jogos_container__jogo h2{
   color: #000;
-  font-size: 75%;
+  font-size: 90%;
   -webkit-text-stroke-width: 0.03125rem;
   -webkit-text-stroke-color: gray;
   text-align: center;
@@ -263,8 +262,8 @@ section {
   #meu-repositorio h2{
     font-size: 150%;
   }
-  p{
-    word-wrap: break-word;
+  #tech-content h2 p{
+    font-size: 150%;
   }
 }
 
