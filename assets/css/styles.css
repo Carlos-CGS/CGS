@@ -8,6 +8,12 @@ body {
 html {
   scroll-behavior: smooth; /* Adiciona o efeito de rolagem suave globalmente */
 }
+
+header {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  overflow: auto;
+}
  
 .navegacao {
   display: flex;
@@ -135,17 +141,19 @@ section {
 
 #main {
   width: 100%;
+  padding: 2%;
 }
 
 #tech-content {
   width: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin: 2rem auto; 
+  padding: 0 2%; 
   text-align: center;
-  background: rgb(11,63,93);
-  background: radial-gradient(circle, rgba(11,63,93,0.9248074229691877) 0%, rgba(0,9,0,1) 100%);
+  background: rgb(11, 63, 93);
+  background: radial-gradient(circle, rgba(11, 63, 93, 0.9248074229691877) 0%, rgba(0, 9, 0, 1) 100%);
   border-radius: 1.25rem;
   box-shadow: 0.3125rem 0.3125rem 0.3125rem 0.3125rem rgba(90, 86, 86, 0.5);
+  overflow: auto;
 }
 
 #tech-content h2 {
@@ -285,6 +293,38 @@ section {
   }
   #certificados h2{
     font-size: 150%;
+  }
+  #tech-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tech-content .galeria {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #tech-content h2 {
+    font-size: 100%; 
+  }
+  #tech-content .galeria p {
+    font-size: 50%; 
+  }
+  #tech-content .galeria img {
+    width: 8%; 
+    height: auto;
+    margin: 0.5rem; 
+  }
+  #tech-content .galeria1 img {
+    width: 25%; 
+    height: auto;
+    margin: 0.5rem; 
+  }
+  #tech-content .galeria1 p {
+    font-size: 80%; 
+  }
+  #meu-repositorio p{
+    font-size: 70%;
   }
 }
 
