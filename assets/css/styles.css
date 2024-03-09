@@ -165,35 +165,38 @@ section {
   text-decoration: none;
 }
 
-.galeria {
+.galeria_tech {
   -webkit-text-stroke-width: 0.03125rem;
   -webkit-text-stroke-color: #000;
-  letter-spacing: 0.625rem;
   font-size: 1.5rem;
-  padding: 0.625rem 0.625rem;
 }
 
 .galeria1{
   -webkit-text-stroke-width: 0.03125rem;
   -webkit-text-stroke-color: #000;
   font-size: 1rem;
-  padding: 0.625rem 0.625rem;
+  padding: 0.8rem 0.625rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-.galeria img:hover{
-  scale: 1.2;
+.galeria_tech img:hover{
+  scale: 1.1;
   transition: 0.5s;
+  cursor: pointer;
 } 
 
 .galeria1 img:hover{
-  scale: 1.1;
+  scale: 1.2;
   transition: 0.5s;
 }
 
+.galeria_cursos img:hover{
+  scale: 1.2;
+  transition: 0.5s;
+}
 
 #meus_jogos {
   height: 43.75rem;
@@ -310,11 +313,6 @@ section {
   #tech-content .galeria p {
     font-size: 50%; 
   }
-  #tech-content .galeria img {
-    width: 8%; 
-    height: auto;
-    margin: 0.5rem; 
-  }
   #tech-content .galeria1 img {
     width: 25%; 
     height: auto;
@@ -329,9 +327,10 @@ section {
   .video-text-container {
     flex-direction: column;
   }
-  .video-text-container .video,
-  .video-text-container .text-container {
-    width: 100%;
+  #meu-repositorio .video{
+    width: 90%;
+  }
+  .video-text-container .video {
     margin-bottom: 1rem;
   }
 }
