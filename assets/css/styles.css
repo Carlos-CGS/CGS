@@ -307,6 +307,10 @@ section {
     justify-content: center;
     align-items: center;
   }
+  .galeria1 img{
+    width: 70%;
+    height: 70%;
+  }
   #tech-content h2 {
     font-size: 100%; 
   }
