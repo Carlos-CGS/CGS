@@ -209,13 +209,25 @@ section {
   padding: 10% 3% 10% 3%;
 }
 
-.link_game{
+.link_game {
   position: absolute;
-  left: 15%;
-  right: 15%;
+  left: 50%; 
+  transform: translateX(-50%); 
   bottom: 2%;
-  align-items: center;
-  text-align: justify;
+  padding: 0.5rem 1rem; 
+  background-color: #33A8DB; 
+  color: #fff;
+  border: 2px solid #33A8DB; 
+  border-radius: 0.5rem; 
+  text-align: center; 
+  text-decoration: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+}
+
+.link_game:hover {
+  background-color: #1472B7; 
+  border-color: #1472B7; 
 }
 
 .meus_jogos__container {
