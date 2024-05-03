@@ -147,5 +147,24 @@
     <p>Vamos Disseminar os Conhecimentos e Transbordar Tudo o que Aprendemos !</p>
     <p>© Copyright 2024</p>
   </footer>
+  <div class="btn-home" onclick="scrollToTop()">
+    <img src="./assets/images/btnTopo.png" alt="Home">
+  </div>
+  <script>
+    // Função para rolar para o topo da página ao clicar no botão Home
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    // Verifica a posição do scroll e exibe/oculta o botão Home conforme necessário
+    window.onscroll = function() {
+      var btnHome = document.querySelector('.btn-home');
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btnHome.style.display = 'block'; 
+      } else {
+        btnHome.style.display = 'none'; 
+      }
+    };
+  </script>
 </body>
 </html>
