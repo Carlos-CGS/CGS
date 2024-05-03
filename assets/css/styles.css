@@ -160,6 +160,21 @@ section {
   transform: scale(1.2); 
 }
 
+.btn-home img {
+  width: 3.125rem; 
+  height: 3.125rem; 
+  filter: drop-shadow(0rem 0rem 0.625rem rgba(0, 255, 255, 0.5)); 
+  transition: transform 0.3s; 
+}
+
+.btn-home {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999; 
+  cursor: pointer;
+}
+
 #main {
   width: 100%;
   padding: 2%;
