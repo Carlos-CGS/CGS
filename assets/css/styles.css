@@ -342,6 +342,9 @@ section {
   .banner-content p{
     font-size: 75%;
   }
+  .navegacao_link{
+    font-size: 100%;
+  }
   #certificados h2{
     font-size: 150%;
   }
