@@ -336,8 +336,11 @@ section {
   #meu-repositorio h2{
     font-size: 150%;
   }
-  #tech-content h2 p{
+  #tech-content h2{
     font-size: 150%;
+  }
+  #tech-content p{
+    font-size:100%;
   }
   .banner-content p{
     font-size: 75%;
