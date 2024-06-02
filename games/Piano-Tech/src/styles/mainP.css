@@ -121,3 +121,18 @@ header .column span {
 .piano-keys .key.hide span {
     display: none;
 }
+
+.botao-retorno img {
+    width: 3.125rem; 
+    height: 3.125rem; 
+    filter: drop-shadow(0rem 0rem 0.625rem rgba(0, 255, 255, 0.5)); 
+    transition: transform 0.3s; 
+}
+  
+.botao-retorno {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; 
+    cursor: pointer;
+}
