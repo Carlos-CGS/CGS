@@ -15,10 +15,7 @@
         <a href="#home" class="navegacao_link">Home</a>
       </li>
       <li>
-        <a href="#meus_jogos" class="navegacao_link">Jogos</a>
-      </li>
-      <li>
-        <a href="#meu-repositorio" class="navegacao_link">Projetos</a>
+        <a href="#meus_jogos" class="navegacao_link">Jogos e Projetos</a>
       </li>
       <li>
         <a href="cursos.html" class="navegacao_link">Cursos e Certificações</a>
@@ -30,7 +27,7 @@
       </div>
       <h1>Carlos-CGS</h1>
       <p>
-        - Graduando em Ciências de Dados (UNIVESP), cursando Técnico em Desenvolvimento de Sistemas (FAT),<br> Formado em Técnico em Administração (SENAC).<br>
+        - Graduando em Ciências de Dados (UNIVESP), cursando Técnico em Desenvolvimento de Sistemas, com Técnico em Administração.<br>
         - Estudante e Desenvolvedor Junior de Software Backend e Frontend em transição de carreira, optei pela área de programação em 2016<br>
         atrás de conhecimentos e me apaixonei pela sensação de ter "o poder" de criar do zero, apenas utilizando palavras.<br>
       </p>
@@ -41,8 +38,8 @@
         <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" class="social-icon">
           <img src="./assets/images/linkedin.png" alt="LinkedIn">
         </a>
-        <a href="mailto:garcia.mar.mil@gmail.com" target="_blank" class="social-icon">
-          <img src="./assets/images/email.png" alt="Enviar Email">
+        <a href="mailto:garcia.mar.mil@gmail.com" class="social-icon">
+          <img src="./assets/images/email.png" alt="Email">
         </a>
       </div>
     </div>
@@ -95,10 +92,10 @@
             </p>
         </div>
         <div class="meus_jogos_container__jogo">
-          <h2>World War</h2>
-          <a href="./games/WorldWar-Game/index.html"><img src="./games/WorldWar-Game/src/assets/icons/worldWar.png" alt="worldwar"></a>
-          <p>Jogo Baseado em um projeto de game Yu Gi Oh! Com adaptações e incrementos que transformaram em um jogo CardGame de Guerra.<br><br>
-          <a class="link_game" href="./games/WorldWar-Game/index.html"> Jogar </a>
+          <h2>Piano Tech</h2>
+          <a href="./games/Piano-Tech/index.html"><img src="./assets/images/pianoTech.png" alt="pianoTech"></a>
+          <p>Abastração de um piano real, que funciona utilizando o teclado ou com cliques dos mouses. Possui também um botão de volume funcional.<br><br>
+          <a class="link_game" href="./games/Piano-Tech/index.html"> Jogar </a>
           </p>
         </div>      
         <div class="meus_jogos_container__jogo">
@@ -119,26 +116,39 @@
         </video>
         <div class="text-container1">
           <p>
+            <b>Controle de Acesso - Windows Forms (.NET C#)</b></br>
             Aplicativo que desenvolvi no ano de 2019, quando não conhecia muito sobre a linguagem C#,
             porém através de alguns tutorias no youtube fui aprendendo e desenvolvendo todo o projeto 
             utilizando o Windows Forms na IDE do Visual Studio.<br>
-            Link do Repositório: <a href="https://github.com/Carlos-CGS/ProjetosCSharp/tree/main/ControleAcesso%20-%20Forms%20CSharp">Controle de Acesso - Windows Forms C#</a>
+            Repositório: <a href="https://github.com/Carlos-CGS/ProjetosCSharp/tree/main/ControleAcesso%20-%20Forms%20CSharp">Controle de Acesso - Windows Forms C#</a>
           </p>
         </div>
       </div>
       <div class="video-text-container">
         <div class="text-container2">
           <p>  
-          Bem-vindo ao meu playground digital, também conhecido como meu GitHub! 
-          Aqui é onde a magia da codificação acontece, e eu me divirto muito compartilhando meus projetos e explorando 
-          diferentes linguagens como se fossem cores em uma paleta de pintura.
-          Quando você der uma olhada, vai perceber que meu GitHub é como uma coleção organizada de maravilhas tecnológicas. 
-          Se você estiver procurando por um pouco de C#, tenho alguns projetos bacanas esperando para serem explorados.
+          <b>E-Book - Do Zero ao Jarvis - Criando Assistente Personalizado</b></br>
+            E-Book desenvolvido em um Bootcamp da DIO que ensina todo o caminho das pedras para elaborar um e-book profissinal.
+            Neste ebook ensino o passo a passo e de forma prática como recriar o J.A.R.V.I.S., assistente pessoal do Homem de Ferro. 
+            Projeto em linguagem Python com reconhecimento de voz e API do google.<br>
+            Repositório: <a href="https://github.com/Carlos-CGS/InteligenciaArtificial-IA/tree/main/Jarvis_1.0">E-Book - Do Zero ao J.A.R.V.I.S.</a>
           </p>
         </div>
-        <video class="video" src="assets/images/github.mp4" title="Video 2" autoplay muted loop>
+        <img src="assets/images/ebook.png">
+      </div>
+      <div class="video-text-container">
+        <video class="video" src="assets/images/worldWar.mp4" title="Video 1" autoplay muted loop>
           Seu navegador não suporta o elemento de vídeo.
         </video>
+        <div class="text-container1">
+          <p>
+            <b>Controle de Acesso - Windows Forms (.NET C#)</b></br>
+            Game no qual o jogador batalha contra seu oponete recebendo cinco cartas por rodada, 
+            tendo de escolher dentre elas qual que ganhará do card escolhido pelo seu oponente. 
+            A parte visual foi escrita em HTML e CSS, e a parte lógica em JavaScript. Jogo em processo de criação<br>
+            Repositório: <a href="">World War Game</a>
+          </p>
+        </div>
       </div>
     </section>   
   </main>
@@ -152,12 +162,10 @@
     <img src="./assets/images/btnTopo.png" alt="Home">
   </div>
   <script>
-    // Função para rolar para o topo da página ao clicar no botão Home
     function scrollToTop() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-    // Verifica a posição do scroll e exibe/oculta o botão Home conforme necessário
     window.onscroll = function() {
       var btnHome = document.querySelector('.btn-home');
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
