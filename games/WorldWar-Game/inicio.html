@@ -17,17 +17,21 @@
     <link rel="shortcut icon" href="./src/assets/favicon/favicon1.png" type="image/x-icon">
 </head>
 <body>
+    <body> 
+        <div class="botao-retorno">
+            <a href="../../index.html">
+                <img src="../../assets/images/btnTopo.png" alt="Botão de retorno à página principal" />
+            </a>
+        </div>
     <audio id="bgm" loop>
         <source src="./src/assets/audios/music.mp3" type="audio/mp3"/>
     </audio>
-
     <div class="bg-video">
         <video class="video" autoplay loop muted>
             <source src="./src/assets/video/cenarioGame.mp4" type="video/mp4" />
         </video>
         </div> 
     </div>
-
     <div class="container">
         <div class="container__left framed-golden-2">
             <div class="score_box frame">
@@ -41,11 +45,9 @@
                 <p id="card-type">uma carta</p>
             </div>
         </div>
-
         <div class="container__right">
             <div class="card-box__container">
                 <div class="card-box framed" id="computer-cards"></div>
-
                 <div class="card-versus__container">
                     <div class="versus-top">
                         <div class="card-infield">
@@ -61,11 +63,9 @@
                         <button id="next-duel" class="rpgui-button" onclick="resetDuel()">GANHOU</button>
                     </div>
                 </div>
-
                 <div class="card-box framed" id="player-cards"></div>
             </div>
         </div>
-
     </div>
 
     <script src="./src/scripts/engine.js" defer></script>
