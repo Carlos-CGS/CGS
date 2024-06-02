@@ -143,6 +143,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 0.625rem; 
 }
 
 .social-icon {
@@ -336,14 +337,8 @@ section {
   #meu-repositorio h2{
     font-size: 150%;
   }
-  #tech-content h2{
+  #tech-content h2 p{
     font-size: 150%;
-  }
-  #tech-content p{
-    font-size:100%;
-  }
-  .banner-content p{
-    font-size: 75%;
   }
   #certificados h2{
     font-size: 150%;
@@ -414,6 +409,13 @@ section {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+}
+
+#meu-repositorio img{
+  width: 45%;
+  border-radius: 0.625rem;
+  box-shadow: 0.1875rem 0.1875rem 0.1875rem 0.1875rem rgba(90, 86, 86, 0.5);
+  padding: 1%;
 }
 
 .video-text-container .video {
