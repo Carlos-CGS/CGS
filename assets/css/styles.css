@@ -414,8 +414,8 @@ footer .logo {
   }
 
   .banner .logo {
-    height: 50%;
-    width: 50%;
+    height: 55%;
+    width: 55%;
   }
 
   .banner-content {
@@ -423,7 +423,7 @@ footer .logo {
   }
 
   .banner-content p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .navegacao_link {
