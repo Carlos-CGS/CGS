@@ -6,7 +6,8 @@ body {
 }
 
 html {
-  scroll-behavior: smooth; /* Adiciona o efeito de rolagem suave globalmente */
+  scroll-behavior: smooth;
+  /* Adiciona o efeito de rolagem suave globalmente */
 }
 
 header {
@@ -14,7 +15,7 @@ header {
   margin-bottom: 2%;
   overflow: auto;
 }
- 
+
 .navegacao {
   display: flex;
   align-items: center;
@@ -24,7 +25,7 @@ header {
   font-size: 20%;
 }
 
-.navegacao_link{
+.navegacao_link {
   font-size: 0.9rem;
   letter-spacing: 0.125rem;
   color: #fff;
@@ -35,7 +36,7 @@ header {
   text-transform: uppercase;
 }
 
-.navegacao_link:hover{
+.navegacao_link:hover {
   color: #33A8DB;
   font-weight: bold;
 }
@@ -123,11 +124,11 @@ section {
   letter-spacing: 0.25rem;
   background-color: transparent;
   border-radius: 0.625rem;
-  text-decoration: none; 
+  text-decoration: none;
   box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(90, 86, 86, 0.5);
 }
 
-.banner .banner-content button :hover{
+.banner .banner-content button :hover {
   color: #1a7097;
   font-size: 1.1rem;
   font-weight: bold;
@@ -143,36 +144,36 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0.625rem; 
+  margin: 0 0.625rem;
 }
 
 .social-icon {
-  margin: 0 0.625rem; 
+  margin: 0 0.625rem;
 }
 
 .social-icon img {
-  width: 3.125rem; 
-  height: 3.125rem; 
-  filter: drop-shadow(0rem 0rem 0.625rem rgba(0, 255, 255, 0.5)); 
-  transition: transform 0.3s; 
+  width: 3.125rem;
+  height: 3.125rem;
+  filter: drop-shadow(0rem 0rem 0.625rem rgba(0, 255, 255, 0.5));
+  transition: transform 0.3s;
 }
 
 .social-icon img:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .btn-home img {
-  width: 3.125rem; 
-  height: 3.125rem; 
-  filter: drop-shadow(0rem 0rem 0.625rem rgba(0, 255, 255, 0.5)); 
-  transition: transform 0.3s; 
+  width: 3.125rem;
+  height: 3.125rem;
+  filter: drop-shadow(0rem 0rem 0.625rem rgba(0, 255, 255, 0.5));
+  transition: transform 0.3s;
 }
 
 .btn-home {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999; 
+  z-index: 999;
   cursor: pointer;
 }
 
@@ -183,8 +184,8 @@ section {
 
 #tech-content {
   width: 90%;
-  margin: 2rem auto; 
-  padding: 0 2%; 
+  margin: 2rem auto;
+  padding: 0 2%;
   text-align: center;
   background: rgb(11, 63, 93);
   background: radial-gradient(circle, rgba(11, 63, 93, 0.9248074229691877) 0%, rgba(0, 9, 0, 1) 100%);
@@ -208,7 +209,7 @@ section {
   font-size: 1.5rem;
 }
 
-.galeria1{
+.galeria1 {
   -webkit-text-stroke-width: 0.03125rem;
   -webkit-text-stroke-color: #000;
   font-size: 1rem;
@@ -219,18 +220,18 @@ section {
   gap: 10px;
 }
 
-.galeria_tech img:hover{
+.galeria_tech img:hover {
   scale: 1.1;
   transition: 0.5s;
   cursor: pointer;
-} 
+}
 
-.galeria1 img:hover{
+.galeria1 img:hover {
   scale: 1.2;
   transition: 0.5s;
 }
 
-.galeria_cursos img:hover{
+.galeria_cursos img:hover {
   scale: 1.2;
   transition: 0.5s;
 }
@@ -248,23 +249,23 @@ section {
 
 .link_game {
   position: absolute;
-  left: 50%; 
-  transform: translateX(-50%); 
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 2%;
-  padding: 0.5rem 1rem; 
-  background-color: #33A8DB; 
+  padding: 0.5rem 1rem;
+  background-color: #33A8DB;
   color: #fff;
-  border: 2px solid #33A8DB; 
-  border-radius: 0.5rem; 
-  text-align: center; 
-  text-decoration: none; 
-  cursor: pointer; 
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+  border: 2px solid #33A8DB;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .link_game:hover {
-  background-color: #1472B7; 
-  border-color: #1472B7; 
+  background-color: #1472B7;
+  border-color: #1472B7;
 }
 
 .meus_jogos__container {
@@ -279,7 +280,7 @@ section {
   height: auto;
   box-sizing: border-box;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9); 
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 0.625rem;
   overflow: auto;
 }
@@ -292,7 +293,7 @@ section {
   border-color: black;
 }
 
-.meus_jogos_container__jogo h2{
+.meus_jogos_container__jogo h2 {
   color: #000;
   font-size: 90%;
   -webkit-text-stroke-width: 0.03125rem;
@@ -302,7 +303,7 @@ section {
 
 .meus_jogos_container__jogo p {
   font-family: arial, 'sans serif';
-  color: black; 
+  color: black;
   text-align: justify;
 }
 
@@ -325,66 +326,6 @@ section {
   width: 100vw;
 }
 
-@media (max-width: 700px) {
-  .meus_jogos_container__jogo{
-    width: 20%;
-    max-height: 100vh;
-  }
-  #certificados {
-    flex-direction: column;
-    align-items: center;
-  }
-  #meu-repositorio h2{
-    font-size: 150%;
-  }
-  #tech-content h2 p{
-    font-size: 150%;
-  }
-  #certificados h2{
-    font-size: 150%;
-  }
-  #tech-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #tech-content .galeria_tech .galeria {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .galeria1 img{
-    width: 70%;
-    height: 70%;
-  }
-  #tech-content h2 {
-    font-size: 100%; 
-  }
-  #tech-content .galeria p {
-    font-size: 50%; 
-  }
-  #tech-content .galeria1 img {
-    width: 25%; 
-    height: auto;
-    margin: 0.5rem; 
-  }
-  #tech-content .galeria1 p {
-    font-size: 80%; 
-  }
-  #meu-repositorio p{
-    font-size: 70%;
-  }
-  .video-text-container {
-    flex-direction: column;
-  }
-  #meu-repositorio .video{
-    width: 90%;
-  }
-  .video-text-container .video {
-    margin-bottom: 1rem;
-  }
-}
-
 #certificados h2 {
   text-align: left;
   padding: 0rem 1.875rem;
@@ -395,7 +336,7 @@ section {
   flex-basis: 48%;
 }
 
-#meu-repositorio {
+#projetos {
   text-align: center;
   width: 100vw;
   background-size: cover;
@@ -411,7 +352,7 @@ section {
   margin-bottom: 2rem;
 }
 
-#meu-repositorio img{
+#projetos img {
   width: 45%;
   border-radius: 0.625rem;
   box-shadow: 0.1875rem 0.1875rem 0.1875rem 0.1875rem rgba(90, 86, 86, 0.5);
@@ -456,4 +397,101 @@ footer {
 
 footer .logo {
   width: 6.25rem;
+}
+
+@media (max-width: 700px) {
+  .meus_jogos_container__jogo {
+    width: 25%;
+    max-height: 100vh;
+  }
+
+  .banner {
+    margin-top: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 20%;
+    overflow-y: hidden;
+  }
+
+  .banner .logo {
+    height: 50%;
+    width: 50%;
+  }
+
+  .banner-content {
+    max-width: 80%;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+
+  .navegacao_link {
+    font-size: 0.7rem;
+  }
+
+  #certificados {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #tech-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #tech-content .galeria_tech .galeria {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galeria1 img {
+    width: 70%;
+    height: 70%;
+  }
+
+  #tech-content h2 {
+    font-size: 1rem;
+  }
+
+  #tech-content .galeria1 img {
+    width: 25%;
+    height: auto;
+    margin: 0.5rem;
+  }
+
+  #tech-content p {
+    font-size: 1.1rem;
+  }
+
+  #tech-content .galeria1 p {
+    font-size: 90%;
+  }
+
+  #projetos p {
+    font-size: 70%;
+  }
+
+  .video-text-container {
+    flex-direction: column;
+  }
+
+  #projetos .video {
+    width: 90%;
+  }
+
+  .video-text-container .video {
+    margin-bottom: 1rem;
+    order: 1;
+  }
+
+  .text-container1 {
+    order: 2;
+  }
+
+  .text-container2 {
+    order: 2;
+  }
 }
