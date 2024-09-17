@@ -453,7 +453,7 @@ footer .logo {
   }
 
   #tech-content h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   #tech-content .galeria1 img {
@@ -468,6 +468,11 @@ footer .logo {
 
   #tech-content .galeria1 p {
     font-size: 90%;
+  }
+
+  #projetos h2 {
+    font-size: 1.1rem;
+    margin: -5% 0 7% 0;
   }
 
   #projetos p {
