@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/Styles/styles.css">
+    <link rel="shortcut icon" href="./assets/img/favicon1.png" type="image/x-icon">
+    <title>Desafio do Herói - DIO</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navegacao">
+                <li><a href="https://carlos-cgs.github.io/CGS/" target="_blank">Portfólio</a></li>
+                <li><a href="https://github.com/Carlos-CGS" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    <main>
+        <div class="containner">    
+            <div class="containner_left">
+                <img src="./assets/img/img_left.png">
+            </div>
+            <div class="containner_rigth"> 
+                <section>
+                    <h1>Desafio do Herói</h1>
+                    <p>Informe o nome e o xp abaixo para verificar o nível do seu herói!</p>
+                </section>
+                <input class="input" id="nome" placeholder="Nome do Herói...">
+                <input class="input" id="xp" placeholder="XP do herói...">
+                <button class="button" onclick="classificarHeroi()">Descubra o Nível do seu Herói</button>
+                <p id="resultado"></p>
+            </div>
+        </containner> 
+    </main>
+    
+    <script src="./assets/JavaScript/script.js"></script>
+</body>
+</html>
