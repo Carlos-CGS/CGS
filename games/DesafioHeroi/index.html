@@ -1,39 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/Styles/styles.css">
-    <link rel="shortcut icon" href="./assets/img/favicon1.png" type="image/x-icon">
-    <title>Desafio do Herói - DIO</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="shortcut icon" href="./assets/images/favicon1.png" type="image/x-icon">
+  <title>Carlos-CGS</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul class="navegacao">
-                <li><a href="https://carlos-cgs.github.io/CGS/" target="_blank">Portfólio</a></li>
-                <li><a href="https://github.com/Carlos-CGS" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank">LinkedIn</a></li>
-            </ul>
-        </nav>
-    <main>
-        <div class="containner">    
-            <div class="containner_left">
-                <img src="./assets/img/img_left.png">
-            </div>
-            <div class="containner_rigth"> 
-                <section>
-                    <h1>Desafio do Herói</h1>
-                    <p>Informe o nome e o xp abaixo para verificar o nível do seu herói!</p>
-                </section>
-                <input class="input" id="nome" placeholder="Nome do Herói...">
-                <input class="input" id="xp" placeholder="XP do herói...">
-                <button class="button" onclick="classificarHeroi()">Descubra o Nível do seu Herói</button>
-                <p id="resultado"></p>
-            </div>
-        </containner> 
-    </main>
-    
-    <script src="./assets/JavaScript/script.js"></script>
+  <header class="banner">
+    <ul class="navegacao">
+      <li>
+        <a href="#home" class="navegacao_link">Home</a>
+      </li>
+      <li>
+        <a href="#meus_jogos" class="navegacao_link">Jogos</a>
+      </li>
+      <li>
+        <a href="#projetos" class="navegacao_link">Projetos</a>
+      </li>
+      <li>
+        <a href="cursos.html" class="navegacao_link">Cursos e Certificações</a>
+      </li>
+    </ul>
+    <div class="banner-content">
+      <div class="logo">
+        <img src="assets/images/profile.png" title="meuPerfil" alt="meuPerfil">
+      </div>
+      <h1>Carlos-CGS</h1>
+      <p>
+        - Graduando em Ciências de Dados (UNIVESP), cursando Técnico em Desenvolvimento de Sistemas, com Técnico em
+        Administração.<br>
+        - Estudante e Desenvolvedor Junior de Software FullStack em transição de carreira, optei pela área de
+        programação em 2016<br>
+        atrás de conhecimentos e me apaixonei pela sensação de ter "o poder" de criar do zero, apenas utilizando
+        palavras.<br>
+      </p>
+      <div class="social-icons">
+        <a href="https://github.com/Carlos-CGS" target="_blank" class="social-icon">
+          <img src="./assets/images/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" class="social-icon">
+          <img src="./assets/images/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:garcia.mar.mil@gmail.com" class="social-icon">
+          <img src="./assets/images/email.png" alt="Email">
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="tech-content">
+      <br>
+      <h2>Principais Tecnologias</h2>
+      <br>
+      <div class="galeria_tech">
+        <p> Linguagens de Programação</p><br>
+        <img src="https://hermes.dio.me/skills/21020ed4-299a-4e76-8cf2-86c38502b4b4.png" height="50px">
+        <img src="https://hermes.dio.me/skills/7c8b20c8-af95-4c24-87ae-be37695d1f0a.png" height="50px">
+        <img src="https://hermes.dio.me/skills/fcf8b10b-47bc-4f8c-a105-4e1c0ce3cde4.png" height="50px">
+        <img src="https://hermes.dio.me/skills/09cd9e23-7d8a-4782-8e5e-0dcb65d1b640.png" height="50px">
+        <img src="https://hermes.dio.me/skills/bb34a26f-52a7-4861-a6e3-39ade2145dcb.png" height="50px">
+        <img src="https://haostreinamentos.com.br/images/cursos/Sql.png" height="50px">
+        <img src="https://hermes.dio.me/skills/9d9ca366-ab09-4b4c-be29-d84e66527df4.png" height="50px">
+        <img src="https://hermes.dio.me/skills/e6b5fb78-716f-46b3-80e1-78bc9c78420b.png" height="50px">
+
+        </br></br>
+        <p>Frameworks</p>
+        <img src="https://img.shields.io/badge/framework-512BD4?style=for-the-badge&logo=.net&logoColor=white"
+          height="30px">
+        <img
+          src="https://img.shields.io/badge/Spring%20Boot-6DB33F.svg?style=for-the-badge&logo=Spring-Boot&logoColor=white"
+          height="30px">
+        <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=ffffff"
+          height="30px"><br>
+
+        </br>
+        <p> Outras Tecnologias</p>
+        <img src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white"
+          height="30px">
+        <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"
+          height="30px">
+        <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"
+          height="30px">
+        <img src="https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white" height="30px">
+        <br>
+        <img
+          src="https://images.vexels.com/media/users/3/141428/isolated/preview/6de6fbefdd682a5e6b9dbfe072a85f1f-logotipo-do-windows.png"
+          height="70px">
+        <img src="https://logos-world.net/wp-content/uploads/2020/09/Linux-Symbol.png" height="50px">
+        <br>
+      </div>
+    </section>
+    <section id="meus_jogos">
+      <div class="meus_jogos__container">
+        <div class="meus_jogos_container__jogo">
+          <h2>Memoria Tech</h2>
+          <a href="./games/MemoriaTech-Game/indexMemoria.html"><img src="./assets/images/jogoMemoria.png"
+              alt="Jogo-Memoria"></a>
+          <p>Jogo da memória produzido inicialmente em um bootcamp da DIO, com diversos upgrades, alterações e
+            adaptações, tornando um game único. <br><br>
+            <a class="link_game" href="./games/MemoriaTech-Game/indexMemoria.html"> Jogar </a>
+          </p>
+        </div>
+        <div class="meus_jogos_container__jogo">
+          <h2>Galinha Feliz</h2>
+          <a href="./games/GalinhaFeliz-Game/indexGalinha.html"><img
+              src="./games/GalinhaFeliz-Game/src/imagem/galinhaFeliz.png" alt="galinhaFeliz"></a>
+          <p>Jogo da galinha feliz, onde o objetivo é clicar em cima da galinha e quando clicado, ela coloca ovos e
+            atribui dez pontos ao jogador.<br><br>
+            <a class="link_game" href="./games/GalinhaFeliz-Game/indexGalinha.html"> Jogar </a>
+          </p>
+        </div>
+        <div class="meus_jogos_container__jogo">
+          <h2>Piano Tech</h2>
+          <a href="./games/Piano-Tech/index.html"><img src="./assets/images/pianoTech.png" alt="pianoTech"></a>
+          <p>Abastração de um piano real, que funciona utilizando o teclado ou com cliques dos mouses. Possui também um
+            botão de volume funcional.<br><br>
+            <a class="link_game" href="./games/Piano-Tech/index.html"> Jogar </a>
+          </p>
+        </div>
+        <div class="meus_jogos_container__jogo">
+          <h2>Numero Secreto</h2>
+          <a href="./games/JogoNumeroSecreto/index.html"><img src="./assets/images/numeroSecreto.png"
+              alt="numeroSecreto"></a>
+          <p>Jogo para adivinhar o numero secreto! Através de tentativas, o jogo responde se o numero é maior ou menor.
+            Utilizado leitura dos textos durante o jogo.<br><br>
+            <a class="link_game" href="./games/JogoNumeroSecreto/index.html"> Jogar </a>
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="projetos">
+      <h2>Alguns Projetos Desenvolvidos</h2>
+      <div class="video-text-container">
+        <video class="video" src="assets/images/windowsForms.mp4" title="Video 1" autoplay muted loop controls>
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="text-container1">
+          <p>
+            <b>Controle de Acesso - Windows Forms (.NET C#)</b></br>
+            <br>
+            Aplicativo que desenvolvi no ano de 2019, quando não conhecia muito sobre a linguagem C#,
+            porém através de alguns tutorias no youtube fui aprendendo e desenvolvendo todo o projeto
+            utilizando o Windows Forms na IDE do Visual Studio.<br>
+            Repositório: <a
+              href="https://github.com/Carlos-CGS/ProjetosCSharp/tree/main/ControleAcesso%20-%20Forms%20CSharp">Controle
+              de Acesso - Windows Forms C#</a>
+          </p>
+        </div>
+      </div>
+      <div class="video-text-container">
+        <div class="text-container2">
+          <p>
+            <b>Projeto J.A.R.V.I.S.</b></br>
+            <br>
+            J.A.R.V.I.S. é um assistente virtual desenvolvido em Python que utiliza reconhecimento de voz,
+            síntese de fala e APIs avançada para realizar tarefas como buscas na web, previsão do tempo e
+            transcrição de textos, além de abrir aplicativos como calculadora, word, excel, dentre outros.<br>
+            Repositório: <a href="https://github.com/Carlos-CGS/Projeto-J.A.R.V.I.S.">Projeto J.A.R.V.I.S.</a>
+          </p>
+        </div>
+        <video class="video" src="assets/images/videoJarvis.mp4" title="Video 1" autoplay muted loop controls>
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </div>
+      <div class="video-text-container">
+        <video class="video" src="assets/images/worldWar.mp4" title="Video 1" autoplay muted loop controls>
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="text-container1">
+          <p>
+            <b>World War - Game</b></br>
+            <br>
+            Neste jogo, o jogador batalha contra seu oponente recebendo cinco cartas por rodada, devendo escolher qual
+            delas vencerá a carta selecionada pelo oponente. Cada carta possui características únicas, como poder de
+            ataque e tipo, e o resultado do duelo é determinado com base nas regras de vitória e derrota de cada carta.
+            O placar é atualizado a cada rodada, e há efeitos visuais e sonoros que intensificam a experiência. Todo o
+            código foi escrito durante BootCamp da DIO<br>
+            Site: <a href="./games/WorldWar-Game/index.html">Site World War</a> - Repositório: <a
+              href="https://github.com/Carlos-CGS/CGS/tree/main/games/WorldWar-Game">World War Game</a>
+          </p>
+        </div>
+      </div>
+      <div class="video-text-container">
+        <div class="text-container2">
+          <p>
+            <b>Assistente de Busca c/ direcionamento de anúncios.</b></br>
+            <br>O Assistente de Busca é uma aplicação web que permite realizar buscas
+            através de um campo de input e direciona propagandas baseadas nas buscas realizadas.
+            Desenvolvido com HTML, CSS e JavaScript, foi criado durante a Imersão Alura X Google.<br>
+            Site: <a href="https://projeto-assistente-busca-google-alura.vercel.app/">Assistente Busca</a> -
+            Repositório: <a href="https://github.com/Carlos-CGS/Projeto-AssistenteBusca">Repositório GitHub</a>
+          </p>
+        </div>
+        <video class="video" src="assets/images/siteBusca.mp4" title="Video 1" autoplay muted loop controls>
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </div>
+      <div class="video-text-container">
+        <video class="video" src="assets/images/DesafioHeroi.mp4" title="Video 1" autoplay muted loop controls>
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="text-container1">
+          <p>
+            <b>Desafio do Herói</b></br>
+            <br>
+            Este projeto é uma aplicação simples que permite que os usuários classifiquem seus heróis com base na quantidade 
+            de experiência (XP) que possuem. O projeto utiliza HTML, CSS e JavaScript. Funcionalidades - Entrada do nome e XP do herói.
+            - Classificação do herói com base na XP fornecida. - Exibição do nível do herói na interface. - Limpeza dos campos após a classificação.
+            - Botão Enter aciona o botão.<br>
+            Site: <a href="./games/DesafioHeroi/index.html">Desafio Herói</a> - Repositório: <a href="https://github.com/Carlos-CGS/CGS/tree/main/games/DesafioHeroi">Desafio do Herói</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img class="logo" src="assets/images/logo.png" title="Logotipo CGS" alt="Logotipo">
+    <p>Vamos Disseminar os Conhecimentos e Transbordar Tudo o que Aprendemos !</p>
+    <p>© Copyright 2024</p>
+  </footer>
+
+  <div class="btn-home" onclick="scrollToTop()">
+    <img src="./assets/images/btnTopo.png" alt="Home">
+  </div>
+ 
+  <script src="./assets/JavaScript/script.js"></script>
 </body>
+
 </html>
