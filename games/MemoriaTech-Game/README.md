@@ -57,4 +57,4 @@ Contribuições são bem-vindas! Se tiver sugestões de melhorias ou encontrar a
 Licença
 Este projeto é de uso livre para fins educacionais e de entretenimento
 
-<img src="jogoMemoria.png">
+<img src="./src/img/jogoMemoria.png">
