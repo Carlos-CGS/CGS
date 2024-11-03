@@ -107,10 +107,17 @@ body {
     gap: 20px;
     text-align: center;
     flex-direction: column;
+    width: 50vw;
+    height: 40vh;
+    font-size: 2rem;
 }
 
 .oculto {
     display: none;
+}
+
+.btnReiniciar {
+    margin-top: 8rem;
 }
 
 @media (max-width: 600px) {
@@ -140,5 +147,15 @@ body {
     .square {
         height: calc(100vh / 15);
         width: calc(100vh / 15);
+    }
+
+    .vitoria {
+        width: 80vw;
+        height: 30vh;
+        font-size: 1rem;
+    }
+    
+    .btnReiniciar {
+        margin-top: 4rem;
     }
 }
