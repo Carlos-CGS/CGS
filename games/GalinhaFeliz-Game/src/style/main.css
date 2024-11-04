@@ -22,6 +22,7 @@ body {
     height: 100%;
     width: 90%;
     background: #49d3c7;
+    box-sizing: border-box;
 }
 
 .menu {
@@ -35,21 +36,24 @@ body {
     padding: 0 2rem; 
 }
 
-.imgTitulo {
-    display: flex;
-    align-items: center; 
-}
-
 .botao-sair img {
     height: 50px; 
-    margin-right: 10px; 
+    margin-right: 20rem; 
 }
 
 .imgTitulo {
-    font-size: 1.5rem; 
+    display: flex;
+    font-size: 2rem; 
     color: #fff; 
+    align-items: center;
 }
 
+.imgTitulo p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ 
 .info {
     display: flex;
     align-items: center;
@@ -120,6 +124,14 @@ body {
     margin-top: 8rem;
 }
 
+#reiniciarJogo {
+    color: #49d3c7;
+    background-color: rgb(16, 14, 141);
+    border-radius: .5rem;
+    width: 10rem;
+    font-size: 1.5rem;
+}
+
 @media (max-width: 600px) {
     .menu {
         flex-direction: column;
@@ -151,11 +163,20 @@ body {
 
     .vitoria {
         width: 80vw;
-        height: 30vh;
+        height: 20vh;
         font-size: 1rem;
     }
     
     .btnReiniciar {
-        margin-top: 4rem;
+        margin-top: 3rem;
+    }
+
+    #reiniciarJogo {
+        width: 5rem;
+        font-size: 1rem;
+    }
+
+    .botao-sair img {
+        margin-right: 2rem; 
     }
 }
