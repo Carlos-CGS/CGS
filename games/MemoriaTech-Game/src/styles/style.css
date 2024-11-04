@@ -160,20 +160,20 @@ body {
 
 @media(max-width: 700px){
     .game{
-        width: 80vw;
-        height: auto;
+        width: 70vw;
+        height: 70%;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .container .emoji-img {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .item {
-        width: 25%;
-        height: 25%;
+        width: 20%;
+        height: 20%;
     }
-
 }
