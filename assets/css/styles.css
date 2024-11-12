@@ -55,6 +55,7 @@ header {
   -webkit-text-stroke-color: #000;
   transform: scale(1.2);
   text-transform: uppercase;
+  transition: color 0.5s ease, transform 0.3s ease;
 }
 
 .navegacao_link:hover {
