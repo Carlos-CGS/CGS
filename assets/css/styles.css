@@ -469,6 +469,14 @@ footer .logo {
     height: 70%;
   }
 
+  #certificados h2 {
+    font-size: 1.1rem;
+  }
+
+  .column ol li {
+    font-size: 0.6rem;
+  }
+
   #tech-content h2 {
     font-size: 1.1rem;
   }
