@@ -470,11 +470,12 @@ footer .logo {
   }
 
   #certificados h2 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .column ol li {
-    font-size: 0.5rem;
+    font-size: 0.59rem;
+    margin-left: -1rem;
   }
 
   #tech-content h2 {
