@@ -25,7 +25,6 @@ html {
   background-color: #555; 
 }
 
-
 header {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -469,6 +468,10 @@ footer .logo {
     height: 70%;
   }
 
+  .galeria_cursos img {
+    height: 2.2rem;
+  }
+
   #certificados h2 {
     font-size: 1.4rem;
   }
@@ -479,21 +482,22 @@ footer .logo {
   }
 
   #tech-content h2 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   #tech-content .galeria1 img {
-    width: 25%;
+    width: 40%;
     height: auto;
-    margin: 0.5rem;
+    margin: 0.1rem;
   }
 
   #tech-content p {
-    font-size: 1.1rem;
+    font-size: 0.7rem;
+    margin-top: 0;
   }
 
   #tech-content .galeria1 p {
-    font-size: 90%;
+    font-size: 75%;
   }
 
   #projetos h2 {
@@ -526,3 +530,4 @@ footer .logo {
     order: 2;
   }
 }
+
