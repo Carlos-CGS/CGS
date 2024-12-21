@@ -464,8 +464,8 @@ footer .logo {
   }
 
   .galeria1 img {
-    width: 70%;
-    height: 70%;
+    width: 1.3rem;
+    height: 1.3rem;
   }
 
   .galeria_cursos img {
@@ -492,7 +492,7 @@ footer .logo {
   }
 
   #tech-content p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-top: 0;
   }
 
