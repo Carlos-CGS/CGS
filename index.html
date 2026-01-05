@@ -5,16 +5,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
   <meta name="description" content="Portfólio de Carlos Garcia, desenvolvedor FullStack e estudante de Ciência de Dados, com projetos em C#, JavaScript, React e Python. Explore soluções criativas e colaborações!">
+  <meta name="keywords" content="desenvolvedor fullstack, python, c#, javascript, react, ciência de dados, portfolio desenvolvedor, projetos web, bootcamps DIO">
+  <meta name="author" content="Carlos Garcia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://carlos-cgs.github.io/CGS/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://carlos-cgs.github.io/CGS/">
+  <meta property="og:title" content="Carlos-CGS | Desenvolvedor FullStack & Ciência de Dados">
+  <meta property="og:description" content="Portfólio profissional com projetos em Python, C#, JavaScript e React. Desenvolvedor FullStack apaixonado por tecnologia e inovação.">
+  <meta property="og:image" content="https://carlos-cgs.github.io/CGS/assets/images/profile.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://carlos-cgs.github.io/CGS/">
+  <meta name="twitter:title" content="Carlos-CGS | Desenvolvedor FullStack">
+  <meta name="twitter:description" content="Portfólio profissional com projetos em Python, C#, JavaScript e React.">
+  <meta name="twitter:image" content="https://carlos-cgs.github.io/CGS/assets/images/profile.png">
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://hermes.dio.me">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="shortcut icon" href="./assets/images/favicon1.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <title>Carlos-CGS</title>
+  <title>Carlos-CGS | Desenvolvedor FullStack & Ciência de Dados</title>
 </head>
 
 <body>
-  <header class="banner">
-    <ul class="navegacao">
+  <!-- Skip Navigation for Accessibility -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+  
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Progresso de leitura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  
+  <header class="banner" data-parallax="0.22">
+    <nav aria-label="Navegação principal">
+      <ul class="navegacao">
       <li>
         <a href="#home" class="navegacao_link">Home</a>
       </li>
@@ -27,11 +60,17 @@
       <li>
         <a href="cursos.html" class="navegacao_link">Cursos e Certificações</a>
       </li>
-    </ul>
+      <li>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+          <span id="theme-label">🌙 Escuro</span>
+        </button>
+      </li>
+      </ul>
+    </nav>
     <div class="banner-content">
-      <div class="logo">
+      <figure class="logo">
         <img src="assets/images/profile.png" title="meuPerfil" alt="meuPerfil">
-      </div>
+      </figure>
       <h1>Carlos-CGS</h1>
       <p>
         <i>Transformando idéias em código!</i><br>
@@ -45,18 +84,18 @@
         <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" class="social-icon">
           <img src="./assets/images/linkedin.png" alt="LinkedIn">
         </a>
-        <a href="mailto:garcia.mar.mil@gmail.com" class="social-icon" >
+        <a id="email-link" href="mailto:garcia.mar.mil@gmail.com?subject=Contato%20Portf%C3%B3lio&body=Ol%C3%A1%20Carlos,%20tudo%20bem?" class="social-icon">
           <img src="./assets/images/email.png" alt="Email">
         </a>
       </div>
     </div>
   </header>
-  <main>
+  <main id="main-content">
     <section id="tech-content" data-aos="zoom-in"data-aos-duration="3000">
       <br>
       <h2>Principais Tecnologias</h2>
       <br>
-      <div class="galeria_tech" >
+      <figure class="galeria_tech" >
         <p> Linguagens de Programação</p><br>
         <img src="https://hermes.dio.me/skills/21020ed4-299a-4e76-8cf2-86c38502b4b4.png" height="50px">
         <img src="https://hermes.dio.me/skills/7c8b20c8-af95-4c24-87ae-be37695d1f0a.png" height="50px">
@@ -74,59 +113,93 @@
 
         </br>
         <p> Outras Tecnologias</p>
-        <img src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white" height="30px">
-        <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" height="30px">
-        <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" height="30px">
-        <img src="https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white" height="30px">
-        <img src="https://img.shields.io/badge/ChatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white" height="30px">
-        <img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlebard&logoColor=fff" height="30px">
+        <img src="./assets/images/github1.png" height="38px" alt="GitHub">
+        <img src="./assets/images/git.png" height="25px" alt="Git">
+        <img src="./assets/images/markdown.png" height="35px" alt="Markdown">
+        <img src="./assets/images/gemini.png" height="35px" alt="Gemini">
+        <img src="./assets/images/copilot.png" height="35px" alt="GitHub Copilot">
         <br>
-        <img src="https://images.vexels.com/media/users/3/141428/isolated/preview/6de6fbefdd682a5e6b9dbfe072a85f1f-logotipo-do-windows.png" height="70px">
-        <img src="https://logos-world.net/wp-content/uploads/2020/09/Linux-Symbol.png" height="50px">
+        <img src="./assets/images/VSCode.png" height="30px" alt="VS Code">
+        <img src="./assets/images/visualStudio.png" height="30px" alt="Visual Studio">
+        <img src="./assets/images/windows.png" height="22px" alt="Windows">
+        <img src="./assets/images/linux.png" height="30px" alt="Linux">
         <br>
-      </div>
+      </figure>
     </section>
-    <section id="meus_jogos">
+    <section id="meus_jogos" data-parallax="0.32">
       <div class="meus_jogos__container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="meus_jogos_container__jogo">
+        <article class="meus_jogos_container__jogo">
           <h2>Memoria Tech</h2>
-          <a href="./games/MemoriaTech-Game/index.html"><img src="./assets/images/jogoMemoria.png" alt="Jogo-Memoria"></a>
+          <a href="./games/MemoriaTech-Game/index.html"><img src="./assets/images/jogoMemoria.png" alt="Jogo da Memória - Teste sua memória com cartas tecnológicas"></a>
           <p>Jogo da memória produzido inicialmente em um bootcamp da DIO, com diversos upgrades, alterações e
             adaptações, tornando um game único. <br><br>
             <a class="link_game" href="./games/MemoriaTech-Game/index.html"> Jogar </a>
           </p>
-        </div>
-        <div class="meus_jogos_container__jogo" data-aos="fade-up">
+        </article>
+        <article class="meus_jogos_container__jogo" data-aos="fade-up">
           <h2>Galinha Feliz</h2>
-          <a href="./games/GalinhaFeliz-Game/index.html"><img src="./games/GalinhaFeliz-Game/src/imagem/galinhaFeliz.png" alt="galinhaFeliz"></a>
+          <a href="./games/GalinhaFeliz-Game/index.html"><img src="./games/GalinhaFeliz-Game/src/imagem/galinhaFeliz.png" alt="Jogo Galinha Feliz - Clique na galinha para ganhar pontos"></a>
           <p>Jogo da galinha feliz, onde o objetivo é clicar em cima da galinha e quando clicado, ela coloca ovos e
             atribui dez pontos ao jogador.<br><br>
             <a class="link_game" href="./games/GalinhaFeliz-Game/index.html"> Jogar </a>
           </p>
-        </div>
-        <div class="meus_jogos_container__jogo" data-aos="fade-up">
+        </article>
+        <article class="meus_jogos_container__jogo" data-aos="fade-up">
           <h2>Piano Tech</h2>
-          <a href="./games/Piano-Tech/index.html"><img src="./assets/images/pianoTech.png" alt="pianoTech"></a>
+          <a href="./games/Piano-Tech/index.html"><img src="./assets/images/pianoTech.png" alt="Piano Virtual - Toque música com teclado ou mouse"></a>
           <p>Abastração de um piano real, que funciona utilizando o teclado ou com cliques dos mouses. Possui também um
             botão de volume funcional.<br><br>
             <a class="link_game" href="./games/Piano-Tech/index.html"> Jogar </a>
           </p>
-        </div>
-        <div class="meus_jogos_container__jogo" data-aos="fade-up">
+        </article>
+        <article class="meus_jogos_container__jogo" data-aos="fade-up">
           <h2>Numero Secreto</h2>
-          <a href="./games/JogoNumeroSecreto/index.html"><img src="./assets/images/numeroSecreto.png" alt="numeroSecreto"></a>
+          <a href="./games/JogoNumeroSecreto/index.html"><img src="./assets/images/numeroSecreto.png" alt="Jogo Número Secreto - Adivinhe o número com dicas"></a>
           <p>Jogo para adivinhar o numero secreto! Através de tentativas, o jogo responde se o numero é maior ou menor.
             Utilizado leitura dos textos durante o jogo.<br><br>
             <a class="link_game" href="./games/JogoNumeroSecreto/index.html"> Jogar </a>
           </p>
-        </div>
+        </article>
       </div>
       </div>
     </section>
     <section id="projetos">
       <h2>Alguns Projetos Desenvolvidos</h2>
-      <div class="video-text-container">
-        <video class="video" src="assets/images/windowsForms.mp4" title="Video 1" autoplay muted loop controls data-aos="fade-right" data-aos-duration="1000" >
+      <article class="video-text-container">
+        <video class="video" src="assets/images/AppGestaoFuncionarios.mp4" title="AppGestaoFuncionarios" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="text-container1" data-aos="zoom-in-up" data-aos-duration="1000">
+          <p>
+            <b>AppGestão de Funcionários (PI II — Univesp)</b></br>
+            <br>
+            Sistema web completo desenvolvido para o PI II da Univesp, com backend em .NET 8 + ASP.NET Identity + JWT, 
+            banco SQL Server e frontend HTML/CSS/JavaScript. Inclui validação de CPF, busca avançada, painel de KPIs, relatórios por período/posto/tipo, 
+            trilha de ocorrências e geração de PDF individual com logotipo e histórico.<br>
+            Repositório: <a href="https://github.com/Carlos-CGS/AppGestaoFuncionarios_PI2_Univesp">AppGestaoFuncionarios</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="video-text-container">
+        <div class="text-container2" data-aos="zoom-in-up" data-aos-duration="1000">
+          <p>
+            <b>KidsRunner (Divertida Mente Runner)</b></br>
+            <br>
+            Jogo endless runner que foi criado em Python + Pygame para divertir minhas filhas pequenas que estavam 
+            em frente a TV assitindo um video e simulando que estavam jogando, O jogo possue seleção de personagem 
+            (Alegria, Tristeza, Raiva), sprites/sons em assets/, pontuação por desvios, contagem de colisões e tela de game over. 
+            Movimentos controlados por gestos com MediaPipe.<br>
+            Repositório: <a href="https://github.com/Carlos-CGS/Jogo-Kids-Runner">Jogo-Kids-Runner</a>
+          </p>
+        </div>
+        <video class="video" src="assets/images/KidsRunner.mp4" title="KdsRunner" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </article>
+
+      <article class="video-text-container">
+        <video class="video" src="assets/images/windowsForms.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000" >
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -139,8 +212,8 @@
             Repositório: <a href="https://github.com/Carlos-CGS/ProjetosCSharp/tree/main/ControleAcesso%20-%20Forms%20CSharp">Controle de Acesso - Windows Forms C#</a>
           </p>
         </div>
-      </div>
-      <div class="video-text-container">
+      </article>
+      <article class="video-text-container">
         <div class="text-container2" data-aos="zoom-in-up" data-aos-duration="1000">
           <p>
             <b>Projeto J.A.R.V.I.S.</b></br>
@@ -151,12 +224,12 @@
             Repositório: <a href="https://github.com/Carlos-CGS/Projeto-J.A.R.V.I.S.">Projeto J.A.R.V.I.S.</a>
           </p>
         </div>
-        <video class="video" src="assets/images/videoJarvis.mp4" title="Video 1" autoplay muted loop controls data-aos="fade-left" data-aos-duration="1000">
+        <video class="video" src="assets/images/videoJarvis.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
-      </div>
-      <div class="video-text-container">
-        <video class="video" src="assets/images/worldWar.mp4" title="Video 1" autoplay muted loop controls data-aos="fade-right" data-aos-duration="1000">
+      </article>
+      <article class="video-text-container">
+        <video class="video" src="assets/images/worldWar.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -171,8 +244,8 @@
             Site: <a href="./games/WorldWar-Game/index.html">Site World War</a> - Repositório: <a href="https://github.com/Carlos-CGS/CGS/tree/main/games/WorldWar-Game">World War Game</a>
           </p>
         </div>
-      </div>
-      <div class="video-text-container">
+      </article>
+      <article class="video-text-container">
         <div class="text-container2" data-aos="zoom-in-up" data-aos-duration="1000">
           <p>
             <b>Avatar Tecnologias + Direcionamento Anúncios</b></br>
@@ -182,12 +255,12 @@
             Repositório: <a href="https://github.com/Carlos-CGS/Projeto-AssistenteBusca">Repositório GitHub</a>
           </p>
         </div>
-        <video class="video" src="assets/images/siteBusca.mp4" title="Video 1" autoplay muted loop controls data-aos="fade-left">
+        <video class="video" src="assets/images/siteBusca.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left">
           Seu navegador não suporta o elemento de vídeo.
         </video>
-      </div>
-      <div class="video-text-container">
-        <video class="video" src="assets/images/DesafioHeroi.mp4" title="Video 1" autoplay muted loop controls data-aos="fade-right">
+      </article>
+      <article class="video-text-container">
+        <video class="video" src="assets/images/DesafioHeroi.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right">
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up">
@@ -201,8 +274,8 @@
             Site: <a href="https://desafio-heroi.vercel.app/">Desafio Herói</a> - Repositório: <a href="https://github.com/Carlos-CGS/CGS/tree/main/games/DesafioHeroi">Desafio do Herói</a>
           </p>
         </div>
-      </div>
-      <div class="video-text-container">
+      </article>
+      <article class="video-text-container">
         <div class="text-container2" data-aos="zoom-in-up">
           <p>
             <b>Projeto Pokédex - DIO</b></br>
@@ -212,12 +285,12 @@
             Repositório: <a href="https://github.com/Carlos-CGS/Pokedex-JS-DIO">Repositório GitHub</a>
           </p>
         </div>
-        <video class="video" src="assets/images/Pokedex.mp4" title="Video 1" autoplay muted loop controls data-aos="fade-right" data-aos-duration="1000">
+        <video class="video" src="assets/images/Pokedex.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
-      </div>
-      <div class="video-text-container">
-        <video class="video" src="assets/images/CodeVerse.mp4" title="Video 1" autoplay muted loop controls data-aos="fade-left" data-aos-duration="1000">
+      </article>
+      <article class="video-text-container">
+        <video class="video" src="assets/images/CodeVerse.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -231,24 +304,37 @@
             Site: <a href="https://code-verse-one.vercel.app/">CodeVerse</a> - Repositório: <a href="https://github.com/Carlos-CGS/CodeVerse">CodeVerse</a>
           </p>
         </div>
-      </div>
+      </article>
     </section>
   </main>
-  <footer>
-    <img class="logo" src="assets/images/logo.png" title="Logotipo CGS" alt="Logotipo">
-    <p>Vamos Disseminar os Conhecimentos e Transbordar Tudo o que Aprendemos !</p>
-    <p>© Copyright 2024</p>
+  <footer role="contentinfo">
+    <img class="logo footer-logo" src="assets/images/logo.png" title="Logotipo CGS" alt="Logotipo Carlos-CGS">
+    <p>Vamos Disseminar os Conhecimentos e Transbordar Tudo o que Aprendemos!</p>
+    <div class="footer-info">
+      <p>&copy; <span id="year">2024</span> - 2026 <span class="brand">Carlos-CGS</span>. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
   <div class="btn-home" onclick="scrollToTop()">
     <img src="./assets/images/btnTopo.png" alt="Home">
   </div>
  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script defer>
+    window.addEventListener('load', function() {
+      AOS.init();
+    
+    // Atualizar ano dinamicamente no footer
+    document.addEventListener('DOMContentLoaded', function() {
+      const yearElement = document.getElementById('year');
+      if (yearElement) {
+        const currentYear = new Date().getFullYear();
+        yearElement.textContent = currentYear;
+      }
+    });
+    });
   </script>
-  <script src="./assets/JavaScript/script.js"></script>
+  <script src="./assets/JavaScript/script.js" defer></script>
 </body>
 
 </html>

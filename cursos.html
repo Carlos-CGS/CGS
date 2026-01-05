@@ -4,27 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Certificações e BootCamps de Carlos Garcia - Desenvolvedor FullStack. Mais de 50 cursos em Python, C#, JavaScript, Cloud e Ciência de Dados.">
+  <meta name="keywords" content="certificações desenvolvedor, bootcamps DIO, cursos python, cursos c#, certificações tecnologia, github foundations">
+  <meta name="author" content="Carlos Garcia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://carlos-cgs.github.io/CGS/cursos.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://carlos-cgs.github.io/CGS/cursos.html">
+  <meta property="og:title" content="Certificações e Cursos | Carlos-CGS">
+  <meta property="og:description" content="Mais de 50 BootCamps e certificações em tecnologia, incluindo DIO, Microsoft, Google e GitHub.">
+  <meta property="og:image" content="https://carlos-cgs.github.io/CGS/assets/images/profile.png">
+  
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://hermes.dio.me">
+  <link rel="preconnect" href="https://assets.dio.me">
+  
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="shortcut icon" href="./assets/images/favicon1.png" type="image/x-icon">
   <meta name="theme-color" content="#31A8DD">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <title>Carlos-CGS</title>
+  <title>Certificações e Cursos | Carlos-CGS</title>
 </head>
 <body>
+  <a href="#certificados" class="skip-link">Pular para certificações</a>
+  <div id="progress-bar" role="progressbar" aria-label="Progresso de leitura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  
   <header class="banner">
-    <ul class="navegacao">
+    <nav aria-label="Navegação principal">
+      <ul class="navegacao">
       <li>
         <a href="index.html" class="navegacao_link">Home</a>
       </li>
       <li>
         <a href="#certificados" class="navegacao_link">Cursos e Certificações</a>
       </li>
-    </ul>
+      <li>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+          <span id="theme-label">🌙 Escuro</span>
+        </button>
+      </li>
+      </ul>
+    </nav>
     <section id="tech-content">
         <br><h2>Bootcamps e Certificações</h2>
         <p>Segue abaixo os Badges de todos os meus BootCamps e Certificações concluídas, com link para os sites que conclui, que apresentam toda a carga horária, módulos e cursos de cada um dos programas.</p>
         <br>
-        <div class="galeria_cursos">
+        <figure class="galeria_cursos">
           <a href="https://hermes.dio.me/certificates/HEUX8BON.pdf"><img src="https://assets.dio.me/uE_GG1uuhcWALEVe5dQRLl5BSovzlYHug3m7zoShiAQ/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNTc4YzBhYmMtY2VhYS00ODk1LTg3NTItM2E3ODE0NWQ2ZGNlLnBuZw" height="50"><a/>
           <a href="https://hermes.dio.me/certificates/M0EOJ8IG.pdf"><img src="https://assets.dio.me/90yVOp7AKLkff3B7pjTeHNnWte--AoAW5tYu42DKOTw/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvODJmNWI4YTQtMjYxNS00NGJiLWEyYzctN2U1NmU4YzRiMmM2LnBuZw" height="50"><a/>
           <a href="https://hermes.dio.me/certificates/218JIDGI.pdf"><img src="https://assets.dio.me/94UFtgabgVoxzmb2R7HDUXH3HXZKCRzgrOlrqL0-7lY/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvZjRjYTVjYmMtMTIyMC00ZGY3LWI5YjUtMDk0MmQzMDExOGExLnBuZw" height="50"><a/>
@@ -79,9 +109,9 @@
           <a href="https://web.dio.me/track/pottencial-net-developer"><img src="https://hermes.dio.me/tracks/9a1e80de-6b42-4f59-97be-15e1493aa96f.png" height="50"></a>
           <a href="https://web.dio.me/track/formacao-dotnet-developer"><img src="https://hermes.dio.me/tracks/169e3d0f-263a-4efb-86c5-244bdf1ce8d6.png" height="50"></a>
           <br>
-        </div>
+        </figure>
       </section>
-      <div class="galeria1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
+      <figure class="galeria1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
         <a href="https://univesp.br/"><img src="./assets/images/Univesp.png" height="45"></a>
         <a href="https://escolatecnicafat.org.br/"><img src="./assets/images/Fat.png" height="45"></a>
         <a href="https://www.dio.me/"><img src="https://hermes.dio.me/companies/a169bb67-5f72-4289-9778-fcea58dfa19a.png" height=45"></a>
@@ -95,8 +125,35 @@
         <a href="https://www.escolavirtual.gov.br/"><img src="data:image/png;base64,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" height="45"></a>
         <a href="https://ifrs.edu.br/ensino/ead/"><img src="data:image/png;base64,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" height="45"></a>
         <a href="https://ibsec.com.br/"><img src="https://ibsec.com.br/wp-content/uploads/2023/12/logo-small.webp" height="45"></a>
-      </div>
+      </figure>
   </header>
+  <!-- Filtros de Cursos -->
+  <section id="filtros" aria-label="Filtros de cursos" data-aos="fade-up" data-aos-duration="800">
+    <div class="filters content">
+      <div class="filter-group">
+        <label for="filter-year">Ano</label>
+        <select id="filter-year" aria-label="Filtrar por ano">
+          <option value="">Todos</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-type">Tipo</label>
+        <select id="filter-type" aria-label="Filtrar por tipo">
+          <option value="">Todos</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-lang">Linguagem/Área</label>
+        <select id="filter-lang" aria-label="Filtrar por linguagem ou área">
+          <option value="">Todos</option>
+        </select>
+      </div>
+      <div class="filter-actions">
+        <button id="filter-clear" type="button" aria-label="Limpar filtros">Limpar</button>
+        <span id="filter-count" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
   <section id="certificados" data-aos="fade-up" data-aos-duration="1000">
       <div class="column">
         <h2>Cursos Tecnologia</h2>
@@ -224,10 +281,12 @@
         </ol>
       </div>
   </section>
-  <footer>
-    <img class="logo" src="assets/images/logo.png" title="Logotipo CGS" alt="Logotipo">
-    <p>Vamos Disseminar os Conhecimentos e Transbordar Tudo que Aprendemos !</p>
-    <p>© Copyright 2024</p>
+  <footer role="contentinfo">
+    <img class="logo footer-logo" src="assets/images/logo.png" title="Logotipo CGS" alt="Logotipo Carlos-CGS">
+    <p>Vamos Disseminar os Conhecimentos e Transbordar Tudo o que Aprendemos!</p>
+    <div class="footer-info">
+      <p>&copy; <span id="year">2024</span> - 2026 <span class="brand">Carlos-CGS</span>. Todos os direitos reservados.</p>
+    </div>
   </footer>
   <div class="btn-home" onclick="scrollToTop()">
     <img src="./assets/images/btnTopo.png" alt="Home">
@@ -249,10 +308,24 @@
     };
   </script>
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script defer>
+    window.addEventListener('load', function() {
+      AOS.init();
+    
+    // Atualizar ano dinamicamente no footer
+    document.addEventListener('DOMContentLoaded', function() {
+      const yearElement = document.getElementById('year');
+      if (yearElement) {
+        const currentYear = new Date().getFullYear();
+        yearElement.textContent = currentYear;
+      }
+    });
+    });
   </script>
+  <script src="./assets/JavaScript/script.js" defer></script>
+  <!-- Script específico de filtros para a página de cursos -->
+  <script src="assets/JavaScript/cursos-filter.js" defer></script>
 </body>
 </html>
 
