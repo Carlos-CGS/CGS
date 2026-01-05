@@ -678,9 +678,61 @@ footer .brand {
     align-items: center;
   }
 
+  .galeria1 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .galeria1 a:nth-child(1),
+  .galeria1 a:nth-child(2),
+  .galeria1 a:nth-child(3),
+  .galeria1 a:nth-child(4),
+  .galeria1 a:nth-child(5),
+  .galeria1 a:nth-child(6),
+  .galeria1 a:nth-child(7) {
+    grid-row: 1;
+  }
+
+  .galeria1 a:nth-child(8) {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .galeria1 a:nth-child(9) {
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  .galeria1 a:nth-child(10) {
+    grid-row: 2;
+    grid-column: 4;
+  }
+
+  .galeria1 a:nth-child(11) {
+    grid-row: 2;
+    grid-column: 5;
+  }
+
+  .galeria1 a:nth-child(12) {
+    grid-row: 2;
+    grid-column: 6;
+  }
+
+  .galeria1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .galeria1 img {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 100%;
+    max-width: 45px;
+    height: auto;
   }
 
   .galeria_cursos img {
@@ -701,9 +753,10 @@ footer .brand {
   }
 
   #tech-content .galeria1 img {
-    width: 40%;
+    width: 100%;
+    max-width: 45px;
     height: auto;
-    margin: 0.1rem;
+    margin: 0;
   }
 
   #tech-content p {
