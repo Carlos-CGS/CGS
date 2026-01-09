@@ -661,7 +661,7 @@ footer .brand {
   header.banner {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   .container {
@@ -672,11 +672,11 @@ footer .brand {
   .banner {
     margin-top: 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     font-size: 20%;
     overflow-y: hidden;
     background-attachment: scroll;
-    padding-top: 0.25rem;
+    padding-top: 0.125rem;
   }
 
   .banner .logo {
