@@ -676,13 +676,17 @@ footer .brand {
     font-size: 20%;
     overflow-y: hidden;
     background-attachment: scroll;
-    padding-top: 0.125rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .banner .logo {
-    height: 50%;
-    width: 50%;
-    margin-bottom: 0.5rem;
+    height: 35%;
+    width: 35%;
+    margin-bottom: 0.75rem;
   }
 
   .banner-content {
@@ -690,7 +694,12 @@ footer .brand {
   }
 
   .banner-content p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
   }
 
   /* Layout do menu para mobile */
