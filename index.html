@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Portfólio de Carlos Garcia, desenvolvedor FullStack e estudante de Ciência de Dados, com projetos em C#, JavaScript, React e Python. Explore soluções criativas e colaborações!">
-  <meta name="keywords" content="desenvolvedor fullstack, python, c#, javascript, react, ciência de dados, portfolio desenvolvedor, projetos web, bootcamps DIO">
+  <meta name="description" content="Portfólio de Carlos Garcia, desenvolvedor FullStack e estudante de Ciência de Dados, com projetos em Python, C#, JavaScript e React, e IA (Copilot, Gemini, ChatGPT).">
+  <meta name="keywords" content="desenvolvedor fullstack, python, c#, javascript, react, ciência de dados, portfolio desenvolvedor, projetos web, bootcamps DIO, chatgpt, ia generativa, inteligência artificial, github copilot, gemini">
   <meta name="author" content="Carlos Garcia">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://carlos-cgs.github.io/CGS/">
@@ -17,20 +17,25 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://carlos-cgs.github.io/CGS/">
   <meta property="og:title" content="Carlos-CGS | Desenvolvedor FullStack & Ciência de Dados">
-  <meta property="og:description" content="Portfólio profissional com projetos em Python, C#, JavaScript e React. Desenvolvedor FullStack apaixonado por tecnologia e inovação.">
+  <meta property="og:description" content="Portfólio com projetos em Python, C#, JavaScript e React, e IA (Copilot, Gemini, ChatGPT). Desenvolvedor FullStack apaixonado por tecnologia e inovação.">
   <meta property="og:image" content="https://carlos-cgs.github.io/CGS/assets/images/profile.png">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://carlos-cgs.github.io/CGS/">
   <meta name="twitter:title" content="Carlos-CGS | Desenvolvedor FullStack">
-  <meta name="twitter:description" content="Portfólio profissional com projetos em Python, C#, JavaScript e React.">
+  <meta name="twitter:description" content="Portfólio com projetos em Python, C#, JavaScript e React, e IA (Copilot, Gemini, ChatGPT).">
   <meta name="twitter:image" content="https://carlos-cgs.github.io/CGS/assets/images/profile.png">
   
   <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://hermes.dio.me">
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="shortcut icon" href="./assets/images/favicon1.png" type="image/x-icon">
@@ -45,11 +50,21 @@
   <!-- Reading Progress Bar -->
   <div id="progress-bar" role="progressbar" aria-label="Progresso de leitura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
   
-  <header class="banner" data-parallax="0.22">
+  <header id="home" class="banner" data-parallax="0.22">
     <nav aria-label="Navegação principal">
-      <ul class="navegacao">
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-items">
+        <span class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </span>
+      </button>
+      <ul class="navegacao" id="menu-items">
       <li>
-        <a href="#home" class="navegacao_link">Home</a>
+        <a href="#home" class="navegacao_link active">Home</a>
+      </li>
+      <li>
+        <a href="#sobre" class="navegacao_link">Sobre mim</a>
       </li>
       <li>
         <a href="#meus_jogos" class="navegacao_link">Jogos</a>
@@ -60,28 +75,24 @@
       <li>
         <a href="cursos.html" class="navegacao_link">Cursos e Certificações</a>
       </li>
-      <li>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
-          <span id="theme-label">🌙 Escuro</span>
-        </button>
-      </li>
       </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+        <span id="theme-label">🌙 Escuro</span>
+      </button>
     </nav>
     <div class="banner-content">
       <figure class="logo">
         <img src="assets/images/profile.png" title="meuPerfil" alt="meuPerfil">
       </figure>
       <h1>Carlos-CGS</h1>
-      <p>
-        <i>Transformando idéias em código!</i><br>
-        - Desenvolvedor Full Stack | Python, C#, SQL, JavaScript, IA(Copilot, Gemini, ChatGPT)<br>
-        - Bem-vindo ao meu Porfólio! Aqui você encontrará projetos que refletem minha paixão por desenvolvimento Fullstack e tecnologia.<br>
+      <p class="hero-subtitle">
+        Desenvolvedor Full Stack | Python, C#, SQL, JavaScript, IA
       </p>
       <div class="social-icons">
-        <a href="https://github.com/Carlos-CGS" target="_blank" class="social-icon">
+        <a href="https://github.com/Carlos-CGS" target="_blank" rel="noopener noreferrer" class="social-icon">
           <img src="./assets/images/github.png" alt="GitHub">
         </a>
-        <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" class="social-icon">
+        <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" rel="noopener noreferrer" class="social-icon">
           <img src="./assets/images/linkedin.png" alt="LinkedIn">
         </a>
         <a id="email-link" href="mailto:garcia.mar.mil@gmail.com?subject=Contato%20Portf%C3%B3lio&body=Ol%C3%A1%20Carlos,%20tudo%20bem?" class="social-icon">
@@ -91,12 +102,45 @@
     </div>
   </header>
   <main id="main-content">
-    <section id="tech-content" data-aos="zoom-in"data-aos-duration="3000">
-      <br>
-      <h2>Principais Tecnologias</h2>
-      <br>
-      <figure class="galeria_tech" >
-        <p> Linguagens de Programação</p><br>
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="section-spacing" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container-sobre">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-content">
+          <div class="sobre-text">
+            <p>
+              Sou desenvolvedor Full Stack apaixonado por transformar ideias em código. 
+              Atualmente cursando <strong>Bacharelado em Ciência de Dados pela UNIVESP</strong>, com 
+              <strong>Técnico em Desenvolvimento de Sistemas pela FAT</strong> e <strong>Técnico em Administração pelo SENAC</strong>.
+            </p>
+            <p>
+              Com experiência em <strong>Python, C#, HTML, CSS, JavaScript e SQL</strong>, desenvolvo desde aplicações web 
+              até soluções com desktop e mobile, utilizando ferramentas como <strong>GitHub Copilot, 
+              ChatGPT e Gemini</strong> para otimizar processos, fazendo de forma humana toda a validação e correções de código, escrevendo incialmente o projeto e utilizando a IA para corrigir ou implemnetar, produzindo códigos de qualidade.
+            </p>
+            <div class="stats">
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Certificações</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Projetos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Formações</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="tech-content" class="section-spacing" data-aos="zoom-in" data-aos-duration="3000">
+      <h2 class="mb-2">Principais Tecnologias</h2>
+      <figure class="galeria_tech">
+        <p class="mb-1">Linguagens de Programação</p>
         <img src="https://hermes.dio.me/skills/21020ed4-299a-4e76-8cf2-86c38502b4b4.png" height="50px">
         <img src="https://hermes.dio.me/skills/7c8b20c8-af95-4c24-87ae-be37695d1f0a.png" height="50px">
         <img src="https://hermes.dio.me/skills/fcf8b10b-47bc-4f8c-a105-4e1c0ce3cde4.png" height="50px">
@@ -105,19 +149,18 @@
         <img src="https://haostreinamentos.com.br/images/cursos/Sql.png" height="50px">
         <img src="https://hermes.dio.me/skills/9d9ca366-ab09-4b4c-be29-d84e66527df4.png" height="50px">
 
-        </br></br>
-        <p>Frameworks</p>
+        <p class="mt-2 mb-1">Frameworks</p>
         <img src="https://img.shields.io/badge/framework-512BD4?style=for-the-badge&logo=.net&logoColor=white" height="30px">
         <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F.svg?style=for-the-badge&logo=Spring-Boot&logoColor=white" height="30px">
-        <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=ffffff" height="30px"><br>
+        <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=ffffff" height="30px">
 
-        </br>
-        <p> Outras Tecnologias</p>
+        <p class="mt-2 mb-1">Outras Tecnologias</p>
         <img src="./assets/images/github1.png" height="38px" alt="GitHub">
         <img src="./assets/images/git.png" height="25px" alt="Git">
         <img src="./assets/images/markdown.png" height="35px" alt="Markdown">
         <img src="./assets/images/gemini.png" height="35px" alt="Gemini">
         <img src="./assets/images/copilot.png" height="35px" alt="GitHub Copilot">
+        <img src="./assets/images/chatGpt.png" height="35px" alt="ChatGPT">
         <br>
         <img src="./assets/images/VSCode.png" height="30px" alt="VS Code">
         <img src="./assets/images/visualStudio.png" height="30px" alt="Visual Studio">
@@ -132,33 +175,29 @@
           <h2>Memoria Tech</h2>
           <a href="./games/MemoriaTech-Game/index.html"><img src="./assets/images/jogoMemoria.png" alt="Jogo da Memória - Teste sua memória com cartas tecnológicas"></a>
           <p>Jogo da memória produzido inicialmente em um bootcamp da DIO, com diversos upgrades, alterações e
-            adaptações, tornando um game único. <br><br>
-            <a class="link_game" href="./games/MemoriaTech-Game/index.html"> Jogar </a>
-          </p>
+            adaptações, tornando um game único.</p>
+          <a class="link_game" href="./games/MemoriaTech-Game/index.html">Jogar</a>
         </article>
-        <article class="meus_jogos_container__jogo" data-aos="fade-up">
+        <article class="meus_jogos_container__jogo">
           <h2>Galinha Feliz</h2>
           <a href="./games/GalinhaFeliz-Game/index.html"><img src="./games/GalinhaFeliz-Game/src/imagem/galinhaFeliz.png" alt="Jogo Galinha Feliz - Clique na galinha para ganhar pontos"></a>
           <p>Jogo da galinha feliz, onde o objetivo é clicar em cima da galinha e quando clicado, ela coloca ovos e
-            atribui dez pontos ao jogador.<br><br>
-            <a class="link_game" href="./games/GalinhaFeliz-Game/index.html"> Jogar </a>
-          </p>
+            atribui dez pontos ao jogador.</p>
+          <a class="link_game" href="./games/GalinhaFeliz-Game/index.html">Jogar</a>
         </article>
-        <article class="meus_jogos_container__jogo" data-aos="fade-up">
+        <article class="meus_jogos_container__jogo">
           <h2>Piano Tech</h2>
           <a href="./games/Piano-Tech/index.html"><img src="./assets/images/pianoTech.png" alt="Piano Virtual - Toque música com teclado ou mouse"></a>
           <p>Abastração de um piano real, que funciona utilizando o teclado ou com cliques dos mouses. Possui também um
-            botão de volume funcional.<br><br>
-            <a class="link_game" href="./games/Piano-Tech/index.html"> Jogar </a>
-          </p>
+            botão de volume funcional.</p>
+          <a class="link_game" href="./games/Piano-Tech/index.html">Jogar</a>
         </article>
-        <article class="meus_jogos_container__jogo" data-aos="fade-up">
+        <article class="meus_jogos_container__jogo">
           <h2>Numero Secreto</h2>
           <a href="./games/JogoNumeroSecreto/index.html"><img src="./assets/images/numeroSecreto.png" alt="Jogo Número Secreto - Adivinhe o número com dicas"></a>
           <p>Jogo para adivinhar o numero secreto! Através de tentativas, o jogo responde se o numero é maior ou menor.
-            Utilizado leitura dos textos durante o jogo.<br><br>
-            <a class="link_game" href="./games/JogoNumeroSecreto/index.html"> Jogar </a>
-          </p>
+            Utilizado leitura dos textos durante o jogo.</p>
+          <a class="link_game" href="./games/JogoNumeroSecreto/index.html">Jogar</a>
         </article>
       </div>
       </div>
@@ -170,17 +209,20 @@
           <p>
             <b>WorldWar - Jogo Online Multiplayer</b></br>
             <br>
-            WorldWar é um jogo online multiplayer de estratégia por cartas, com partidas em tempo real. Iniciei o projeto em 2017, quando estava entrando no universo da programação, mas não cheguei a finalizá-lo. Retomei em janeiro de 2026 e o concluí em 3 dias, alavancado pelo GitHub Copilot. O jogo possui modo offline com IA e multiplayer com matchmaking e sincronização de turnos, além de autenticação segura, rankings persistentes, seleção de mapas e uma galeria completa de cartas.<br>
-            Repositório: <a href="https://github.com/Carlos-CGS/WorldWar">WorldWar</a>
+            WorldWar é um jogo online multiplayer de estratégia por cartas, com partidas em tempo real. 
+            Iniciei o projeto em 2017, quando estava entrando no mundo da programação, mas não cheguei a finalizá-lo. 
+            Retomei em janeiro de 2026 concluindo em 3 dias, com ajuda do GitHub Copilot. O jogo possui modo offline com 
+            IA e multiplayer com matchmaking e sincronização de turnos, além de autenticação segura, rankings persistentes e uma galeria completa de cartas.<br>
+            Repositório: <a href="https://github.com/Carlos-CGS/WorldWar" target="_blank" rel="noopener noreferrer">WorldWar</a>
           </p>
         </div>
-        <video class="video" src="assets/images/worldwar1.mp4" title="WorldWar" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
+        <video class="video" src="assets/videos/WorldWar1.mp4" title="WorldWar" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
       </article>
 
       <article class="video-text-container">
-        <video class="video" src="assets/images/AppGestaoFuncionarios.mp4" title="AppGestaoFuncionarios" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
+        <video class="video" src="assets/videos/AppGestaoFuncionarios.mp4" title="AppGestaoFuncionarios" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -190,7 +232,7 @@
             Sistema web completo desenvolvido para o PI II da Univesp, com backend em .NET 8 + ASP.NET Identity + JWT, 
             banco SQL Server e frontend HTML/CSS/JavaScript. Inclui validação de CPF, busca avançada, painel de KPIs, relatórios por período/posto/tipo, 
             trilha de ocorrências e geração de PDF individual com logotipo e histórico.<br>
-            Repositório: <a href="https://github.com/Carlos-CGS/AppGestaoFuncionarios_PI2_Univesp">AppGestaoFuncionarios</a>
+            Repositório: <a href="https://github.com/Carlos-CGS/AppGestaoFuncionarios_PI2_Univesp" target="_blank" rel="noopener noreferrer">AppGestaoFuncionarios</a>
           </p>
         </div>
       </article>
@@ -204,16 +246,16 @@
             em frente a TV assitindo um video e simulando que estavam jogando, O jogo possue seleção de personagem 
             (Alegria, Tristeza, Raiva), sprites/sons em assets/, pontuação por desvios, contagem de colisões e tela de game over. 
             Movimentos controlados por gestos com MediaPipe.<br>
-            Repositório: <a href="https://github.com/Carlos-CGS/Jogo-Kids-Runner">Jogo-Kids-Runner</a>
+            Repositório: <a href="https://github.com/Carlos-CGS/Jogo-Kids-Runner" target="_blank" rel="noopener noreferrer">Jogo-Kids-Runner</a>
           </p>
         </div>
-        <video class="video" src="assets/images/KidsRunner.mp4" title="KdsRunner" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
+        <video class="video" src="assets/videos/KidsRunner.mp4" title="KdsRunner" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
       </article>
 
       <article class="video-text-container">
-        <video class="video" src="assets/images/windowsForms.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000" >
+        <video class="video" src="assets/videos/windowsForms.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000" >
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -223,7 +265,7 @@
             Aplicativo que desenvolvi no ano de 2019, quando não conhecia muito sobre a linguagem C#,
             porém através de alguns tutorias no youtube fui aprendendo e desenvolvendo todo o projeto
             utilizando o Windows Forms na IDE do Visual Studio.<br>
-            Repositório: <a href="https://github.com/Carlos-CGS/ProjetosCSharp/tree/main/ControleAcesso%20-%20Forms%20CSharp">Controle de Acesso - Windows Forms C#</a>
+            Repositório: <a href="https://github.com/Carlos-CGS/ProjetosCSharp/tree/main/ControleAcesso%20-%20Forms%20CSharp" target="_blank" rel="noopener noreferrer">Controle de Acesso - Windows Forms C#</a>
           </p>
         </div>
       </article>
@@ -235,15 +277,15 @@
             J.A.R.V.I.S. é um assistente virtual desenvolvido em Python que utiliza reconhecimento de voz,
             síntese de fala e APIs avançada para realizar tarefas como buscas na web, previsão do tempo e
             transcrição de textos, além de abrir aplicativos como calculadora, word, excel, dentre outros.<br>
-            Repositório: <a href="https://github.com/Carlos-CGS/Projeto-J.A.R.V.I.S.">Projeto J.A.R.V.I.S.</a>
+            Repositório: <a href="https://github.com/Carlos-CGS/Projeto-J.A.R.V.I.S." target="_blank" rel="noopener noreferrer">Projeto J.A.R.V.I.S.</a>
           </p>
         </div>
-        <video class="video" src="assets/images/videoJarvis.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
+        <video class="video" src="assets/videos/videoJarvis.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
       </article>
       <article class="video-text-container">
-        <video class="video" src="assets/images/worldWar.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
+        <video class="video" src="assets/videos/worldWar.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -255,7 +297,7 @@
             ataque e tipo, e o resultado do duelo é determinado com base nas regras de vitória e derrota de cada carta.
             O placar é atualizado a cada rodada, e há efeitos visuais e sonoros que intensificam a experiência. Todo o
             código foi escrito durante BootCamp da DIO<br>
-            Site: <a href="./games/WorldWar-Game/index.html">Site World War</a> - Repositório: <a href="https://github.com/Carlos-CGS/CGS/tree/main/games/WorldWar-Game">World War Game</a>
+            Site: <a href="./games/WorldWar-Game/index.html" target="_blank" rel="noopener noreferrer">Site World War</a> - Repositório: <a href="https://github.com/Carlos-CGS/CGS/tree/main/games/WorldWar-Game" target="_blank" rel="noopener noreferrer">World War Game</a>
           </p>
         </div>
       </article>
@@ -265,16 +307,16 @@
             <b>Avatar Tecnologias + Direcionamento Anúncios</b></br>
             <br>Neste projeto o usuário pesquisa por uma tecnologia, sendo apresentado uma imagem gerada por IA 
             referente a imagem pesquisa e uma breve descrição, executando esta busca em um objeto JavaScript.<br>
-            Site: <a href="https://projeto-assistente-busca-google.vercel.app/">Avatares Tecnologias</a> -
-            Repositório: <a href="https://github.com/Carlos-CGS/Projeto-AssistenteBusca">Repositório GitHub</a>
+            Site: <a href="https://projeto-assistente-busca-google.vercel.app/" target="_blank" rel="noopener noreferrer">Avatares Tecnologias</a> -
+            Repositório: <a href="https://github.com/Carlos-CGS/Projeto-AssistenteBusca" target="_blank" rel="noopener noreferrer">Repositório GitHub</a>
           </p>
         </div>
-        <video class="video" src="assets/images/siteBusca.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left">
+        <video class="video" src="assets/videos/siteBusca.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left">
           Seu navegador não suporta o elemento de vídeo.
         </video>
       </article>
       <article class="video-text-container">
-        <video class="video" src="assets/images/DesafioHeroi.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right">
+        <video class="video" src="assets/videos/DesafioHeroi.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right">
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up">
@@ -285,7 +327,7 @@
             de experiência (XP) que possuem. O projeto utiliza HTML, CSS e JavaScript. Funcionalidades - Entrada do nome e XP do herói.
             - Classificação do herói com base na XP fornecida. - Exibição do nível do herói na interface. - Limpeza dos campos após a classificação.
             - Botão Enter aciona o botão.<br>
-            Site: <a href="https://desafio-heroi.vercel.app/">Desafio Herói</a> - Repositório: <a href="https://github.com/Carlos-CGS/CGS/tree/main/games/DesafioHeroi">Desafio do Herói</a>
+            Site: <a href="https://desafio-heroi.vercel.app/" target="_blank" rel="noopener noreferrer">Desafio Herói</a> - Repositório: <a href="https://github.com/Carlos-CGS/CGS/tree/main/games/DesafioHeroi" target="_blank" rel="noopener noreferrer">Desafio do Herói</a>
           </p>
         </div>
       </article>
@@ -295,16 +337,16 @@
             <b>Projeto Pokédex - DIO</b></br>
             <br>Este projeto é uma Pokédex interativa desenvolvida como parte de um desafio da Digital Innovation One (DIO).<br>
             A aplicação utiliza a PokeAPI para exibir uma lista de Pokémons e fiz algumas alterações como adicionar detalhamento do pokemon, quando ele é clicado, além de sombras e mouse hover.<br>
-            Site: <a href="https://pokedex-js-dio.vercel.app//">Projeto Pokédex - DIO</a> -
-            Repositório: <a href="https://github.com/Carlos-CGS/Pokedex-JS-DIO">Repositório GitHub</a>
+            Site: <a href="https://pokedex-js-dio.vercel.app//" target="_blank" rel="noopener noreferrer">Projeto Pokédex - DIO</a> -
+            Repositório: <a href="https://github.com/Carlos-CGS/Pokedex-JS-DIO" target="_blank" rel="noopener noreferrer">Repositório GitHub</a>
           </p>
         </div>
-        <video class="video" src="assets/images/Pokedex.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
+        <video class="video" src="assets/videos/Pokedex.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
       </article>
       <article class="video-text-container">
-        <video class="video" src="assets/images/CodeVerse.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
+        <video class="video" src="assets/videos/CodeVerse.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -321,11 +363,54 @@
       </article>
     </section>
   </main>
-  <footer role="contentinfo">
-    <img class="logo footer-logo" src="assets/images/logo.png" title="Logotipo CGS" alt="Logotipo Carlos-CGS">
-    <p>Vamos Disseminar os Conhecimentos e Transbordar Tudo o que Aprendemos!</p>
-    <div class="footer-info">
-      <p>&copy; <span id="year">2024</span> - 2026 <span class="brand">Carlos-CGS</span>. Todos os direitos reservados.</p>
+  
+  <footer role="contentinfo" class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/images/logo.png" title="Logotipo CGS" alt="Logotipo Carlos-CGS">
+        <p class="footer-slogan">Transformando ideias em código</p>
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#meus_jogos">Jogos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="cursos.html">Cursos e Certificações</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="mailto:garcia.mar.mil@gmail.com">Email</a></li>
+            <li><a href="https://github.com/Carlos-CGS" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Redes Sociais</h3>
+          <div class="footer-social">
+            <a href="https://github.com/Carlos-CGS" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="./assets/images/github.png" alt="GitHub" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="./assets/images/linkedin.png" alt="LinkedIn" height="30">
+            </a>
+            <a href="mailto:garcia.mar.mil@gmail.com" aria-label="Email">
+              <img src="./assets/images/email.png" alt="Email" height="30">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2024</span> - 2026 <span class="brand">Carlos-CGS</span>. Todos os direitos reservados.</p>
+      </div>
     </div>
   </footer>
 
@@ -348,7 +433,7 @@
     });
     });
   </script>
-  <script src="./assets/JavaScript/script.js" defer></script>
+  <script src="./assets/javascript/script.js" defer></script>
 </body>
 
 </html>

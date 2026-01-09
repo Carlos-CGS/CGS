@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Certificações e BootCamps de Carlos Garcia - Desenvolvedor FullStack. Mais de 50 cursos em Python, C#, JavaScript, Cloud e Ciência de Dados.">
-  <meta name="keywords" content="certificações desenvolvedor, bootcamps DIO, cursos python, cursos c#, certificações tecnologia, github foundations">
+  <meta name="description" content="Certificações e BootCamps de Carlos Garcia - Desenvolvedor FullStack. Mais de 50 cursos em Python, C#, JavaScript, Cloud, Ciência de Dados e IA (Copilot, Gemini, ChatGPT).">
+  <meta name="keywords" content="certificações desenvolvedor, bootcamps DIO, cursos python, cursos c#, certificações tecnologia, github foundations, chatgpt, ia generativa, inteligência artificial, github copilot, gemini">
   <meta name="author" content="Carlos Garcia">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://carlos-cgs.github.io/CGS/cursos.html">
@@ -20,9 +20,14 @@
   <meta property="og:image" content="https://carlos-cgs.github.io/CGS/assets/images/profile.png">
   
   <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://hermes.dio.me">
   <link rel="preconnect" href="https://assets.dio.me">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="shortcut icon" href="./assets/images/favicon1.png" type="image/x-icon">
@@ -36,125 +41,133 @@
   
   <header class="banner">
     <nav aria-label="Navegação principal">
-      <ul class="navegacao">
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-items">
+        <span class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </span>
+      </button>
+      <ul class="navegacao" id="menu-items">
       <li>
-        <a href="index.html" class="navegacao_link">Home</a>
+        <a href="index.html#home" class="navegacao_link">Home</a>
       </li>
       <li>
-        <a href="#certificados" class="navegacao_link">Cursos e Certificações</a>
-      </li>
-      <li>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
-          <span id="theme-label">🌙 Escuro</span>
-        </button>
+        <a href="cursos.html" class="navegacao_link active">Cursos e Certificações</a>
       </li>
       </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+        <span id="theme-label">🌙 Escuro</span>
+      </button>
     </nav>
     <section id="tech-content">
-        <br><h2>Bootcamps e Certificações</h2>
-        <p>Segue abaixo os Badges de todos os meus BootCamps e Certificações concluídas, com link para os sites que conclui, que apresentam toda a carga horária, módulos e cursos de cada um dos programas.</p>
-        <br>
+        <h2 class="mb-2">Bootcamps e Certificações</h2>
+        <p>Mais de 50 cursos e certificações em desenvolvimento de software, ciência de dados, cloud computing e inteligência artificial.</p>
         <figure class="galeria_cursos">
-          <a href="https://hermes.dio.me/certificates/HEUX8BON.pdf"><img src="https://assets.dio.me/uE_GG1uuhcWALEVe5dQRLl5BSovzlYHug3m7zoShiAQ/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNTc4YzBhYmMtY2VhYS00ODk1LTg3NTItM2E3ODE0NWQ2ZGNlLnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/M0EOJ8IG.pdf"><img src="https://assets.dio.me/90yVOp7AKLkff3B7pjTeHNnWte--AoAW5tYu42DKOTw/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvODJmNWI4YTQtMjYxNS00NGJiLWEyYzctN2U1NmU4YzRiMmM2LnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/218JIDGI.pdf"><img src="https://assets.dio.me/94UFtgabgVoxzmb2R7HDUXH3HXZKCRzgrOlrqL0-7lY/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvZjRjYTVjYmMtMTIyMC00ZGY3LWI5YjUtMDk0MmQzMDExOGExLnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/XP2ZNU10.pdf"><img src="https://assets.dio.me/IeEuXP8J4jx7Pf6czAvuvQ0josS2B6iAQG_tqMYkbbE/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvMTI2MjIyOTQtODU5Zi00MDU3LTgxNWUtYmE0NTM4NmRlNTZhLnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/NWSRFEVF.pdf"><img src="https://assets.dio.me/UhhZ_70STvHrgeRtPEXu6Qjz8FXY4Pm5xB4_2nDAEB0/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvMDljZjNmMDgtMDRjNC00MzFhLThhNTQtMzdlZDVmNDRjYTk2LnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/N2P3HT6G.pdf"><img src="https://assets.dio.me/Qltudbj67Pk5X65uSbgi4kZ3uBKQ_EX1_PRRyhs5c8Y/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvYjEwZDExM2ItMjIzNS00YTc5LWEzNGQtYjE4MmQ3NTI3MWZhLnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/1TTJRJMR.pdf"><img src="https://assets.dio.me/bYmLieBRSBhgW5_7gGTMhALmof0va49CEFhD9iMSv3o/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvOTFiNWY3NzktNWJkYy00YzgwLWJkNWUtYjNjMzczOThlYWQ0LnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/V2FZ7ZDB.pdf"><img src="https://assets.dio.me/05lp_QMscnXbwqDy0YKZt4Mg1MDB3UE63LK9JQabPSc/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvZDYzOTViNWQtNjdjOC00ZjhmLTljOGEtYzg2YjcyYjE4MjdhLnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/SGESUAXX.pdf"><img src="https://assets.dio.me/PLhLlL0UBjln8UIkXMJxvhDslnCEG2Lp63tHK4uMDr8/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNTU4MGVjZGMtYmI4Zi00NWIwLWI5MjgtNTAxYjA3NDdmMjMxLnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/CLSYSDQN.pdf"><img src="https://assets.dio.me/w_aw33GiCnqh4hlVcI3Ey9tAeh1Lm-wm9BMaVbwTyC4/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNzk4NzViZDgtMzA0Yy00YmJkLTlhMTMtODc3YmQxZDI2NDkyLnBuZw" height="50"><a/>
-          <a href="https://hermes.dio.me/certificates/EQVIXDY6.pdf"><img src="https://assets.dio.me/r2jBLXv9dGRnKkngouzdw44d3Mj7mLfTPx7LFVtkHKs/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvOGQ5OTQ5M2QtZWJlNC00OTFiLWEwNmMtZDIwMWIyMzAxMTI4LnBuZw" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/ZO97S88N.pdf"><img src="https://assets.dio.me/F6QUpCT19KAT0xr9osG0ZwH5ox39nKa08i2t-ob-YF8/f:webp/h:120/q:80/L3RyYWNrcy8xMDIxYmVhMC0yMDk0LTRmODgtYTY2MC1mNzViZmQ0NDVjNDUucG5n" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/NDEBNJER.pdf"><img src="https://assets.dio.me/DSTU_-zep4rU4JceDp5Bsc62O7pD65ise53xYO9cJm4/f:webp/h:120/q:80/L3RyYWNrcy9lY2EwMjEzMS1lYjZiLTQ2ZWQtOWEyOC1mNmVlNTk3YWVhNTYucG5n" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/LE7E3NMC.pdf"><img src="https://assets.dio.me/N3ET28fsUKPyJZb6mh6vdqhVziWjbk3xPNlE_velBWs/f:webp/h:120/q:80/L3RyYWNrcy85NzIyOTdkYy00MzU3LTRhZjQtYWJlYS04OWEzODg1M2E5NDkucG5n" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/VWENIMGL.pdf"><img src="https://assets.dio.me/IZFwGHO3xaT7_edB13S-swDxAb_oHUYPGzyAHuAEeew/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvN2VmMjRlYjctNGFmNy00NWQ2LWI0Y2YtOGM4ODhhMWE2ZDgwLnBuZw" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/NB2YX8BJ.pdf"><img src="https://assets.dio.me/_xj0-kAHVWo6J-EmDQQKNyjVEMB0a4f5srXrzxHoj_w/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvOTAxZmFhZWYtMTE1MS00MWE2LTg3NWUtM2JlN2QwMjBmNzA2LnBuZw" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/MDSDLCPI.pdf"><img src="https://assets.dio.me/rxyKbq0KWMaVYiJP_8Etfi0wac-blkSEi_g74BBAp4M/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvZDE1ZmU4YzYtZTg5OC00ZjllLTgxOWUtYTNkZTU1MzMxMDk2LnBuZw" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/3EU02QOP.pdf"><img src="https://assets.dio.me/FHX59vC4u9ByCKVz1IJK-oMl65LfL8TENe14fLdmV-o/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNTQxNGE0ZmUtMTM2Ny00ODk0LWFmZGQtOTVlM2JkMWQ0YTUxLnBuZw" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/UUBJ5OUS.pdf"><img src="https://assets.dio.me/iA6Q1Vin_WRYRaRxh4OsrF0jVnjWd0RC0yjMrYvMrQM/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNjA1NzliMGYtMDM5YS00NmI4LTg2YjYtMjE3ZGU1ZGU4OWFjLnBuZw" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/B94K2NI8.pdf"><img src="https://assets.dio.me/L2Lk8puSQIFoySTrBB582IWoZ-xlY9KdK_9ncHx-Onk/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvYTgzZjNlMDMtZWQwNi00OThmLWI4ZjktZGQ2NjNlOTRiYjc5LnBuZw" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/DMX9UZ6S.pdf"><img src="https://assets.dio.me/kyM2lTKV1pkxFDtV4gAZ0Ub703CGFfXopKX64pUvpaI/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvZmE2ZjJmYzktMDk3YS00Y2U3LTgxODEtNjBmNGRmYzZkZGI3LnBuZw" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/FOCVETHW.pdf"><img src="https://assets.dio.me/u6Ybb3oH8W5AHaJS_VGQ5SRwiXGXXF3eloJOkaC8knU/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvOTM0Yjk3NmYtZTEwMi00NzNlLTg3MWYtOWVhNWYxZGY4NzZlLnBuZw" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/WTYKAEUX.pdf"><img src="https://assets.dio.me/x84deVbyyXPy2Qv6Ug4uuQnB0tRIBOyfiPJQe9jKNrc/f:webp/h:120/q:80/L3RyYWNrcy84MDUyZGIxYi1mNDM0LTQ5ODAtOGJiYi05ZjdkYWE3MjViOGQucG5n" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/SVTACDD1.pdf"><img src="https://assets.dio.me/xEToxE9fgWwdB62arhyfnUPNNK42xbqSOzHNRpWtDxk/f:webp/h:120/q:80/L3RyYWNrcy8wYTY1YmE2MS1hOGZhLTQ2ZDktODhhYS1kYmViYjAyOTU4M2UucG5n" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/BZ9TAMEY.pdf"><img src="https://assets.dio.me/8O4Ov__246yP1m1GMFj94m2LxxG3lPwaLMlIdRMDzdE/f:webp/h:120/q:80/L3RyYWNrcy8yNjExMzViOS02N2M5LTQ0MjktYWQyZC00MThjMTFmMWMzNGYucG5n" height="50"></a>
-          <a href="https://www.credly.com/badges/dd770403-b985-4b9a-ad14-711dce728c97/public_url"><img src="https://images.credly.com/size/110x110/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/SSQ4FSPO.pdf"><img src="https://hermes.dio.me/tracks/e0b4ad51-a4c7-4e61-a683-c04f6d376e9c.png" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/SHYYQMRK.pdf"><img src="https://hermes.dio.me/tracks/4deb40de-7fb6-4229-a6a5-97185381d577.png" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/53OXVZRG.pdf"><img src="https://hermes.dio.me/tracks/5d55a4ec-ef34-4222-830f-18dea83ba393.png" height="50"></a>
-          <a href="https://hermes.dio.me/certificates/APNBUNKW.pdf"><img src="https://hermes.dio.me/tracks/a736ef42-0d2f-4079-adb4-25c55c85ba2b.png" height="50"></a>
-          <a href="https://www.dio.me/certificate/7VRG2NTW/share"><img src="https://hermes.dio.me/tracks/0cb208b8-6bf4-454b-9b12-9e9418ad0356.png" height="50"></a>
-          <a href="https://www.dio.me/certificate/GUZQESX3/share"><img src="https://hermes.dio.me/tracks/84b2d685-23f9-4729-9e3c-28cb84a39b38.png" height="50"></a>
-          <a href="https://www.dio.me/certificate/J7LMDVM4/share"><img src="https://hermes.dio.me/tracks/648ef080-6c4b-4e54-bf72-34f62030f350.png" height="50"></a>
-          <a href="https://web.dio.me/track/8f3056da-5877-40e1-bd15-de9ae4d9885d?tab=path"><img src="https://hermes.dio.me/tracks/02ee8de6-37e2-4be7-872d-0d7d94910cae.png" height="50"></a>
-          <a href="https://www.dio.me/certificate/0HBJXLUF/share"><img src="https://hermes.dio.me/tracks/1fd7a7da-ba42-417c-a4de-2f0c2f0622b6.png" height="50"></a>
-          <a href="https://web.dio.me/track/bootcamp-squadio"><img src="https://hermes.dio.me/tracks/0136518c-68d6-4198-bdbe-6d982c3a1261.png" height="50"></a>
-          <a href="https://web.dio.me/track/microsoft-azure-ai-fundamentals"><img src="https://hermes.dio.me/tracks/4d998d5c-36c1-497b-8da0-8db465c820eb.png" height="50"></a>
-          <a href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/SixSigmaYellowBelt-CarlosHenriqueGarciaSoares-884912.pdf"><img src="https://micheletaverna.info/wp-content/uploads/2021/09/ssyb-six-sigma-yellow-belt-281x300.webp" height="50"></a>
-          <a href="https://cursos.alura.com.br/formacao-logica-de-programacao-turma-6-oracle-one"><img src="https://raw.githubusercontent.com/patrickwebsdev/Encriptador-Oracle-Alura/master/img/one.png" height="40"></a>
-          <a href="https://web.dio.me/track/b9ac7102-6e15-42c4-9081-c8b869e7b04a?tab=path"><img src="https://hermes.dio.me/tracks/b092559f-ec20-4401-83e5-d98b6278b7b1.png" height="50"></a>
-          <a href="https://web.dio.me/track/decola-tech-avanade-net-developer?tab=path"><img src="https://hermes.dio.me/tracks/6bb40420-5f89-4902-8df7-3399674d9d84.png" height="50"></a>
-          <a href="https://web.dio.me/track/potencia-tech-ifood-desenvolvimento-de-jogos?tab=path"><img src="https://hermes.dio.me/tracks/83f8150a-6429-4c1a-9207-d5bff610f647.png" height="50"></a>
-          <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1004566"><img src="https://www.scrumstudy.com/Scrum-Images/brand-logo/badge-SFC.png" height="50"></a>
-          <a href="https://www.credly.com/badges/92330b0c-f085-4930-88a6-c47abfa33459/public_url"><img src="https://images.credly.com/size/340x340/images/771cff46-3573-4d12-bfd8-528745f00957/GCC_badge_PGM_1000x1000.png" height="50"></a>
-          <a href="https://web.dio.me/track/bootcamp-wex-desenvolvimento-net-e-qa"><img src="https://hermes.dio.me/tracks/bad97784-9de1-469b-9409-80343b69b50b.png" height="50"></a>
-          <a href="https://web.dio.me/track/potencia-tech-powered-ifood-ciencias-de-dados-com-python"><img src="https://hermes.dio.me/tracks/f5dba255-da18-427a-a02a-ca11a339c1cd.png" height="50"></a>
-          <a href="https://web.dio.me/track/santander-bootcamp-2023-ciencia-de-dados-com-python"><img src="https://hermes.dio.me/tracks/03253ff0-95b9-4904-84e7-2063e9d6cb26.png" height="50"></a>
-          <a href="https://web.dio.me/track/bootcamp-tqi-kotlin"><img src="https://hermes.dio.me/tracks/4c796cee-bef5-4048-8fbe-260527c11f45.png" height="50"></a>
-          <a href="https://web.dio.me/track/orange-tech-backend"><img src="https://hermes.dio.me/tracks/5443980d-31cb-4a9f-8dbd-065773810c04.png" height="50"></a>
-          <a href="https://web.dio.me/track/kotlin-experience"><img src="https://hermes.dio.me/tracks/041777d8-a929-4126-a914-08e69ed3f731.png" height="50"></a>
-          <a href="https://web.dio.me/track/trainee-grupo-carrefour-brasil-lideranca-negra"><img src="https://hermes.dio.me/tracks/12da0c17-5b91-4e81-b6e9-92e3ee3b83f6.png" height="50"></a>
-          <a href="https://web.dio.me/track/pottencial-net-developer"><img src="https://hermes.dio.me/tracks/9a1e80de-6b42-4f59-97be-15e1493aa96f.png" height="50"></a>
-          <a href="https://web.dio.me/track/formacao-dotnet-developer"><img src="https://hermes.dio.me/tracks/169e3d0f-263a-4efb-86c5-244bdf1ce8d6.png" height="50"></a>
+          <a href="https://hermes.dio.me/certificates/HEUX8BON.pdf"><img src="https://assets.dio.me/uE_GG1uuhcWALEVe5dQRLl5BSovzlYHug3m7zoShiAQ/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNTc4YzBhYmMtY2VhYS00ODk1LTg3NTItM2E3ODE0NWQ2ZGNlLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/M0EOJ8IG.pdf"><img src="https://assets.dio.me/90yVOp7AKLkff3B7pjTeHNnWte--AoAW5tYu42DKOTw/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvODJmNWI4YTQtMjYxNS00NGJiLWEyYzctN2U1NmU4YzRiMmM2LnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/218JIDGI.pdf"><img src="https://assets.dio.me/94UFtgabgVoxzmb2R7HDUXH3HXZKCRzgrOlrqL0-7lY/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvZjRjYTVjYmMtMTIyMC00ZGY3LWI5YjUtMDk0MmQzMDExOGExLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/XP2ZNU10.pdf"><img src="https://assets.dio.me/IeEuXP8J4jx7Pf6czAvuvQ0josS2B6iAQG_tqMYkbbE/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvMTI2MjIyOTQtODU5Zi00MDU3LTgxNWUtYmE0NTM4NmRlNTZhLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/NWSRFEVF.pdf"><img src="https://assets.dio.me/UhhZ_70STvHrgeRtPEXu6Qjz8FXY4Pm5xB4_2nDAEB0/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvMDljZjNmMDgtMDRjNC00MzFhLThhNTQtMzdlZDVmNDRjYTk2LnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/N2P3HT6G.pdf"><img src="https://assets.dio.me/Qltudbj67Pk5X65uSbgi4kZ3uBKQ_EX1_PRRyhs5c8Y/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvYjEwZDExM2ItMjIzNS00YTc5LWEzNGQtYjE4MmQ3NTI3MWZhLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/1TTJRJMR.pdf"><img src="https://assets.dio.me/bYmLieBRSBhgW5_7gGTMhALmof0va49CEFhD9iMSv3o/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvOTFiNWY3NzktNWJkYy00YzgwLWJkNWUtYjNjMzczOThlYWQ0LnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/V2FZ7ZDB.pdf"><img src="https://assets.dio.me/05lp_QMscnXbwqDy0YKZt4Mg1MDB3UE63LK9JQabPSc/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvZDYzOTViNWQtNjdjOC00ZjhmLTljOGEtYzg2YjcyYjE4MjdhLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/SGESUAXX.pdf"><img src="https://assets.dio.me/PLhLlL0UBjln8UIkXMJxvhDslnCEG2Lp63tHK4uMDr8/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNTU4MGVjZGMtYmI4Zi00NWIwLWI5MjgtNTAxYjA3NDdmMjMxLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/CLSYSDQN.pdf"><img src="https://assets.dio.me/w_aw33GiCnqh4hlVcI3Ey9tAeh1Lm-wm9BMaVbwTyC4/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNzk4NzViZDgtMzA0Yy00YmJkLTlhMTMtODc3YmQxZDI2NDkyLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/EQVIXDY6.pdf"><img src="https://assets.dio.me/r2jBLXv9dGRnKkngouzdw44d3Mj7mLfTPx7LFVtkHKs/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvOGQ5OTQ5M2QtZWJlNC00OTFiLWEwNmMtZDIwMWIyMzAxMTI4LnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/ZO97S88N.pdf"><img src="https://assets.dio.me/F6QUpCT19KAT0xr9osG0ZwH5ox39nKa08i2t-ob-YF8/f:webp/h:120/q:80/L3RyYWNrcy8xMDIxYmVhMC0yMDk0LTRmODgtYTY2MC1mNzViZmQ0NDVjNDUucG5n" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/NDEBNJER.pdf"><img src="https://assets.dio.me/DSTU_-zep4rU4JceDp5Bsc62O7pD65ise53xYO9cJm4/f:webp/h:120/q:80/L3RyYWNrcy9lY2EwMjEzMS1lYjZiLTQ2ZWQtOWEyOC1mNmVlNTk3YWVhNTYucG5n" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/LE7E3NMC.pdf"><img src="https://assets.dio.me/N3ET28fsUKPyJZb6mh6vdqhVziWjbk3xPNlE_velBWs/f:webp/h:120/q:80/L3RyYWNrcy85NzIyOTdkYy00MzU3LTRhZjQtYWJlYS04OWEzODg1M2E5NDkucG5n" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/VWENIMGL.pdf"><img src="https://assets.dio.me/IZFwGHO3xaT7_edB13S-swDxAb_oHUYPGzyAHuAEeew/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvN2VmMjRlYjctNGFmNy00NWQ2LWI0Y2YtOGM4ODhhMWE2ZDgwLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/NB2YX8BJ.pdf"><img src="https://assets.dio.me/_xj0-kAHVWo6J-EmDQQKNyjVEMB0a4f5srXrzxHoj_w/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvOTAxZmFhZWYtMTE1MS00MWE2LTg3NWUtM2JlN2QwMjBmNzA2LnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/MDSDLCPI.pdf"><img src="https://assets.dio.me/rxyKbq0KWMaVYiJP_8Etfi0wac-blkSEi_g74BBAp4M/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvZDE1ZmU4YzYtZTg5OC00ZjllLTgxOWUtYTNkZTU1MzMxMDk2LnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/3EU02QOP.pdf"><img src="https://assets.dio.me/FHX59vC4u9ByCKVz1IJK-oMl65LfL8TENe14fLdmV-o/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNTQxNGE0ZmUtMTM2Ny00ODk0LWFmZGQtOTVlM2JkMWQ0YTUxLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/UUBJ5OUS.pdf"><img src="https://assets.dio.me/iA6Q1Vin_WRYRaRxh4OsrF0jVnjWd0RC0yjMrYvMrQM/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvNjA1NzliMGYtMDM5YS00NmI4LTg2YjYtMjE3ZGU1ZGU4OWFjLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/B94K2NI8.pdf"><img src="https://assets.dio.me/L2Lk8puSQIFoySTrBB582IWoZ-xlY9KdK_9ncHx-Onk/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvYTgzZjNlMDMtZWQwNi00OThmLWI4ZjktZGQ2NjNlOTRiYjc5LnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/DMX9UZ6S.pdf"><img src="https://assets.dio.me/kyM2lTKV1pkxFDtV4gAZ0Ub703CGFfXopKX64pUvpaI/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvZmE2ZjJmYzktMDk3YS00Y2U3LTgxODEtNjBmNGRmYzZkZGI3LnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/FOCVETHW.pdf"><img src="https://assets.dio.me/u6Ybb3oH8W5AHaJS_VGQ5SRwiXGXXF3eloJOkaC8knU/f:webp/h:413/q:80/w:413/L3JhbmtpbmcvOTM0Yjk3NmYtZTEwMi00NzNlLTg3MWYtOWVhNWYxZGY4NzZlLnBuZw" alt="Badge DIO Bootcamp" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/WTYKAEUX.pdf"><img src="https://assets.dio.me/x84deVbyyXPy2Qv6Ug4uuQnB0tRIBOyfiPJQe9jKNrc/f:webp/h:120/q:80/L3RyYWNrcy84MDUyZGIxYi1mNDM0LTQ5ODAtOGJiYi05ZjdkYWE3MjViOGQucG5n" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/SVTACDD1.pdf"><img src="https://assets.dio.me/xEToxE9fgWwdB62arhyfnUPNNK42xbqSOzHNRpWtDxk/f:webp/h:120/q:80/L3RyYWNrcy8wYTY1YmE2MS1hOGZhLTQ2ZDktODhhYS1kYmViYjAyOTU4M2UucG5n" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/BZ9TAMEY.pdf"><img src="https://assets.dio.me/8O4Ov__246yP1m1GMFj94m2LxxG3lPwaLMlIdRMDzdE/f:webp/h:120/q:80/L3RyYWNrcy8yNjExMzViOS02N2M5LTQ0MjktYWQyZC00MThjMTFmMWMzNGYucG5n" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://www.credly.com/badges/dd770403-b985-4b9a-ad14-711dce728c97/public_url"><img src="https://images.credly.com/size/110x110/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png" alt="Credly Badge" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/SSQ4FSPO.pdf"><img src="https://hermes.dio.me/tracks/e0b4ad51-a4c7-4e61-a683-c04f6d376e9c.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/SHYYQMRK.pdf"><img src="https://hermes.dio.me/tracks/4deb40de-7fb6-4229-a6a5-97185381d577.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/53OXVZRG.pdf"><img src="https://hermes.dio.me/tracks/5d55a4ec-ef34-4222-830f-18dea83ba393.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://hermes.dio.me/certificates/APNBUNKW.pdf"><img src="https://hermes.dio.me/tracks/a736ef42-0d2f-4079-adb4-25c55c85ba2b.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://www.dio.me/certificate/7VRG2NTW/share"><img src="https://hermes.dio.me/tracks/0cb208b8-6bf4-454b-9b12-9e9418ad0356.png" alt="Badge DIO Certificate" height="50" loading="lazy"></a>
+          <a href="https://www.dio.me/certificate/GUZQESX3/share"><img src="https://hermes.dio.me/tracks/84b2d685-23f9-4729-9e3c-28cb84a39b38.png" alt="Badge DIO Certificate" height="50" loading="lazy"></a>
+          <a href="https://www.dio.me/certificate/J7LMDVM4/share"><img src="https://hermes.dio.me/tracks/648ef080-6c4b-4e54-bf72-34f62030f350.png" alt="Badge DIO Certificate" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/8f3056da-5877-40e1-bd15-de9ae4d9885d?tab=path"><img src="https://hermes.dio.me/tracks/02ee8de6-37e2-4be7-872d-0d7d94910cae.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://www.dio.me/certificate/0HBJXLUF/share"><img src="https://hermes.dio.me/tracks/1fd7a7da-ba42-417c-a4de-2f0c2f0622b6.png" alt="Badge DIO Certificate" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/bootcamp-squadio"><img src="https://hermes.dio.me/tracks/0136518c-68d6-4198-bdbe-6d982c3a1261.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/microsoft-azure-ai-fundamentals"><img src="https://hermes.dio.me/tracks/4d998d5c-36c1-497b-8da0-8db465c820eb.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/SixSigmaYellowBelt-CarlosHenriqueGarciaSoares-884912.pdf"><img src="https://micheletaverna.info/wp-content/uploads/2021/09/ssyb-six-sigma-yellow-belt-281x300.webp" alt="Six Sigma Yellow Belt" height="50" loading="lazy"></a>
+          <a href="https://cursos.alura.com.br/formacao-logica-de-programacao-turma-6-oracle-one"><img src="https://raw.githubusercontent.com/patrickwebsdev/Encriptador-Oracle-Alura/master/img/one.png" alt="Oracle ONE Badge" height="40" loading="lazy"></a>
+          <a href="https://web.dio.me/track/b9ac7102-6e15-42c4-9081-c8b869e7b04a?tab=path"><img src="https://hermes.dio.me/tracks/b092559f-ec20-4401-83e5-d98b6278b7b1.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/decola-tech-avanade-net-developer?tab=path"><img src="https://hermes.dio.me/tracks/6bb40420-5f89-4902-8df7-3399674d9d84.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/potencia-tech-ifood-desenvolvimento-de-jogos?tab=path"><img src="https://hermes.dio.me/tracks/83f8150a-6429-4c1a-9207-d5bff610f647.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1004566"><img src="https://www.scrumstudy.com/Scrum-Images/brand-logo/badge-SFC.png" alt="Scrum Fundamentals Certified" height="50" loading="lazy"></a>
+          <a href="https://www.credly.com/badges/92330b0c-f085-4930-88a6-c47abfa33459/public_url"><img src="https://images.credly.com/size/340x340/images/771cff46-3573-4d12-bfd8-528745f00957/GCC_badge_PGM_1000x1000.png" alt="Google Cloud Badge" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/bootcamp-wex-desenvolvimento-net-e-qa"><img src="https://hermes.dio.me/tracks/bad97784-9de1-469b-9409-80343b69b50b.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/potencia-tech-powered-ifood-ciencias-de-dados-com-python"><img src="https://hermes.dio.me/tracks/f5dba255-da18-427a-a02a-ca11a339c1cd.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/santander-bootcamp-2023-ciencia-de-dados-com-python"><img src="https://hermes.dio.me/tracks/03253ff0-95b9-4904-84e7-2063e9d6cb26.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/bootcamp-tqi-kotlin"><img src="https://hermes.dio.me/tracks/4c796cee-bef5-4048-8fbe-260527c11f45.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/orange-tech-backend"><img src="https://hermes.dio.me/tracks/5443980d-31cb-4a9f-8dbd-065773810c04.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/kotlin-experience"><img src="https://hermes.dio.me/tracks/041777d8-a929-4126-a914-08e69ed3f731.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/trainee-grupo-carrefour-brasil-lideranca-negra"><img src="https://hermes.dio.me/tracks/12da0c17-5b91-4e81-b6e9-92e3ee3b83f6.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/pottencial-net-developer"><img src="https://hermes.dio.me/tracks/9a1e80de-6b42-4f59-97be-15e1493aa96f.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
+          <a href="https://web.dio.me/track/formacao-dotnet-developer"><img src="https://hermes.dio.me/tracks/169e3d0f-263a-4efb-86c5-244bdf1ce8d6.png" alt="Badge DIO Track" height="50" loading="lazy"></a>
           <br>
         </figure>
       </section>
-      <figure class="galeria1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
-        <a href="https://univesp.br/"><img src="./assets/images/Univesp.png" height="45"></a>
-        <a href="https://escolatecnicafat.org.br/"><img src="./assets/images/Fat.png" height="45"></a>
-        <a href="https://www.dio.me/"><img src="https://hermes.dio.me/companies/a169bb67-5f72-4289-9778-fcea58dfa19a.png" height=45"></a>
-        <a href="https://learn.microsoft.com/pt-br/training/"><img src="https://thetechnologytheciolifeandme.files.wordpress.com/2023/07/microsoftlearning.png" height="45"></a>
-        <a href="https://www.santanderopenacademy.com/en/index.html?utm_source=web&utm_medium=referral&utm_campaign=LP_universidades"><img src="https://bytefurado.com.br/wp-content/uploads/2024/01/FA_SAN_OPEN-20ACADEMY_HV_POS_RGB_compress.png" height="65"></a>
-        <a href="https://www.ev.org.br/"><img src="https://play-lh.googleusercontent.com/9Al62xiIgm1hglfBiK8ebNwGjgQuLSBYKA2GsGaVdaBzIbasznD-jBHOMQqnP785vA=w240-h480-rw" height="45"></a>
-        <a href="https://www.alura.com.br/"><img src="https://www.alura.com.br/assets/img/home/alura-logo.1709759817.svg" height="35"></a>
-        <a href="https://ada.tech/"><img src="https://ada-site-frontend.s3.sa-east-1.amazonaws.com/home/header-logo.svg" height="35"></a>
-        <a href="https://potenciatech.com.br/"><img src="https://assets.toolzz.com.br/25202234/logo-instituicao/e8d5d0ca4cec7f9703744a3b4a479b99.png" height="45"></a>
+      <figure class="galeria1">
+        <a href="https://univesp.br/"><img src="./assets/images/Univesp.png" height="45" alt="Univesp" loading="lazy"></a>
+        <a href="https://escolatecnicafat.org.br/"><img src="./assets/images/Fat.png" height="45" alt="FAT" loading="lazy"></a>
+        <a href="https://www.dio.me/"><img src="https://hermes.dio.me/companies/a169bb67-5f72-4289-9778-fcea58dfa19a.png" alt="DIO" height="45" loading="lazy"></a>
+        <a href="https://learn.microsoft.com/pt-br/training/"><img src="https://thetechnologytheciolifeandme.files.wordpress.com/2023/07/microsoftlearning.png" alt="Microsoft Learn" height="45" loading="lazy"></a>
+        <a href="https://www.santanderopenacademy.com/en/index.html?utm_source=web&utm_medium=referral&utm_campaign=LP_universidades"><img src="https://bytefurado.com.br/wp-content/uploads/2024/01/FA_SAN_OPEN-20ACADEMY_HV_POS_RGB_compress.png" alt="Santander Open Academy" height="65" loading="lazy"></a>
+        <a href="https://www.ev.org.br/"><img src="https://play-lh.googleusercontent.com/9Al62xiIgm1hglfBiK8ebNwGjgQuLSBYKA2GsGaVdaBzIbasznD-jBHOMQqnP785vA=w240-h480-rw" alt="Escola Virtual" height="45" loading="lazy"></a>
+        <a href="https://www.alura.com.br/"><img src="https://www.alura.com.br/assets/img/home/alura-logo.1709759817.svg" alt="Alura" height="35" loading="lazy"></a>
+        <a href="https://ada.tech/"><img src="https://ada-site-frontend.s3.sa-east-1.amazonaws.com/home/header-logo.svg" alt="Ada Tech" height="35" loading="lazy"></a>
+        <a href="https://potenciatech.com.br/"><img src="https://assets.toolzz.com.br/25202234/logo-instituicao/e8d5d0ca4cec7f9703744a3b4a479b99.png" alt="Potência Tech" height="45" loading="lazy"></a>
         <a href="https://jornadadodev.com.br/"><img src="data:image/png;base64,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" height="45"></a>
         <a href="https://www.escolavirtual.gov.br/"><img src="data:image/png;base64,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" height="45"></a>
         <a href="https://ifrs.edu.br/ensino/ead/"><img src="data:image/png;base64,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" height="45"></a>
         <a href="https://ibsec.com.br/"><img src="https://ibsec.com.br/wp-content/uploads/2023/12/logo-small.webp" height="45"></a>
       </figure>
   </header>
-  <!-- Filtros de Cursos -->
-  <section id="filtros" aria-label="Filtros de cursos" data-aos="fade-up" data-aos-duration="800">
-    <div class="filters content">
-      <div class="filter-group">
-        <label for="filter-year">Ano</label>
-        <select id="filter-year" aria-label="Filtrar por ano">
-          <option value="">Todos</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label for="filter-type">Tipo</label>
-        <select id="filter-type" aria-label="Filtrar por tipo">
-          <option value="">Todos</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label for="filter-lang">Linguagem/Área</label>
-        <select id="filter-lang" aria-label="Filtrar por linguagem ou área">
-          <option value="">Todos</option>
-        </select>
-      </div>
-      <div class="filter-actions">
-        <button id="filter-clear" type="button" aria-label="Limpar filtros">Limpar</button>
-        <span id="filter-count" aria-live="polite"></span>
-      </div>
-    </div>
-  </section>
   <section id="certificados" data-aos="fade-up" data-aos-duration="1000">
+      <!-- Filtros de Cursos -->
+      <section id="filtros" aria-label="Filtros de cursos" data-aos="fade-up" data-aos-duration="800">
+        <div class="filters content">
+          <div class="filter-group">
+            <label for="filter-text">Nome</label>
+            <input id="filter-text" type="search" placeholder="Digite nome ou palavra-chave" aria-label="Filtrar por nome ou palavra-chave">
+          </div>
+          <div class="filter-group">
+            <label for="filter-year">Ano</label>
+            <select id="filter-year" aria-label="Filtrar por ano">
+              <option value="">Todos</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-type">Tipo</label>
+            <select id="filter-type" aria-label="Filtrar por tipo">
+              <option value="">Todos</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-lang">Linguagem/Área</label>
+            <select id="filter-lang" aria-label="Filtrar por linguagem ou área">
+              <option value="">Todos</option>
+            </select>
+          </div>
+          <div class="filter-actions">
+            <button id="filter-clear" type="button" aria-label="Limpar filtros">Limpar</button>
+            <span id="filter-count" aria-live="polite"></span>
+          </div>
+        </div>
+      </section>
       <div class="column">
         <h2>Cursos Tecnologia</h2>
         <ol>
@@ -281,11 +294,54 @@
         </ol>
       </div>
   </section>
-  <footer role="contentinfo">
-    <img class="logo footer-logo" src="assets/images/logo.png" title="Logotipo CGS" alt="Logotipo Carlos-CGS">
-    <p>Vamos Disseminar os Conhecimentos e Transbordar Tudo o que Aprendemos!</p>
-    <div class="footer-info">
-      <p>&copy; <span id="year">2024</span> - 2026 <span class="brand">Carlos-CGS</span>. Todos os direitos reservados.</p>
+  
+  <footer role="contentinfo" class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/images/logo.png" title="Logotipo CGS" alt="Logotipo Carlos-CGS">
+        <p class="footer-slogan">Transformando ideias em código</p>
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#meus_jogos">Jogos</a></li>
+            <li><a href="index.html#projetos">Projetos</a></li>
+            <li><a href="cursos.html">Cursos e Certificações</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="mailto:garcia.mar.mil@gmail.com">Email</a></li>
+            <li><a href="https://github.com/Carlos-CGS" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Redes Sociais</h3>
+          <div class="footer-social">
+            <a href="https://github.com/Carlos-CGS" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="./assets/images/github.png" alt="GitHub" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="./assets/images/linkedin.png" alt="LinkedIn" height="30">
+            </a>
+            <a href="mailto:garcia.mar.mil@gmail.com" aria-label="Email">
+              <img src="./assets/images/email.png" alt="Email" height="30">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2024</span> - 2026 <span class="brand">Carlos-CGS</span>. Todos os direitos reservados.</p>
+      </div>
     </div>
   </footer>
   <div class="btn-home" onclick="scrollToTop()">
@@ -307,7 +363,6 @@
       }
     };
   </script>
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
   <script defer>
     window.addEventListener('load', function() {
@@ -323,9 +378,9 @@
     });
     });
   </script>
-  <script src="./assets/JavaScript/script.js" defer></script>
+  <script src="./assets/javascript/script.js" defer></script>
   <!-- Script específico de filtros para a página de cursos -->
-  <script src="assets/JavaScript/cursos-filter.js" defer></script>
+  <script src="assets/javascript/cursos-filter.js" defer></script>
 </body>
 </html>
 
