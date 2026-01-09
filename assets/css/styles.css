@@ -653,6 +653,17 @@ footer .brand {
 }
 
 @media (max-width: 700px) {
+  header {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  header.banner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
   .container {
     width: 95vw;
     height: auto;
