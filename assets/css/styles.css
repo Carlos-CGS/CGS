@@ -285,10 +285,9 @@ header.banner:not(:has(.banner-content)) {
   height: 16.25rem;
   width: 16.25rem;
   margin: auto;
-  border-radius: 50%;
   padding: 1rem;
   margin-bottom: 1rem;
-  clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
   animation: floatY 6s ease-in-out infinite;
 }
 
@@ -298,7 +297,7 @@ header.banner:not(:has(.banner-content)) {
   height: 100%;
   object-fit: contain;
   filter: drop-shadow(0 0 10px color-mix(in oklab, var(--gold) 55%, var(--primary) 35%, transparent)) brightness(1.05);
-  clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
 }
 
 @keyframes floatY {
@@ -666,7 +665,7 @@ footer .brand {
     font-size: 20%;
     overflow-y: hidden;
     background-attachment: scroll;
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
   }
 
   .banner .logo {
