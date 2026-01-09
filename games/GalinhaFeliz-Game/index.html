@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galinha Feliz - clique na galinha para pontuar antes do tempo acabar.">
+    <title>Galinha Feliz - CGS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/main.css">
+</head>
+<body>
+    <main class="container" id="container">
+        <div class="menu">
+            <div class="imgTitulo">
+                <div class="botao-sair">
+                    <a href="../../index.html"><img src="./src/imagem/sair.png" alt="Botão de retorno à página principal" height="50px"/></a>
+                </div>
+                <p>Jogo da Galinha Feliz</p>
+            </div>
+            <div class="info">
+                <p>Pontos: <span id="score" aria-live="polite">0</span></p>
+                <p>Tempo: <span id="time-left" aria-live="polite">30</span></p>
+            </div>
+        </div>
+        
+        <div class="panel">
+            <div class="square" id="0"></div>
+            <div class="square" id="1"></div>
+            <div class="square" id="2"></div>
+            <div class="square" id="3"></div>
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
+            <div class="square" id="6"></div>
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
+            <div class="square" id="9"></div>
+            <div class="square" id="10"></div>
+            <div class="square" id="11"></div>
+            <div class="square" id="12"></div>
+            <div class="square" id="13"></div>
+            <div class="square" id="14"></div>
+            <div class="square" id="15"></div>
+            <div class="square" id="16"></div>
+            <div class="square" id="17"></div>
+            <div class="square" id="18"></div>
+            <div class="square" id="19"></div>
+            <div class="square" id="20"></div>
+            <div class="square" id="21"></div>
+            <div class="square" id="22"></div>
+            <div class="square" id="23"></div>
+            <div class="square" id="24"></div>
+            <div class="square" id="25"></div>
+            <div class="square" id="26"></div>
+            <div class="square" id="27"></div>
+            <div class="square" id="28"></div>
+            <div class="square" id="29"></div>
+            <div class="square" id="30"></div>
+            <div class="square" id="31"></div>
+            <div class="square" id="32"></div>
+            <div class="square" id="33"></div>
+            <div class="square" id="34"></div>
+            <div class="square" id="35"></div>
+            <div class="square" id="36"></div>
+            <div class="square" id="37"></div>
+            <div class="square" id="38"></div>
+            <div class="square" id="39"></div>
+            <div class="square" id="40"></div>
+            <div class="square" id="41"></div>
+            <div class="square" id="42"></div>
+            <div class="square" id="43"></div>
+            <div class="square" id="44"></div>
+            <div class="square" id="45"></div>
+            <div class="square" id="46"></div>
+            <div class="square" id="47"></div>
+            <div class="square" id="48"></div>
+            <div class="square" id="49"></div>
+            <div class="square" id="50"></div>
+            <div class="square" id="51"></div>
+            <div class="square" id="52"></div>
+            <div class="square" id="53"></div>
+            <div class="square" id="54"></div>
+            <div class="square" id="55"></div>
+            <div class="square" id="56"></div>
+            <div class="square" id="57"></div>
+            <div class="square" id="58"></div>
+            <div class="square" id="59"></div>
+        </div>
+    </main>
+    <div id="mensagemVitoria" class="vitoria oculto" role="dialog" aria-live="assertive">
+        <p>Sua pontuação final é: <span id="finalScore"></span></p>
+        <button id="reiniciarJogo" class="btnReiniciar" type="button">Reiniciar</button>
+    </div>
+    <script src="./src/script/engine.js" defer></script>
+</body>
+</html>
