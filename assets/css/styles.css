@@ -660,17 +660,19 @@ footer .brand {
   }
 
   .banner {
-    margin-top: 2rem;
+    margin-top: 0;
     width: 100%;
     min-height: 100vh;
     font-size: 20%;
     overflow-y: hidden;
     background-attachment: scroll;
+    padding-top: 0.5rem;
   }
 
   .banner .logo {
-    height: 55%;
-    width: 55%;
+    height: 50%;
+    width: 50%;
+    margin-bottom: 0.5rem;
   }
 
   .banner-content {
