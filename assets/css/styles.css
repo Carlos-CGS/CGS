@@ -1324,6 +1324,10 @@ footer .brand {
 
 /* ====== Responsive Sobre Mim ====== */
 @media (max-width: 768px) {
+  #sobre {
+    padding: 1.2rem 2rem;
+  }
+  
   .container-sobre h2 {
     font-size: 2rem;
     margin-top: 0rem;
@@ -1331,6 +1335,7 @@ footer .brand {
   
   .sobre-text p {
     font-size: 0.85rem;
+    text-align: justify;
   }
 
   .logo{
