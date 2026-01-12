@@ -946,7 +946,7 @@ footer .brand {
 /* ====== Seção Sobre Mim ====== */
 #sobre {
   background: var(--surface);
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 4rem;
   border-radius: 1.25rem;
   margin: 2.5rem auto 4rem;
   max-width: 1200px;
@@ -980,6 +980,7 @@ footer .brand {
   line-height: 1.8;
   color: var(--text-soft);
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 .sobre-text strong {
