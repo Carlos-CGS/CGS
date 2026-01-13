@@ -233,16 +233,17 @@ const GameLogic = {
      * Manipula o clique em um quadrado
      */
     handleSquareClick(square) {
-        if (square.id === GameState.values.currentEnemyPosition) {
+        if (square.id === GameState.values.currentEnemyPosition && !square.classList.contains('clicada')) {
             // Acerto!
             GameState.values.currentScore += CONFIG.POINTS_PER_HIT;
             square.classList.add(CLASS_NAMES.EGG);
-            
+            square.classList.add('clicada'); // Marca como já clicada
             // Toca sons de pontuação
             AudioManager.play('poin');
             AudioManager.play('cocorico');
-            
             DOMManager.updateScore();
+            // Remove a marcação após um pequeno tempo para liberar para próxima rodada
+            setTimeout(() => square.classList.remove('clicada'), GameState.values.gameVelocity - 50);
         }
     },
     
@@ -378,6 +379,29 @@ function enableAudioOnFirstInteraction() {
 
 // ==================== INICIALIZAÇÃO ====================
 document.addEventListener('DOMContentLoaded', () => {
+    // Overlay de início
+    const overlay = document.getElementById('telaInicial');
+    const btnIniciar = document.getElementById('btnIniciarJogo');
+    if (overlay && btnIniciar) {
+        btnIniciar.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            GameState.values.userInteracted = true;
+            // Inicializa gerenciadores
+            DOMManager.initialize();
+            GameLogic.attachSquareListeners();
+            GameState.values.isGameRunning = true;
+            GameLogic.initialize();
+            // Garante que o botão de reinício funcione
+            const btnReiniciar = document.getElementById('reiniciarJogo');
+            if (btnReiniciar) {
+                btnReiniciar.addEventListener('click', () => {
+                    GameLogic.restart();
+                });
+            }
+        });
+        return; // Só inicia o jogo após clique
+    }
+    
     // Aguarda interação do usuário para permitir áudio
     document.addEventListener('click', enableAudioOnFirstInteraction);
     document.addEventListener('touchstart', enableAudioOnFirstInteraction);
