@@ -1,8 +1,55 @@
+/**
+ * Estilos do Jogo da Galinha Feliz
+ * Utiliza variáveis CSS para facilitar manutenção
+ */
+
+/* ==================== VARIÁVEIS CSS ==================== */
+:root {
+    /* Cores */
+    --color-primary: #49d3c7;
+    --color-primary-dark: #3ab5a8;
+    --color-text: #ffffff;
+    --color-button-bg: rgb(16, 14, 141);
+    --color-border: rgba(0, 0, 0, 0.1);
+    --color-border-light: rgba(0, 0, 0, 0.15);
+    
+    /* Espaçamento */
+    --spacing-xs: 5px;
+    --spacing-sm: 8px;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    
+    /* Tamanhos */
+    --menu-height-desktop: 80px;
+    --menu-height-tablet: 70px;
+    --menu-height-mobile: 65px;
+    --button-exit-size: 50px;
+    --button-exit-size-mobile: 35px;
+    
+    /* Tipografia */
+    --font-family: 'Comic Sans MS', sans-serif;
+    --font-size-title-desktop: 2rem;
+    --font-size-title-mobile: 1.1rem;
+    --font-size-info-desktop: 1.2rem;
+    --font-size-info-mobile: 0.9rem;
+    
+    /* Transições */
+    --transition-fast: 0.2s ease;
+}
+
+/* ==================== RESET E ESTILOS GLOBAIS ==================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Comic Sans MS', sans-serif;
+    font-family: var(--font-family);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -11,109 +58,210 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #49d3c7;
+    background: var(--color-primary);
+    overflow: hidden;
 }
 
+/* ==================== LAYOUT PRINCIPAL ==================== */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 95vh;
-    width: 95vw;
-    background: #49d3c7;
+    height: 100vh;
+    width: 100vw;
+    background: var(--color-primary);
     box-sizing: border-box;
+    overflow: hidden;
 }
 
+/* ==================== HEADER/MENU ==================== */
 .menu {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--menu-height-desktop);
     width: 100%;
-    background: #49d3c7;
-    color: #fff;
-    padding: 0 2rem; 
+    background: var(--color-primary);
+    color: var(--color-text);
+    padding: 0 var(--spacing-md);
+    flex-shrink: 0;
+}
+
+.botao-sair {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-sair a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .botao-sair img {
-    height: 50px; 
-    margin-right: 20rem; 
+    height: var(--button-exit-size);
+    width: auto;
+    transition: transform var(--transition-fast);
+}
+
+.botao-sair img:hover {
+    transform: scale(1.1);
+}
+
+.botao-sair img:active {
+    transform: scale(0.95);
 }
 
 .imgTitulo {
     display: flex;
-    font-size: 2rem; 
-    color: #fff; 
+    font-size: var(--font-size-title-desktop);
+    color: var(--color-text);
+    flex: 1;
+    justify-content: center;
     align-items: center;
 }
 
-.imgTitulo p {
-    justify-content: center;
-    align-items: center;
+.imgTitulo h1 {
+    margin: 0;
     text-align: center;
 }
- 
+
 .info {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    font-size: 1.2rem;
-    gap: 4rem;
+    justify-content: center;
+    font-size: var(--font-size-info-desktop);
+    gap: var(--spacing-lg);
+    flex-shrink: 0;
 }
 
-.panel {
+.info p {
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.label {
+    font-weight: 600;
+}
+
+/* ==================== ÁREA DE JOGO ==================== */
+.panel {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     justify-content: center;
     width: 100%;
+    height: calc(100vh - var(--menu-height-desktop));
+    gap: 0;
     flex-grow: 1;
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 .square {
-    height: 90px;
-    width: 90px;
-    border: 1px solid #49d3c7;
-    background-color: #49d3c7;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: var(--color-primary);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-fast);
+    user-select: none;
 }
 
-.enemy {
+.square:active {
+    background-color: var(--color-primary-dark);
+}
+
+.square.enemy {
     background-image: url("../imagem/galinha.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.ovo {
+.square.ovo {
     background-image: url("../imagem/ovo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+/* ==================== DIÁLOGO DE FIM DE JOGO ==================== */
 .vitoria {
     background-image: url("../imagem/backJogo.png");
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: fixed;
     top: 50%;
     left: 50%;
+    right: auto;
+    bottom: auto;
     transform: translate(-50%, -50%);
-    background-color: #ffffff;
-    padding: 40px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    gap: 20px;
-    text-align: center;
+    margin: 0;
     flex-direction: column;
     width: 50vw;
     height: 40vh;
-    font-size: 2rem;
+    padding: 40px var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    gap: var(--spacing-lg);
+    text-align: center;
+    border: 3px solid var(--color-primary);
+    padding-top: 24px;
+}
+
+.vitoria h2, .vitoria p {
+    align-self: center;
+}
+
+.vitoria h2 {
+    margin: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        -2px 0 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        0 2px 0 #000;
+}
+
+.vitoria p {
+    margin: 0;
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        -2px 0 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        0 2px 0 #000;
+}
+
+.vitoria strong {
+    color: var(--color-primary);
+    font-weight: 700;
 }
 
 .oculto {
@@ -121,62 +269,314 @@ body {
 }
 
 .btnReiniciar {
-    margin-top: 8rem;
+    margin-top: var(--spacing-xl);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.2rem;
+    margin-bottom: 0;
+    align-self: center;
 }
 
 #reiniciarJogo {
-    color: #49d3c7;
-    background-color: rgb(16, 14, 141);
-    border-radius: .5rem;
+    color: var(--color-primary);
+    background-color: var(--color-button-bg);
+    border: none;
+    border-radius: 0.5rem;
     width: 10rem;
     font-size: 1.5rem;
+    padding: var(--spacing-sm);
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+    font-weight: 600;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.2rem;
+    margin-bottom: 0;
+    align-self: center;
+    white-space: nowrap;
+    height: 2.5rem;
+    min-height: 2.5rem;
+    line-height: 2.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translateX(-50%);
+    margin: 0;
 }
 
-@media (max-width: 600px) {
+#reiniciarJogo:hover {
+    transform: scale(1.05);
+}
+
+#reiniciarJogo:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    #reiniciarJogo {
+        white-space: pre-line;
+        width: 6rem;
+        font-size: 0.9rem;
+        padding: 6px 0;
+    }
+}
+
+/* ==================== MEDIA QUERIES - TABLETS (1024px) ==================== */
+@media (max-width: 1024px) {
+    :root {
+        --menu-height-desktop: 70px;
+    }
+    
     .menu {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-        padding: 10px;
+        height: var(--menu-height-desktop);
     }
 
     .imgTitulo {
-        font-size: 1.2rem;
+        font-size: var(--font-size-title-mobile);
+    }
+
+    .botao-sair img {
+        height: 40px;
     }
 
     .info {
         font-size: 1rem;
+        gap: var(--spacing-md);
     }
 
     .panel {
+        height: calc(100vh - 70px);
+    }
+}
+
+/* ==================== MEDIA QUERIES - SMARTPHONES (768px) ==================== */
+@media (max-width: 768px) {
+    :root {
+        --menu-height-desktop: 65px;
+    }
+    
+    .container {
+        height: 100vh;
         width: 100vw;
-        height: calc(100vh - 1rem);
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(15, 1fr);
     }
 
-    .square {
-        height: calc(100vh / 15);
-        width: calc(100vh / 15);
+    .menu {
+        flex-direction: column;
+        height: auto;
+        min-height: var(--menu-height-desktop);
+        padding: var(--spacing-xs);
+        gap: var(--spacing-xs);
+        justify-content: center;
+        position: relative;
+    }
+
+    .botao-sair {
+        position: absolute;
+        top: var(--spacing-xs);
+        left: var(--spacing-xs);
+    }
+
+    .botao-sair img {
+        height: var(--button-exit-size-mobile);
+    }
+
+    .imgTitulo {
+        font-size: var(--font-size-title-mobile);
+        width: 100%;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .info {
+        font-size: var(--font-size-info-mobile);
+        gap: 1.5rem;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: var(--spacing-xs);
+    }
+
+    .panel {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        height: calc(100vh - 95px);
+        width: 100%;
+        gap: 0;
+    }
+
+    .square.enemy {
+        background-size: 70%;
+    }
+
+    .square.ovo {
+        background-size: 70%;
     }
 
     .vitoria {
-        width: 80vw;
-        height: 20vh;
+        width: 90vw;
+        height: 30vh;
+        font-size: 1.2rem;
+        padding: var(--spacing-lg) 15px;
+        top: 45%;
+        border: 3px solid var(--color-primary);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .vitoria h2 {
+        font-size: 1.5rem;
+    }
+
+    .vitoria p {
         font-size: 1rem;
     }
-    
+
     .btnReiniciar {
-        margin-top: 3rem;
+        margin-top: 1.5rem;
+    }
+
+    #reiniciarJogo {
+        width: 6rem;
+        font-size: 0.9rem;
+        padding: var(--spacing-xs) 12px;
+    }
+
+    .vitoria h2 {
+        margin-bottom: 0;
+    }
+
+    .vitoria p {
+        margin-top: -2rem;
+    }
+
+    .btnReiniciar, #reiniciarJogo {
+        margin-top: 1.2rem;
+        margin-bottom: 0;
+    }
+}
+
+/* ==================== MEDIA QUERIES - SMARTPHONES PEQUENOS (480px) ==================== */
+@media (max-width: 480px) {
+    :root {
+        --menu-height-desktop: 60px;
+    }
+    
+    .container {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .menu {
+        min-height: var(--menu-height-desktop);
+    }
+
+    .imgTitulo {
+        font-size: 0.95rem;
+    }
+
+    .botao-sair img {
+        height: 30px;
+    }
+
+    .info {
+        font-size: 0.8rem;
+        gap: 1.2rem;
+    }
+
+    .panel {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        height: calc(100vh - 85px);
+        gap: 0;
+    }
+
+    .vitoria {
+        width: 95vw;
+        height: 35vh;
+        font-size: 1rem;
+        padding: 15px 10px;
+        top: 45%;
+        border: 3px solid var(--color-primary);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     }
 
     #reiniciarJogo {
         width: 5rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .btnReiniciar {
+        margin-top: 1rem;
+    }
+}
+
+/* ==================== MEDIA QUERIES - ULTRA-PEQUENOS (<380px) ==================== */
+@media (max-width: 380px) {
+    :root {
+        --menu-height-desktop: 55px;
+    }
+    
+    .menu {
+        min-height: var(--menu-height-desktop);
+        padding: var(--spacing-xs);
+        gap: var(--spacing-xs);
+    }
+
+    .imgTitulo {
+        font-size: 0.85rem;
     }
 
     .botao-sair img {
-        margin-right: 2rem; 
+        height: 28px;
+    }
+
+    .info {
+        font-size: 0.75rem;
+        gap: 1rem;
+    }
+
+    .panel {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        height: calc(100vh - 80px);
+        gap: 0;
+    }
+
+    .vitoria {
+        width: 98vw;
+        height: 40vh;
+        font-size: 0.9rem;
+        padding: 12px 8px;
+    }
+
+    #reiniciarJogo {
+        width: 4.5rem;
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+}
+
+/* ==================== ACESSIBILIDADE ==================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .vitoria {
+        background-color: #1a1a1a;
+        color: var(--color-text);
+    }
+    
+    .vitoria h2,
+    .vitoria p {
+        color: var(--color-text);
     }
 }

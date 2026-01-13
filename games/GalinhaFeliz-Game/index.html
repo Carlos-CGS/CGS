@@ -2,8 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Galinha Feliz - clique na galinha para pontuar antes do tempo acabar.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Galinha Feliz - clique nas galinhas para pontuar antes do tempo acabar.">
+    <meta name="theme-color" content="#49d3c7">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Galinha Feliz - CGS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,86 +16,94 @@
 </head>
 <body>
     <main class="container" id="container">
-        <div class="menu">
-            <div class="imgTitulo">
-                <div class="botao-sair">
-                    <a href="../../index.html"><img src="./src/imagem/sair.png" alt="Botão de retorno à página principal" height="50px"/></a>
-                </div>
-                <p>Jogo da Galinha Feliz</p>
+        <!-- Cabeçalho do Jogo -->
+        <header class="menu" role="banner">
+            <nav class="botao-sair" aria-label="Navegação">
+                <a href="../../index.html" title="Retornar à página principal">
+                    <img src="./src/imagem/sair.png" alt="Botão de retorno à página principal"/>
+                </a>
+            </nav>
+            
+            <h1 class="imgTitulo">Jogo da Galinha Feliz</h1>
+            
+            <div class="info" aria-live="polite" aria-atomic="true">
+                <p><span class="label">Pontos:</span> <span id="score">0</span></p>
+                <p><span class="label">Tempo:</span> <span id="time-left">30</span>s</p>
             </div>
-            <div class="info">
-                <p>Pontos: <span id="score" aria-live="polite">0</span></p>
-                <p>Tempo: <span id="time-left" aria-live="polite">30</span></p>
-            </div>
-        </div>
+        </header>
         
-        <div class="panel">
-            <div class="square" id="0"></div>
-            <div class="square" id="1"></div>
-            <div class="square" id="2"></div>
-            <div class="square" id="3"></div>
-            <div class="square" id="4"></div>
-            <div class="square" id="5"></div>
-            <div class="square" id="6"></div>
-            <div class="square" id="7"></div>
-            <div class="square" id="8"></div>
-            <div class="square" id="9"></div>
-            <div class="square" id="10"></div>
-            <div class="square" id="11"></div>
-            <div class="square" id="12"></div>
-            <div class="square" id="13"></div>
-            <div class="square" id="14"></div>
-            <div class="square" id="15"></div>
-            <div class="square" id="16"></div>
-            <div class="square" id="17"></div>
-            <div class="square" id="18"></div>
-            <div class="square" id="19"></div>
-            <div class="square" id="20"></div>
-            <div class="square" id="21"></div>
-            <div class="square" id="22"></div>
-            <div class="square" id="23"></div>
-            <div class="square" id="24"></div>
-            <div class="square" id="25"></div>
-            <div class="square" id="26"></div>
-            <div class="square" id="27"></div>
-            <div class="square" id="28"></div>
-            <div class="square" id="29"></div>
-            <div class="square" id="30"></div>
-            <div class="square" id="31"></div>
-            <div class="square" id="32"></div>
-            <div class="square" id="33"></div>
-            <div class="square" id="34"></div>
-            <div class="square" id="35"></div>
-            <div class="square" id="36"></div>
-            <div class="square" id="37"></div>
-            <div class="square" id="38"></div>
-            <div class="square" id="39"></div>
-            <div class="square" id="40"></div>
-            <div class="square" id="41"></div>
-            <div class="square" id="42"></div>
-            <div class="square" id="43"></div>
-            <div class="square" id="44"></div>
-            <div class="square" id="45"></div>
-            <div class="square" id="46"></div>
-            <div class="square" id="47"></div>
-            <div class="square" id="48"></div>
-            <div class="square" id="49"></div>
-            <div class="square" id="50"></div>
-            <div class="square" id="51"></div>
-            <div class="square" id="52"></div>
-            <div class="square" id="53"></div>
-            <div class="square" id="54"></div>
-            <div class="square" id="55"></div>
-            <div class="square" id="56"></div>
-            <div class="square" id="57"></div>
-            <div class="square" id="58"></div>
-            <div class="square" id="59"></div>
-        </div>
+        <!-- Área de Jogo -->
+        <section class="panel" role="region" aria-label="Área do jogo com galinhas">
+            <div class="square" id="0" role="button" aria-label="Casa 1"></div>
+            <div class="square" id="1" role="button" aria-label="Casa 2"></div>
+            <div class="square" id="2" role="button" aria-label="Casa 3"></div>
+            <div class="square" id="3" role="button" aria-label="Casa 4"></div>
+            <div class="square" id="4" role="button" aria-label="Casa 5"></div>
+            <div class="square" id="5" role="button" aria-label="Casa 6"></div>
+            <div class="square" id="6" role="button" aria-label="Casa 7"></div>
+            <div class="square" id="7" role="button" aria-label="Casa 8"></div>
+            <div class="square" id="8" role="button" aria-label="Casa 9"></div>
+            <div class="square" id="9" role="button" aria-label="Casa 10"></div>
+            <div class="square" id="10" role="button" aria-label="Casa 11"></div>
+            <div class="square" id="11" role="button" aria-label="Casa 12"></div>
+            <div class="square" id="12" role="button" aria-label="Casa 13"></div>
+            <div class="square" id="13" role="button" aria-label="Casa 14"></div>
+            <div class="square" id="14" role="button" aria-label="Casa 15"></div>
+            <div class="square" id="15" role="button" aria-label="Casa 16"></div>
+            <div class="square" id="16" role="button" aria-label="Casa 17"></div>
+            <div class="square" id="17" role="button" aria-label="Casa 18"></div>
+            <div class="square" id="18" role="button" aria-label="Casa 19"></div>
+            <div class="square" id="19" role="button" aria-label="Casa 20"></div>
+            <div class="square" id="20" role="button" aria-label="Casa 21"></div>
+            <div class="square" id="21" role="button" aria-label="Casa 22"></div>
+            <div class="square" id="22" role="button" aria-label="Casa 23"></div>
+            <div class="square" id="23" role="button" aria-label="Casa 24"></div>
+            <div class="square" id="24" role="button" aria-label="Casa 25"></div>
+            <div class="square" id="25" role="button" aria-label="Casa 26"></div>
+            <div class="square" id="26" role="button" aria-label="Casa 27"></div>
+            <div class="square" id="27" role="button" aria-label="Casa 28"></div>
+            <div class="square" id="28" role="button" aria-label="Casa 29"></div>
+            <div class="square" id="29" role="button" aria-label="Casa 30"></div>
+            <div class="square" id="30" role="button" aria-label="Casa 31"></div>
+            <div class="square" id="31" role="button" aria-label="Casa 32"></div>
+            <div class="square" id="32" role="button" aria-label="Casa 33"></div>
+            <div class="square" id="33" role="button" aria-label="Casa 34"></div>
+            <div class="square" id="34" role="button" aria-label="Casa 35"></div>
+            <div class="square" id="35" role="button" aria-label="Casa 36"></div>
+            <div class="square" id="36" role="button" aria-label="Casa 37"></div>
+            <div class="square" id="37" role="button" aria-label="Casa 38"></div>
+            <div class="square" id="38" role="button" aria-label="Casa 39"></div>
+            <div class="square" id="39" role="button" aria-label="Casa 40"></div>
+            <div class="square" id="40" role="button" aria-label="Casa 41"></div>
+            <div class="square" id="41" role="button" aria-label="Casa 42"></div>
+            <div class="square" id="42" role="button" aria-label="Casa 43"></div>
+            <div class="square" id="43" role="button" aria-label="Casa 44"></div>
+            <div class="square" id="44" role="button" aria-label="Casa 45"></div>
+            <div class="square" id="45" role="button" aria-label="Casa 46"></div>
+            <div class="square" id="46" role="button" aria-label="Casa 47"></div>
+            <div class="square" id="47" role="button" aria-label="Casa 48"></div>
+            <div class="square" id="48" role="button" aria-label="Casa 49"></div>
+            <div class="square" id="49" role="button" aria-label="Casa 50"></div>
+            <div class="square" id="50" role="button" aria-label="Casa 51"></div>
+            <div class="square" id="51" role="button" aria-label="Casa 52"></div>
+            <div class="square" id="52" role="button" aria-label="Casa 53"></div>
+            <div class="square" id="53" role="button" aria-label="Casa 54"></div>
+            <div class="square" id="54" role="button" aria-label="Casa 55"></div>
+            <div class="square" id="55" role="button" aria-label="Casa 56"></div>
+            <div class="square" id="56" role="button" aria-label="Casa 57"></div>
+            <div class="square" id="57" role="button" aria-label="Casa 58"></div>
+            <div class="square" id="58" role="button" aria-label="Casa 59"></div>
+            <div class="square" id="59" role="button" aria-label="Casa 60"></div>
+        </section>
     </main>
-    <div id="mensagemVitoria" class="vitoria oculto" role="dialog" aria-live="assertive">
-        <p>Sua pontuação final é: <span id="finalScore"></span></p>
-        <button id="reiniciarJogo" class="btnReiniciar" type="button">Reiniciar</button>
-    </div>
+    
+    <!-- Diálogo de Fim de Jogo -->
+    <dialog id="mensagemVitoria" class="vitoria oculto">
+        <h2>Fim do Jogo</h2>
+        <p>Sua pontuação final é: <strong><span id="finalScore">0</span></strong> pontos</p>
+        <button id="reiniciarJogo" class="btnReiniciar" type="button"><span style="display:block;line-height:1;margin:0;padding:0;">Reiniciar<br>Jogo</span></button>
+    </dialog>
+    
     <script src="./src/script/engine.js" defer></script>
 </body>
 </html>
