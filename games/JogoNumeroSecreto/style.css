@@ -7,10 +7,15 @@
 
 body {
     background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100dvh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -38,6 +43,7 @@ body::before {
     background-image: url("img/Ruido.png");
     background-size: 100% 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .container__conteudo {
@@ -107,6 +113,65 @@ button {
 
 button:disabled {
     background-color: gray;
+}
+
+
+@media screen and (max-width: 600px) {
+    html, body {
+        min-width: 100vw;
+        min-height: 100dvh;
+        width: 100vw;
+        height: 100dvh;
+        overflow: hidden;
+    }
+    .container {
+        width: 98vw;
+        min-height: 98vh;
+        max-width: 100vw;
+        border-radius: 24px;
+        box-shadow: none;
+        margin: 0;
+    }
+    .container__conteudo {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        position: static;
+    }
+    .container__informacoes {
+        padding: 0.5rem;
+    }
+    .container__input {
+        font-size: 18px;
+        height: 48px;
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 32px;
+        padding-bottom: 1rem;
+    }
+    .texto__paragrafo {
+        font-size: 18px;
+    }
+    .container__botao {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .container__imagem-pessoa {
+        display: none;
+    }
+
+    /* Garante que os botões fiquem sempre visíveis dentro da div no mobile */
+    .container__botoes {
+        position: sticky;
+        bottom: 0;
+        padding-bottom: 1rem;
+        z-index: 10;
+        margin-bottom: 0;
+        border-radius: 0 0 16px 16px;
+        background: none;
+    }
 }
 
 @media screen and (max-width: 1250px) {

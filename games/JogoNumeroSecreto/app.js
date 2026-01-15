@@ -1,4 +1,4 @@
-let listaNumerosSorteados = [];
+
 let limiteDeChutes = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
@@ -6,9 +6,29 @@ let tentativas = 1;
 function exibirTextoNaTela(tag, texto){
     let campo =  document.querySelector(tag);
     campo.innerHTML = texto;
-    //Abaixo a tag em javaScript responsavel pela fala.
-    responsiveVoice.speak(texto,'Brazilian Portuguese Female', {rate:1.2});
+    // Corrige leitura no mobile: só executa após interação do usuário
+    if (window.responsiveVoice && window.responsiveVoice.speak) {
+        // Em alguns navegadores mobile, o áudio só funciona após interação
+        if (window._vozLiberada) {
+            responsiveVoice.speak(texto,'Brazilian Portuguese Female', {rate:1.2});
+        }
+    }
 }
+
+// Libera o áudio no mobile após o primeiro toque
+window._vozLiberada = false;
+function liberarVozMobile() {
+    if (!window._vozLiberada && window.responsiveVoice && window.responsiveVoice.speak) {
+        window._vozLiberada = true;
+        // Pequeno texto para liberar o áudio
+        responsiveVoice.speak('Iniciando jogo', 'Brazilian Portuguese Female', {rate:1.2});
+        // Remove o listener após liberar
+        window.removeEventListener('touchend', liberarVozMobile);
+        window.removeEventListener('click', liberarVozMobile);
+    }
+}
+window.addEventListener('touchend', liberarVozMobile, {passive:true});
+window.addEventListener('click', liberarVozMobile, {passive:true});
 
 function exibirMensagemInicial(){
     exibirTextoNaTela('h1', 'Jogo numero secreto');
@@ -19,48 +39,57 @@ exibirMensagemInicial();
 
 function verificarChute(){
     let chute = document.querySelector('input').value;
-    if (chute == numeroSecreto){
+    const chuteNum = Number(chute);
+    if (chute === '' || isNaN(chuteNum)) {
+        exibirTextoNaTela('p', 'Digite um número válido antes de chutar!');
+        limparCampo();
+        return;
+    }
+    if (chuteNum < 1 || chuteNum > 100) {
+        exibirTextoNaTela('p', 'Digite apenas números entre 1 e 100!');
+        limparCampo();
+        return;
+    }
+    if (chuteNum == numeroSecreto){
         exibirTextoNaTela('h1', 'Você Acertou!');
         let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativas';
-        let mensagemTentativas = `Você descobriuo número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}!`;
+        let mensagemTentativas = `Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}!`;
         exibirTextoNaTela('p', mensagemTentativas);
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
-        if (chute > numeroSecreto){
-            exibirTextoNaTela('p', 'O numero secreto é menor');
+        let mensagem = '';
+        if (chuteNum > numeroSecreto){
+            mensagem = `O número secreto é menor que ${chuteNum}`;
         } else {
-            exibirTextoNaTela('p', 'O número secreto é maior');
+            mensagem = `O número secreto é maior que ${chuteNum}`;
         }
+        exibirTextoNaTela('p', mensagem);
         tentativas++;
         limparCampo();
     }
 }
 
+
 function gerarNumeroAleatorio(){
-    let numeroEscolhido =  parseInt(Math.random() * limiteDeChutes + 1);
-    let quantidadeDeElementosNaLista = listaNumerosSorteados.length;
-
-    if (quantidadeDeElementosNaLista == limiteDeChutes){
-        listaNumerosSorteados = [];
-    }
-
-    if (listaNumerosSorteados.includes(numeroEscolhido)){
-        return gerarNumeroAleatorio();
-    } else {
-        listaNumerosSorteados.push(numeroEscolhido);
-        return numeroEscolhido;
-    }
+    return parseInt(Math.random() * limiteDeChutes + 1);
 }
 
 function limparCampo(){
-    chute = document.querySelector('input');
-    chute.value = '';
+    let chute = document.querySelector('input');
+    if (chute) {
+        chute.value = '';
+        chute.removeAttribute('disabled');
+    }
 }
 
 function reiniciarJogo(){
     numeroSecreto = gerarNumeroAleatorio();
-    limparCampo();
     tentativas = 1;
     exibirMensagemInicial();
+    limparCampo();
     document.getElementById('reiniciar').setAttribute('disabled',true);
+    let chute = document.querySelector('input');
+    if (chute) {
+        chute.focus();
+    }
 }
