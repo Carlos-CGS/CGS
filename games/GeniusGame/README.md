@@ -1,6 +1,6 @@
 # Genius Game - CGS
 
-Jogo da Memória desenvolvido em HTML, CSS e JavaScript, totalmente responsivo para desktop, tablets e celulares.
+Jogo da Memória sequencial desenvolvido em HTML, CSS e JavaScript, totalmente responsivo para desktop, tablets e celulares.
 
 ## Funcionalidades
 

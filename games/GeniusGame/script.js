@@ -66,6 +66,7 @@ function render() {
     if (state.screen === 'start') renderStart();
     else if (state.screen === 'game') renderGame();
     else if (state.screen === 'result') renderResult();
+    renderFloatingMenuBtn();
 }
 
 function renderStart() {
@@ -239,6 +240,23 @@ function renderResult() {
         state.screen = 'start';
         render();
     };
+}
+
+// Botão flutuante para voltar ao menu principal
+function renderFloatingMenuBtn() {
+    let btn = document.getElementById('floatingMenuBtn');
+    if (!btn) {
+        btn = document.createElement('button');
+        btn.id = 'floatingMenuBtn';
+        btn.className = 'floating-menu-btn';
+        btn.title = 'Voltar ao menu principal';
+        btn.innerHTML = '🏠';
+        document.body.appendChild(btn);
+    }
+    btn.onclick = () => {
+        window.location.href = 'https://carlos-cgs.github.io/CGS/';
+    };
+    btn.style.display = 'flex';
 }
 
 function restartGame() {

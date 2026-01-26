@@ -292,6 +292,30 @@ button:hover {
     color: #fff;
     margin-left: 8px;
 }
+/* Botão flutuante para voltar ao menu principal */
+.floating-menu-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+    background: #bfa14a;
+    color: #222;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 4px 16px #0008;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.floating-menu-btn:hover {
+    background: #fff;
+    color: #bfa14a;
+}
 @media (max-width: 600px) {
     #app {
         max-width: 98vw;
