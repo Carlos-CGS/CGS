@@ -35,7 +35,7 @@
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="shortcut icon" href="./assets/images/favicon1.png" type="image/x-icon">
@@ -49,8 +49,23 @@
   
   <!-- Reading Progress Bar -->
   <div id="progress-bar" role="progressbar" aria-label="Progresso de leitura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  <div id="trailer-intro" class="trailer-intro" role="dialog" aria-label="Introdução cinematográfica" aria-live="polite">
+    <div class="trailer-intro-content">
+      <p class="trailer-kicker">Portfolio Experience</p>
+      <h2 class="trailer-title">Carlos-CGS</h2>
+      <p class="trailer-copy">Carregando modo cinematográfico...</p>
+      <button id="trailer-skip" class="trailer-skip" type="button">Pular Intro</button>
+    </div>
+  </div>
+  <div class="cinema-bars" aria-hidden="true">
+    <span class="cinema-bar cinema-bar-top"></span>
+    <span class="cinema-bar cinema-bar-bottom"></span>
+  </div>
   
-  <header id="home" class="banner" data-parallax="0.22">
+  <header id="home" class="banner panel panel-hero" data-panel="hero" data-parallax="0.22">
+    <div class="cinematic-layer cinematic-layer-back"></div>
+    <div class="cinematic-layer cinematic-layer-mid"></div>
+    <div class="cinematic-grain" aria-hidden="true"></div>
     <nav aria-label="Navegação principal">
       <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-items">
         <span class="hamburger">
@@ -80,42 +95,50 @@
         <span id="theme-label">🌙 Escuro</span>
       </button>
     </nav>
-    <div class="banner-content">
+    <div class="banner-content cinematic-content">
       <figure class="logo">
         <img src="assets/images/profile.png" title="meuPerfil" alt="meuPerfil">
       </figure>
-      <h1>Carlos-CGS</h1>
+      <h1 class="hero-title">Carlos-CGS</h1>
       <p class="hero-subtitle">
-        Desenvolvedor Full Stack | Python, C#, SQL, JavaScript, IA
+        Desenvolvedor Full Stack | Python, C#, SQL, JavaScript e IA aplicada
       </p>
-      <div class="social-icons">
-        <a href="https://github.com/Carlos-CGS" target="_blank" rel="noopener noreferrer" class="social-icon">
-          <img src="./assets/images/github.png" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" rel="noopener noreferrer" class="social-icon">
-          <img src="./assets/images/linkedin.png" alt="LinkedIn">
-        </a>
-        <a id="email-link" href="mailto:garcia.mar.mil@gmail.com?subject=Contato%20Portf%C3%B3lio&body=Ol%C3%A1%20Carlos,%20tudo%20bem?" class="social-icon">
-          <img src="./assets/images/email.png" alt="Email">
-        </a>
+      <p class="hero-value">
+        Construo produtos web e automações que aceleram resultados, com foco em performance, arquitetura limpa e entrega de valor real para negócios.
+      </p>
+      <div class="hero-social-row">
+        <div class="social-icons">
+          <a href="https://github.com/Carlos-CGS" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <img src="assets/images/github.png" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <img src="assets/images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a id="email-link" href="mailto:garcia.mar.mil@gmail.com?subject=Contato%20Portf%C3%B3lio&body=Ol%C3%A1%20Carlos,%20tudo%20bem?" class="social-icon">
+            <img src="assets/images/email.png" alt="Email">
+          </a>
+        </div>
       </div>
+    </div>
+    <a href="#sobre" class="scroll-cue" aria-label="Rolar para a próxima seção">
+      <span></span>
+    </a>
     </div>
   </header>
   <main id="main-content">
     <!-- Seção Sobre Mim -->
-    <section id="sobre" class="section-spacing" data-aos="fade-up" data-aos-duration="1000">
+    <section id="sobre" class="section-spacing panel panel-story" data-panel="sobre" data-aos="fade-up" data-aos-duration="1000">
       <div class="container-sobre">
         <h2>Sobre Mim</h2>
         <div class="sobre-content">
           <div class="sobre-text">
             <p>
-              Sou <strong>Desenvolvedor Full Stack</strong>  em transição de carreira , com base sólida em <strong>Ciência de Dados (UNIVESP)</strong> e formação 
-              técnica em <strong>Desenvolvimento de Sistemas (FAT)</strong>, direcionando minha energia para construção de produtos, automações e soluções escaláveis.
+              Sou <strong>Desenvolvedor Full Stack</strong> em transição de carreira, com base em <strong>Ciência de Dados (UNIVESP)</strong> e formação técnica em <strong>Desenvolvimento de Sistemas (FAT)</strong>.
+              Hoje concentro minha energia em construir produtos digitais, automações e soluções escaláveis orientadas a impacto.
             </p>
             <p>
-              Atualmente, meu portfólio é guiado por execução: projetos práticos em <strong>Python, C#, .NET, JavaScript, React e SQL</strong>, com foco em boas 
-              práticas, arquitetura limpa, integração ponta a ponta e IA aplicada . Aqui você encontra repositórios que não são “apenas estudos”, 
-              mas entregas evolutivas , cada projeto nasce com um objetivo, uma pilha e um aprendizado mensurável.
+              Meu portfólio é guiado por execução: projetos práticos com <strong>Python, C#, .NET, JavaScript, React e SQL</strong>, aplicando boas práticas,
+              integração ponta a ponta e IA no fluxo de desenvolvimento. Aqui, cada projeto nasce com um objetivo claro, uma stack definida e um resultado mensurável.
             </p>
             <div class="stats">
               <div class="stat-item">
@@ -136,7 +159,7 @@
       </div>
     </section>
     
-    <section id="tech-content" class="section-spacing" data-aos="zoom-in" data-aos-duration="3000">
+    <section id="tech-content" class="section-spacing panel panel-skills" data-panel="skills" data-aos="zoom-in" data-aos-duration="3000">
       <h2 class="mb-2">Principais Tecnologias</h2>
       <figure class="galeria_tech">
         <p class="mb-1">Linguagens de Programação</p>
@@ -168,7 +191,7 @@
         <br>
       </figure>
     </section>
-    <section id="meus_jogos" data-parallax="0.32">
+    <section id="meus_jogos" class="panel panel-games" data-panel="games" data-parallax="0.32">
       <div class="meus_jogos__container" data-aos="fade-up" data-aos-duration="1000">
         <article class="meus_jogos_container__jogo">
           <h2>Memoria Tech</h2>
@@ -185,11 +208,11 @@
           <a class="link_game" href="./games/GalinhaFeliz-Game/index.html">Jogar</a>
         </article>
         <article class="meus_jogos_container__jogo">
-          <h2>Genius Game</h2>
-          <a href="./games/GeniusGame/index.html"><img src="./games/GeniusGame/assets/img/jogando-desktop.png" alt="Genius Game"></a>
-          <p>O objetivo do jogo é testar sua memória e reflexos, reproduzindo corretamente sequências de cards que 
-            vão aumentando a cada rodada.</p>
-          <a class="link_game" href="./games/GeniusGame/index.html">Jogar</a>
+          <h2>Piano Tech</h2>
+          <a href="./games/Piano-Tech/index.html"><img src="./assets/images/pianoTech.png" alt="Piano Virtual - Toque música com teclado ou mouse"></a>
+          <p>Abastração de um piano real, que funciona utilizando o teclado ou com cliques dos mouses. Possui também um
+            botão de volume funcional.</p>
+          <a class="link_game" href="./games/Piano-Tech/index.html">Jogar</a>
         </article>
         <article class="meus_jogos_container__jogo">
           <h2>Numero Secreto</h2>
@@ -199,10 +222,9 @@
           <a class="link_game" href="./games/JogoNumeroSecreto/index.html">Jogar</a>
         </article>
       </div>
-      </div>
     </section>
-    <section id="projetos">
-      <h2>Alguns Projetos Desenvolvidos</h2>
+    <section id="projetos" class="panel panel-projects" data-panel="projetos">
+      <h2>Alguns&nbsp;Projetos <span class="project-title-break">Desenvolvidos</span></h2>
       <article class="video-text-container">
         <div class="text-container2" data-aos="zoom-in-up" data-aos-duration="1000">
           <p>
@@ -340,12 +362,12 @@
             Repositório: <a href="https://github.com/Carlos-CGS/Pokedex-JS-DIO" target="_blank" rel="noopener noreferrer">Repositório GitHub</a>
           </p>
         </div>
-        <video class="video" src="videos/Pokedex.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
+        <video class="video" src="videos/Pokedex.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
       </article>
       <article class="video-text-container">
-        <video class="video" src="videos/CodeVerse.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-left" data-aos-duration="1000">
+        <video class="video" src="videos/CodeVerse.mp4" title="Video 1" autoplay muted loop controls loading="lazy" data-aos="fade-right" data-aos-duration="1000">
           Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="text-container1" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -417,6 +439,8 @@
     <img src="./assets/images/btnTopo.png" alt="Home">
   </div>
  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
   <script defer>
     window.addEventListener('load', function() {
