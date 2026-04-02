@@ -2453,9 +2453,28 @@ footer .brand {
 }
 
 .sobre-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
   gap: 2rem;
-  align-items: center;
+  align-items: stretch;
+}
+
+.sobre-visual {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.sobre-photo {
+  position: absolute;
+  inset: 0.35rem 0 0 0;
+  width: 100%;
+  height: calc(100% - 0.35rem);
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.32));
 }
 
 .sobre-text p {
@@ -3454,13 +3473,25 @@ footer .brand {
   }
 
   .sobre-content {
-    display: block;
+    display: grid;
+    grid-template-columns: minmax(170px, 250px) minmax(0, 1fr);
+    gap: 0.55rem;
+    align-items: stretch;
+  }
+
+  .sobre-visual {
+    margin-left: -0.95rem;
+  }
+
+  .sobre-photo {
+    object-position: left bottom;
+    transform: translateX(-0.6rem);
   }
 
   .sobre-text {
     width: 100%;
     max-width: 860px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .sobre-text p {
@@ -3490,7 +3521,7 @@ footer .brand {
   #sobre {
     margin-top: 1.25rem;
     margin-bottom: 1rem;
-    padding: 1.5rem 1rem !important;
+    padding: 1.1rem 0.85rem !important;
     width: 100% !important;
     box-sizing: border-box !important;
     display: flex !important;
@@ -3501,37 +3532,67 @@ footer .brand {
 
   .container-sobre {
     width: 100% !important;
-    max-width: 80vw !important;
+    max-width: 100% !important;
     margin: 0 auto !important;
     text-align: center !important;
   }
 
   .sobre-content {
     width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    display: grid !important;
+    grid-template-columns: minmax(102px, 122px) minmax(0, 1fr) !important;
+    align-items: start !important;
+    justify-content: start !important;
+    gap: 0.4rem !important;
+  }
+
+  .sobre-visual {
+    width: min(122px, 30vw) !important;
+    max-width: 122px !important;
+    margin: 0 !important;
+    padding-top: 0 !important;
+    position: static !important;
+    flex: 0 0 auto !important;
+    align-self: start !important;
+    overflow: hidden !important;
+    justify-self: start !important;
+  }
+
+  .sobre-photo {
+    display: block !important;
+    position: static !important;
+    width: 116% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    transform: translateX(-0.75rem) scale(1.04) !important;
+    transform-origin: left bottom !important;
   }
 
   .sobre-text {
-    max-width: 80vw !important;
-    text-align: center !important;
-    margin: 0 auto !important;
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    text-align: left !important;
+    margin: 0 !important;
   }
 
   .sobre-text p {
-    margin-bottom: 0.62rem !important;
-    text-align: center !important;
-    max-width: 80vw !important;
+    margin-bottom: 0.5rem !important;
+    text-align: left !important;
+    max-width: none !important;
+    font-size: 0.87rem !important;
+    line-height: 1.42 !important;
   }
 
   .stats {
-    gap: 0.8rem !important;
+    gap: 0.45rem !important;
     width: 100% !important;
-    max-width: 80vw !important;
-    margin: 1rem auto 0 !important;
+    max-width: 100% !important;
+    margin: 0.8rem auto 0 !important;
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   }
 
   .stat-item {
@@ -3540,16 +3601,17 @@ footer .brand {
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
-    padding: 0.6rem 0.3rem !important;
+    padding: 0.45rem 0.15rem !important;
+    min-width: 0 !important;
   }
 
   .stat-number {
-    font-size: clamp(1.4rem, 6vw, 1.7rem) !important;
+    font-size: clamp(1.08rem, 4.8vw, 1.35rem) !important;
     text-align: center !important;
   }
 
   .stat-label {
-    font-size: clamp(0.6rem, 2.2vw, 0.75rem) !important;
+    font-size: clamp(0.5rem, 1.7vw, 0.62rem) !important;
     text-align: center !important;
     text-transform: uppercase !important;
     white-space: normal !important;
@@ -3879,7 +3941,7 @@ nav {
   min-height: 98px;
   border-radius: 0.92rem;
   border: 1px solid color-mix(in oklab, var(--border) 74%, var(--gold) 26%);
-  background: linear-gradient(160deg, color-mix(in oklab, var(--card) 92%, #000 8%) 0%, color-mix(in oklab, var(--surface) 95%, #000 5%) 100%);
+  background: linear-gradient(160deg, color-mix(in oklab, var(--card) 96%, #000 4%) 0%, color-mix(in oklab, var(--surface) 97%, #000 3%) 100%);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
   gap: 0.48rem;
   transform: translateY(7px);
@@ -3897,24 +3959,26 @@ nav {
 }
 
 #tech-content .tech-card img {
-  height: 34px;
+  height: 38px;
   width: auto;
   max-width: 90px;
   object-fit: contain;
-  filter: grayscale(0.08) saturate(0.94) contrast(0.98) brightness(0.92);
+  filter: grayscale(0) saturate(1.08) contrast(1.08) brightness(1.06);
   transition: filter 0.22s ease, transform 0.22s ease;
 }
 
 #tech-content .tech-card-frameworks img {
-  height: 30px;
+  height: 33px;
   max-width: 120px;
 }
 
 #tech-content .tech-card-label {
-  font-size: 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
   letter-spacing: 0.045rem;
   text-transform: uppercase;
-  color: color-mix(in oklab, var(--text-soft) 92%, var(--text) 8%);
+  color: color-mix(in oklab, var(--text) 92%, #fff 8%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 #tech-content .tech-card:hover,
@@ -3955,7 +4019,12 @@ nav {
 }
 
 [data-theme="light"] #tech-content .tech-card img {
-  filter: grayscale(0) saturate(0.98) contrast(0.98) brightness(0.95);
+  filter: grayscale(0) saturate(1.02) contrast(1.02) brightness(0.98);
+}
+
+[data-theme="light"] #tech-content .tech-card-label {
+  color: #334155;
+  text-shadow: none;
 }
 
 @media (max-width: 1100px) {
@@ -4008,16 +4077,17 @@ nav {
   }
 
   #tech-content .tech-card img {
-    height: 30px;
+    height: 33px;
     max-width: 90px;
   }
 
   #tech-content .tech-card-frameworks img {
-    height: 28px;
+    height: 30px;
   }
 
   #tech-content .tech-card-label {
-    font-size: 0.6rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.03rem;
   }
 }
 
