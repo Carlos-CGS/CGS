@@ -1857,25 +1857,40 @@ footer .brand {
     width: 28px;
   }
 
-      grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
-      gap: 0.25rem !important;
+  .courses-page .galeria_cursos {
+    grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+    gap: 0.25rem !important;
+  }
+
+  .courses-page .galeria1-track {
     animation-duration: 38s;
   }
 
   .courses-page .galeria1 img {
     max-height: 27px;
   }
-      min-height: 42px !important;
-      padding: 0.16rem !important;
-      border-radius: 0.48rem !important;
+
+  .courses-page .galeria_cursos a {
+    min-height: 42px !important;
+    padding: 0.16rem !important;
+    border-radius: 0.48rem !important;
+  }
+
+  .courses-featured {
     padding: 0.65rem 0.65rem 0.75rem;
     margin: 0.25rem auto 0.8rem;
   }
 
   .courses-featured h3 {
     font-size: 0.86rem;
-      max-width: 100% !important;
-      max-height: 26px !important;
+  }
+
+  .courses-page .galeria_cursos a img,
+  .courses-page .galeria_cursos img {
+    max-width: 100% !important;
+    max-height: 26px !important;
+  }
+
   .featured-course-list {
     grid-template-columns: 1fr;
     gap: 0.4rem;
