@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="CodeVerse - série de artigos semanais de Carlos Garcia sobre Python e desenvolvimento, publicados no LinkedIn ao longo de 2025 e 2026.">
+  <meta name="keywords" content="codeverse, codeverse python, artigos python, carlos garcia, jarvis python, aprendizado python, linkedin artigos dev">
+  <meta name="author" content="Carlos Garcia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://carlos-cgs.github.io/CGS/codeverse.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://carlos-cgs.github.io/CGS/codeverse.html">
+  <meta property="og:title" content="CodeVerse | Carlos-CGS">
+  <meta property="og:description" content="Série de artigos semanais sobre Python e desenvolvimento, publicados no LinkedIn.">
+  <meta property="og:image" content="https://carlos-cgs.github.io/CGS/assets/images/capa_codeverse2025.webp">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="shortcut icon" href="./assets/images/favicon1.png" type="image/x-icon">
+  <meta name="theme-color" content="#31A8DD">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+  <title>CodeVerse | Carlos-CGS</title>
+</head>
+<body class="courses-page codeverse-page">
+  <a href="#codeverse-content" class="skip-link">Pular para os artigos</a>
+  <div id="progress-bar" role="progressbar" aria-label="Progresso de leitura" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <header class="banner">
+    <nav aria-label="Navegação principal">
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-items">
+        <span class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </span>
+      </button>
+      <ul class="navegacao" id="menu-items">
+        <li>
+          <a href="index.html#home" class="navegacao_link">Home</a>
+        </li>
+        <li>
+          <a href="codeverse.html" class="navegacao_link active">CodeVerse</a>
+        </li>
+        <li>
+          <a href="cursos.html" class="navegacao_link">Cursos e Certificações</a>
+        </li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+        <span id="theme-label">🌙 Escuro</span>
+      </button>
+    </nav>
+    <section class="codeverse-hero">
+      <h1 class="codeverse-hero-title">CodeVerse</h1>
+      <div class="codeverse-tabs" role="tablist" aria-label="Selecione a temporada do CodeVerse">
+        <button type="button" class="codeverse-tab" data-year="2025" role="tab" aria-selected="true">CodeVerse Python 2025</button>
+        <button type="button" class="codeverse-tab" data-year="2026" role="tab" aria-selected="false">CodeVerse 2026</button>
+      </div>
+    </section>
+  </header>
+
+  <main id="codeverse-content">
+    <section class="codeverse-intro" data-aos="fade-up" data-aos-duration="800">
+      <img id="codeverse-cover" class="codeverse-cover" src="" alt="">
+      <div class="codeverse-intro-text">
+        <h2 id="codeverse-year-title"></h2>
+        <p id="codeverse-year-tagline" class="codeverse-year-tagline" hidden></p>
+        <div id="codeverse-year-description" class="codeverse-year-description"></div>
+        <div id="codeverse-year-highlights" class="codeverse-highlights"></div>
+        <div id="codeverse-year-award" class="codeverse-award" hidden></div>
+        <p id="codeverse-year-closing" class="codeverse-closing"></p>
+        <div id="codeverse-year-stats" class="codeverse-stats"></div>
+        <div id="codeverse-year-ctas" class="codeverse-ctas" hidden></div>
+      </div>
+    </section>
+
+    <section id="codeverse-indicators" class="codeverse-indicators" hidden aria-labelledby="codeverse-indicators-title">
+      <h2 id="codeverse-indicators-title" class="codeverse-section-title">Indicadores do projeto</h2>
+      <div id="codeverse-indicators-grid" class="codeverse-indicators-grid"></div>
+    </section>
+
+    <section id="codeverse-topics" class="codeverse-topics" hidden aria-labelledby="codeverse-topics-title">
+      <h2 id="codeverse-topics-title" class="codeverse-section-title">O que você encontra no CodeVerse2026</h2>
+      <div id="codeverse-topics-grid" class="codeverse-topics-grid"></div>
+    </section>
+
+    <section class="codeverse-code" id="codeverse-code" aria-label="Código em destaque" data-aos="fade-up" data-aos-duration="800">
+      <!-- Preenchido via assets/javascript/codeverse.js -->
+    </section>
+
+    <section class="codeverse-articles" id="codeverse-articles" aria-labelledby="codeverse-articles-title">
+      <div class="codeverse-articles-header">
+        <h2 id="codeverse-articles-title" class="codeverse-articles-title"></h2>
+        <p id="codeverse-articles-desc" class="codeverse-articles-desc"></p>
+        <div id="codeverse-articles-stats" class="codeverse-articles-stats" aria-live="polite"></div>
+      </div>
+
+      <div class="codeverse-controls">
+        <nav class="codeverse-month-filter" id="codeverse-month-filter" aria-label="Filtrar artigos por mês">
+          <button type="button" class="codeverse-filter-btn is-active" data-month="all" aria-pressed="true">Todos</button>
+          <button type="button" class="codeverse-filter-btn" data-month="0" aria-pressed="false">Jan</button>
+          <button type="button" class="codeverse-filter-btn" data-month="1" aria-pressed="false">Fev</button>
+          <button type="button" class="codeverse-filter-btn" data-month="2" aria-pressed="false">Mar</button>
+          <button type="button" class="codeverse-filter-btn" data-month="3" aria-pressed="false">Abr</button>
+          <button type="button" class="codeverse-filter-btn" data-month="4" aria-pressed="false">Mai</button>
+          <button type="button" class="codeverse-filter-btn" data-month="5" aria-pressed="false">Jun</button>
+          <button type="button" class="codeverse-filter-btn" data-month="6" aria-pressed="false">Jul</button>
+          <button type="button" class="codeverse-filter-btn" data-month="7" aria-pressed="false">Ago</button>
+          <button type="button" class="codeverse-filter-btn" data-month="8" aria-pressed="false">Set</button>
+          <button type="button" class="codeverse-filter-btn" data-month="9" aria-pressed="false">Out</button>
+          <button type="button" class="codeverse-filter-btn" data-month="10" aria-pressed="false">Nov</button>
+          <button type="button" class="codeverse-filter-btn" data-month="11" aria-pressed="false">Dez</button>
+        </nav>
+
+        <div class="filter-group codeverse-search-group">
+          <label id="codeverse-search-label" for="codeverse-search">Pesquisar artigo</label>
+          <input type="search" id="codeverse-search" placeholder="Buscar por título ou palavra-chave" aria-label="Pesquisar artigos por título ou palavra-chave">
+        </div>
+      </div>
+
+      <div id="codeverse-results" class="codeverse-results">
+        <!-- Preenchido via assets/javascript/codeverse.js -->
+      </div>
+
+      <p id="codeverse-no-results" class="codeverse-empty" hidden>Nenhum artigo encontrado com os filtros selecionados.</p>
+    </section>
+
+    <section id="codeverse-final-cta" class="codeverse-final-cta" hidden aria-labelledby="codeverse-final-cta-title">
+      <h2 id="codeverse-final-cta-title" class="codeverse-final-cta-title"></h2>
+      <p id="codeverse-final-cta-text" class="codeverse-final-cta-text"></p>
+      <div id="codeverse-final-cta-buttons" class="codeverse-final-cta-buttons"></div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-col footer-col-brand">
+          <a href="index.html#home" class="footer-logo-link" aria-label="Voltar ao início">
+            <img class="footer-logo" src="assets/images/logo.png" alt="Logotipo Carlos-CGS">
+          </a>
+          <p class="footer-slogan">Transformando ideias em código</p>
+        </div>
+
+        <nav class="footer-col footer-col-nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#projetos">Projetos</a></li>
+            <li><a href="codeverse.html">CodeVerse</a></li>
+            <li><a href="cursos.html">Cursos e Certificações</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col footer-col-contact" role="group" aria-label="Contato e redes sociais">
+          <ul class="footer-contact-list">
+            <li>
+              <a href="mailto:garcia.mar.mil@gmail.com" class="footer-contact-link">
+                <img src="./assets/images/email.png" alt="" class="footer-contact-icon">
+                <span>E-mail</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Carlos-CGS" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+                <img src="./assets/images/github.png" alt="" class="footer-contact-icon">
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/carlos-cgs/" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+                <img src="./assets/images/linkedin.png" alt="" class="footer-contact-icon">
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 - <span id="year">2026</span> <span class="brand">Carlos-CGS</span>. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="mailto:garcia.mar.mil@gmail.com?subject=Contato%20Portf%C3%B3lio&body=Ol%C3%A1%20Carlos,%20tudo%20bem?" id="cta-contact" class="cta-contact mailto-fallback-link" aria-label="Fale comigo por email">
+    <img src="./assets/images/email.png" alt="" class="cta-contact-icon">
+    <span class="cta-contact-label">Fale comigo</span>
+  </a>
+
+  <button type="button" class="btn-home" onclick="scrollToTop()" aria-label="Voltar ao topo">
+    <img src="./assets/images/btnTopo.png" alt="">
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script defer>
+    window.addEventListener('load', function() {
+      AOS.init();
+    });
+  </script>
+  <script src="./assets/javascript/script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js" defer></script>
+  <script src="./assets/javascript/codeverse-data.js" defer></script>
+  <script src="./assets/javascript/codeverse.js" defer></script>
+</body>
+</html>

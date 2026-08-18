@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carlos-cgs.github.io/CGS/sitemap.xml
