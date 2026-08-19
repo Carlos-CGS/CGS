@@ -566,7 +566,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function resolveTechLabel(sectionTitle, index, image) {
     const title = (sectionTitle || '').toLowerCase();
-    const programming = ['C#', 'Python', 'HTML', 'CSS', 'JavaScript', 'SQL', 'Java'];
+    const programming = ['C#', 'Python', 'HTML', 'CSS', 'JavaScript', 'SQL', 'PHP'];
     const frameworks = ['.NET', 'Spring Boot', 'React'];
     const others = ['GitHub', 'Git', 'Markdown', 'Gemini', 'Copilot', 'ChatGPT', 'Claude', 'VS Code', 'Visual Studio', 'Windows'];
 
@@ -917,11 +917,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const videoRevealStart = isMobile ? 'top 90%' : 'top 84%';
   const parallaxFromSize = isMobile ? '106%' : '116%';
   const parallaxScrub = isMobile ? 0.7 : 1.2;
-  const layerBackShift = isMobile ? 10 : 22;
-  const layerMidShift = isMobile ? 16 : 34;
-  const heroContentShift = isMobile ? 12 : 26;
-  const heroPhotoShift = isMobile ? 6 : 12;
-  const heroOrnamentForeShift = isMobile ? 22 : 42;
+  const layerBackShift = isMobile ? 15 : 22;
+  const layerMidShift = isMobile ? 23 : 34;
+  const heroContentShift = isMobile ? 17 : 26;
+  const heroPhotoShift = isMobile ? 9 : 12;
+  const heroOrnamentForeShift = isMobile ? 30 : 42;
 
   function setSceneByPanel(panel) {
     if (!panel || !panel.id) return;
@@ -1048,8 +1048,13 @@ document.addEventListener('DOMContentLoaded', function () {
     ease: 'none',
     scrollTrigger: {
       trigger: 'footer',
-      start: 'top 78%',
-      end: 'top 25%',
+      // "top 78%/top 25%" nunca era alcancado de verdade: o topo do footer (ultimo
+      // elemento da pagina) nao consegue subir alem de ~(altura da viewport - altura
+      // do footer) no scroll maximo, entao o progress ficava sempre em 0 e a tarja
+      // ficava presa no valor da animacao anterior. "bottom bottom" sempre completa
+      // exatamente no fim real da pagina, seja qual for a altura do footer.
+      start: 'top bottom',
+      end: 'bottom bottom',
       scrub: true
     }
   });
@@ -1128,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const heroLogo = document.querySelector('.banner .logo img');
   if (heroLogo) {
     gsap.to(heroLogo, {
-      yPercent: isMobile ? -8 : -16,
+      yPercent: isMobile ? -11 : -16,
       ease: 'none',
       scrollTrigger: {
         trigger: hero,
